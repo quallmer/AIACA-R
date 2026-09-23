@@ -1,0 +1,28 @@
+---
+title: "Examples"
+---
+
+## Example 1: Quick sentiment proxy
+
+```{r}
+positive <- c("good", "great", "helpful")
+negative <- c("bad", "poor", "harmful")
+
+score_text <- function(tokens) {
+  sum(tokens %in% positive) - sum(tokens %in% negative)
+}
+
+sample_tokens <- c("ai", "is", "helpful", "and", "great")
+score_text(sample_tokens)
+```
+
+## Example 2: Simple n-gram extraction
+
+```{r}
+make_bigrams <- function(tokens) {
+  if (length(tokens) < 2) return(character())
+  paste(tokens[-length(tokens)], tokens[-1])
+}
+
+make_bigrams(c("ai", "assisted", "content", "analysis"))
+```

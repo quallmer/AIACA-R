@@ -1,0 +1,19 @@
+---
+title: "Exercises"
+---
+
+## Exercise 1: Basic token counts
+
+Use this sample text to compute token frequencies.
+
+```{r}
+text <- c("AI helps coding", "coding with AI")
+words <- unlist(strsplit(tolower(text), "\\s+"))
+sort(table(words), decreasing = TRUE)
+```
+
+## Exercise 2: Reproducible workflow
+
+1. Create an R script that reads text input.
+2. Compute simple descriptive statistics.
+3. Save results to a CSV file.

@@ -1,0 +1,10 @@
+---
+title: "AIACA-R Companion Site"
+---
+
+This repository hosts an R companion site with exercises and worked examples for
+*AI-Assisted Content Analysis*.
+
+- Book repository: <https://github.com/quallmer/AIACA/>
+- Start with the [Exercises](exercises.qmd)
+- Explore [Examples](examples.qmd)

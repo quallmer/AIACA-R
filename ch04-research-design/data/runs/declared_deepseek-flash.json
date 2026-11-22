@@ -1,0 +1,21 @@
+{
+  "declared": "2026-11-22 07:52:36 +08",
+  "role": "second",
+  "provider": "deepseek",
+  "model": "deepseek/deepseek-flash",
+  "served_as": "Identifier as given to the API on 22 November 2026. The provider's documentation, read that day, says the identifier is served as DeepSeek-V4.1-Flash-1017, with reasoning on by default at high effort; no reasoning or sampling setting is sent. Chosen by KB on 22 November 2026 over deepseek-v4-pro, which was also piloted under v0.3.",
+  "max_tokens": 64000,
+  "settings": "max_tokens 64000; every other setting left at the provider's default",
+  "requests": "one independent request per document; no conversation state; package defaults for concurrency and retries",
+  "specification_version": "v0.3",
+  "specification_file": "code/achievement/winter/motive_codebook_v0.3.R",
+  "specification_file_sha256": "ec0c6de0151b086086a19b538ca93aae6bc3d097dc90dd80d84c8b295ee9ac41",
+  "instructions_sha256": "2316743c2316e3e75bb7eb3af9fb87769011f11c730b9ebd4f3ed7fb1d37f194",
+  "development_pilot": "pilot_v0.3_deepseek-flash",
+  "development_pilot_max_tokens": "64000",
+  "partition_sha256": "bcc9f1ea556bd2111d3531bb5ecd007e8a661cd8c97d245410a20c094e6f482b",
+  "dictionary_rule_sha256": "adcfe35054219c5be5510b3c58bbbb6297dbcd75d369c774e8163a2757ffaf74",
+  "quallmer": "0.6.0",
+  "ellmer": "0.5.2",
+  "R": "R version 4.6.2 (2026-10-29)"
+}

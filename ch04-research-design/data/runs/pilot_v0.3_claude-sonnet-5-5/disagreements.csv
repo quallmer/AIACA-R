@@ -1,0 +1,219 @@
+motive,type,doc,sentence,cue,model_listed,text
+pow,missed,PA4,6,captain,NA,The captain will finally accept a monetary bribe and the reporter will get his interview.
+ach,added,PA5,4,captain,"ACH4 ""slightly anguished look on the captain's face is because he is late in arriving""",The slightly anguished look on the captain's face is because he is late in arriving due to a severe hurricane which he encountered at sea.
+aff,missed,PA6,2,captain,NA,The two are old acquaintances.
+aff,added,PA6,5,captain,"AFF3 ""They philosophize and discuss the behavior of the tourists""","They philosophize and discuss the behavior of the tourists as observers, above the common crowd."
+pow,added,PA7,2,captain,"POW1 ""wants to get even with him""",Scrowlsy Gafoon is a personal enemy of the capitalist Admiral Bones McKid and wants to get even with him for nothing at all.
+pow,added,PA8,2,captain,"POW1 ""you bastard""","The captain says, No, you bastard, I won't pay a cent!"
+aff,added,PA8,3,captain,"AFF1 ""his buddies"" | POW1 ""have Irma, the captain's daughter, tied up in the cellar""","Jack (the knife) and his buddies have Irma, the captain's daughter, tied up in the cellar."
+pow,added,PA8,4,captain,"POW1 ""Jack has asked for $20,000 from the captain""","Jack has asked for $20,000 from the captain for his daughter's release."
+aff,added,PA9,3,captain,"AFF4 ""wants the bananas to take home to his pet chimpanzee, which is starving""","The passenger wants the bananas to take home to his pet chimpanzee, which is starving because it won't eat anything except bananas cooked in Charlie's Banana Shop in Paris."
+aff,added,PA9,4,captain,"AFF4 ""to be humane""",The man thinks he should be allowed to do it not for himself but to be humane.
+aff,added,PA9,5,captain,"AFF4 ""would like to help""",The officer would like to help but can't.
+pow,added,PA10,4,captain,"POW6 ""The captain is angry because he has just received a ticket"" | POW1 ""the captain wants the president to pay the fine""","The captain is angry because he has just received a ticket for double-parking his boat and since there was no other available pier, the captain wants the president to pay the fine."
+aff,added,PA11,1,river,"AFF3 ""stopped during one of their Sunday promenades""",A husband and wife have stopped during one of their Sunday promenades.
+aff,missed,PA11,5,river,NA,"It wasn't always like that though, as the man is now remembering."
+aff,added,PA12,1,river,"AFF3 ""talking to keep warm""","We sat bundled up on a wooden bench, talking to keep warm, and watching the immobile scene of deserted frozen water caught beneath ice and between the piers of a stone bridge."
+aff,added,PA13,2,river,"AFF2 ""They haven't seen each other for awhile"" | POW1 ""killing his wife""",They haven't seen each other for awhile because Sam was in jail for killing his wife.
+aff,added,PA13,4,river,"AFF1 ""they made love"" | AFF2 ""Sam had been without companionship for such a long time""","He stayed at her apartment last night, and they made love, since Martha felt obligated to, in a way, because Sam had been without companionship for such a long time."
+aff,added,PA13,5,river,"AFF3 ""decided to go for a walk along the river""",Today they decided to go for a walk along the river.
+pow,added,PA13,9,river,"POW1 ""Sam is a psychopathic killer""","Sam is a psychopathic killer, as well as a womanhater"
+pow,missed,PA15,4,river,"AFF3 ""brought a laugh to the conversation""","The recollection of skating on the Charles, and the time she had pushed me through the ice, brought a laugh to the conversation; but it quickly faded in the murky waters of the river that could no longer freeze over."
+aff,missed,PA17,5,river,NA,"He persists in discussing it, their old memories together, and their plans, but she sits quietly, thinking only of how she wished he would leave so she could be alone again."
+pow,missed,PA17,5,river,NA,"He persists in discussing it, their old memories together, and their plans, but she sits quietly, thinking only of how she wished he would leave so she could be alone again."
+pow,missed,PA17,6,river,NA,"Finally, realizing her disinterest, the ex-boyfriend walks away, down the river a bit, and jumps in."
+aff,added,PA17,7,river,"AFF4 ""she runs down to find him""","Hearing the splash, she runs down to find him but it was too late -- he was caught in seaweed under a tugboat, never to reappear."
+aff,added,PA18,6,river,"AFF1 ""But they do.""",But they do.
+aff,added,PA18,7,river,"AFF3 ""They spend their reckless times going to places like the Coop""","They spend their reckless times going to places like the Coop, the Wursthaus and the Brattle Theatre."
+aff,added,PA20,5,river,"AFF3 ""Let's take a walk""","One day he pulls her away from her schoolwork and says, Let's take a walk."
+pow,missed,PA20,5,river,"AFF3 ""Let's take a walk""","One day he pulls her away from her schoolwork and says, Let's take a walk."
+pow,added,PA20,9,river,"POW4 ""He wants to explain life to her""",He wants to explain life to her.
+pow,missed,PA20,10,river,"AFF4 ""He wants to do so much for her""",He wants to do so much for her.
+pow,missed,PA22,3,lab,"ACH1 ""well-known research scientists and are quite talented in this field""",They are also well-known research scientists and are quite talented in this field.
+ach,added,PA22,6,lab,"ACH5 ""hoping that they will eventually come up with the right formula""","They have been working on the project for 1- 1/2 years now, and every day they are hoping that they will eventually come up with the right formula."
+ach,added,PA22,7,lab,"ACH4 ""only come up with the answers that are not quite what they're looking for""",So far they've only come up with the answers that are not quite what they're looking for.
+pow,missed,PA23,1,lab,NA,What was the mysterious disease that was ravaging the land?
+ach,added,PA23,3,lab,"ACH4 ""The doctors were totally baffled, but could offer no cure""","The doctors were totally baffled, but could offer no cure to the frightened masses."
+pow,missed,PA23,6,lab,"AFF1 ""their own lovers""","Families were wiped out, doctors could not even take the time to bury their own parents, their own children, their own lovers."
+pow,missed,PA23,9,lab,NA,"There was no hope ... in the desperation of a dead end, the world died, conquered by a mysterious germ that was all-powerful, all-destructive."
+pow,added,PA24,3,lab,"POW2 ""actually a spy for the Communists""","The woman standing next to her is a Russian scientist who defected to America, but is actually a spy for the Communists."
+pow,missed,PA25,2,lab,"AFF1 ""has a happy home and family""","The one on the left has a happy home and family, she is a leader among women and very independent."
+pow,missed,PA27,2,lab,NA,"Her parents had told her to get married, have children, and just be a housewife -- but she wanted something more."
+pow,missed,PA27,5,lab,"AFF2 ""remained a lonely woman against society""","She met with much opposition and ridicule, and for years remained a lonely woman against society."
+pow,missed,PA29,3,lab,"AFF4 ""Only out of the generosity of her aunt""","Only out of the generosity of her aunt could she receive proper high school education in Syracuse, N. Y. where she breathed every scent of fresh clean air."
+ach,added,PA29,5,lab,"ACH5 ""Her goal was to become a biological researcher""","Her goal was to become a biological researcher for her mom had died at 38 of cancer, leaving 6 children younger than Marie's mere 14 years."
+aff,added,PA29,7,lab,"AFF4 ""to assist in raising the other children""","She returned home too, to assist in raising the other children."
+pow,missed,PA29,7,lab,"AFF4 ""to assist in raising the other children""","She returned home too, to assist in raising the other children."
+aff,added,PA29,9,lab,"ACH1 ""Marie would succeed"" | AFF4 ""Aunt Bertha helped and assisted always""",Marie would succeed and Aunt Bertha helped and assisted always.
+pow,missed,PA29,9,lab,"ACH1 ""Marie would succeed"" | AFF4 ""Aunt Bertha helped and assisted always""",Marie would succeed and Aunt Bertha helped and assisted always.
+ach,added,PA30,8,lab,"ACH2 ""there is so much to learn""","She is thinking that there is so much to learn -- not only from the experiment, but from people -- from life, itself."
+pow,added,PB1,3,captain,"POW1 ""tells the police chief in no uncertain terms what's what""",The captain tells the police chief in no uncertain terms what's what.
+pow,added,PB1,4,captain,"POW1 ""There was an anonymous phone call and several rumors that this ship was bringing drugs""",There was an anonymous phone call and several rumors that this ship was bringing drugs into this country.
+pow,added,PB1,6,captain,"POW2 ""the chief will question others""",The captain will be fairly uncooperative and the chief will question others.
+aff,missed,PB3,5,captain,NA,"Mr. Xis concerned lest he not find his acquaintance in time, for not seeing him off would be an unfortunate faux pas."
+pow,added,PB4,1,captain,"POW2 ""is explaining to a passenger that he cannot leave the ship""",The captain of the Queen Mary is explaining to a passenger that he cannot leave the ship.
+pow,added,PB6,5,captain,"POW6 ""admires the fortitude of the gentleman""",The captain is doubtful in his own beliefs but admires the fortitude of the gentleman who wants to stow away.
+pow,added,PB9,4,captain,"POW5 ""at the expense of his personal pride""","he did this at the expense of his personal pride, as he was broke."
+pow,added,PB9,8,captain,"POW5 ""to save any possible embarrassment""","The captain will get a free case of shoe polish but to save any possible embarrassment, will illicitly grant the merchant a free trip to the shoe polish factories."
+pow,missed,PB10,1,captain,NA,Mr. Smith's having an argument with Captain Pright over his accommodation aboard ship.
+aff,added,PB15,2,river,"AFF1 ""trying to resolve a conflict with his girl""","The guy is trying to resolve a conflict with his girl, but she is being very stubborn and self-possessed."
+pow,added,PB15,5,river,"POW3 ""the earnestness of his argument""","In the earnestness of his argument, the young man does not feel it and leaves his open jacket flapping."
+aff,added,PB16,2,river,"AFF3 ""taken her here for a walk on the beach and then a talk"" | AFF4 ""to cheer her up""","The wife, head bent, was sad or in distress and the husband had taken her here for a walk on the beach and then a talk to cheer her up."
+pow,missed,PB16,2,river,"AFF3 ""taken her here for a walk on the beach and then a talk"" | AFF4 ""to cheer her up""","The wife, head bent, was sad or in distress and the husband had taken her here for a walk on the beach and then a talk to cheer her up."
+aff,added,PB18,2,river,"AFF1 ""a warmth that was unexplainable except in terms of their inner beings""","Winter offered no harsh coldness to them, but a warmth that was unexplainable except in terms of their inner beings."
+aff,added,PB20,4,river,"AFF3 ""The couple have just come from morning coffee at a cafe where they went for breakfast""",The couple have just come from morning coffee at a cafe where they went for breakfast after he picked her up from her apartment.
+aff,added,PB20,6,river,"AFF1 ""ready to ask the girl the question he has been waiting to ask for a long time""",Finally after a silence the boy is ready to ask the girl the question he has been waiting to ask for a long time.
+aff,added,PB20,8,river,"AFF1 ""will probably jump into his arms and agree""","The girl is content and happy almost knowing what is coming, and will probably jump into his arms and agree when he finally asks her the question."
+ach,added,PB22,2,lab,"ACH5 ""put the last culture of virus into the test tube""","Ms. Smith, standing in the background, watching her associate put the last culture of virus into the test tube began to have doubts about the experiment."
+ach,added,PB22,4,lab,"ACH4 ""Ten years of work for nothing.""",Ten years of work for nothing.
+ach,added,PB22,5,lab,"ACH1 ""what if it did prove valid""",But what if it did prove valid?
+pow,added,PB22,7,lab,"POW5 ""would she get enough""",But would she get enough?
+ach,added,PB22,8,lab,"POW5 ""so she could say that she found the answer"" | ACH5 ""she found the answer""",She felt the desire to grab the culture from her associate so she could say that she found the answer.
+pow,added,PB24,2,lab,"ACH1 ""well trained chemists"" | POW5 ""not acknowledged by the great medical chemistry associations of the world""","They are well trained chemists, but are not acknowledged by the great medical chemistry associations of the world."
+aff,added,PB24,5,lab,"AFF4 ""is very helpful""",The woman watching is the younger sister but is very helpful.
+ach,added,PB24,6,lab,"ACH1 ""work well together"" | AFF1 ""They are very compatible""",They are very compatible and work well together.
+pow,missed,PB25,8,lab,NA,Not only was Madame crushed by the thundering hooves but Josephine (the lieutenant's who led the charge fiancée) was mutilated beyond repair.
+pow,missed,PB26,5,lab,"AFF1 ""bitter reconsideration of her friendship""",It will require a great deal of bitter reconsideration of her friendship before she can accept the necessity of such a fight.
+ach,missed,PB27,6,lab,NA,Could they have failed -- have done something wrong?
+ach,missed,PB27,7,lab,NA,"Still, they don't give up."
+ach,added,PB27,8,lab,"POW2 ""watching her, testing her"" | ACH1 ""challenging her to prove herself""","The one holding the pipette is tense, her lips closed together, eyes set on the tube, the other lady's gaze is on the first lady, watching her, testing her, challenging her to prove herself."
+pow,added,PB27,8,lab,"POW2 ""watching her, testing her"" | ACH1 ""challenging her to prove herself""","The one holding the pipette is tense, her lips closed together, eyes set on the tube, the other lady's gaze is on the first lady, watching her, testing her, challenging her to prove herself."
+aff,added,PB29,8,lab,"AFF1 ""She is actually interested in her co-worker.""",She is actually interested in her co-worker.
+ach,missed,PC2,4,captain,"POW3 ""trying to convince the civilian""","The officer is trying to convince the civilian, an officer from the shipping line, that a new design for this type of ship would be beneficial."
+ach,missed,PC2,6,captain,NA,The official has been sent to inspect the ship seen in the background to inspect prototype improvements.
+pow,added,PC3,6,captain,"POW3 ""will win""",The port director will win.
+pow,missed,PC4,3,captain,"AFF1 ""trying desperately to find his family in France""","The man is trying desperately to find his family in France, before all of the country falls to the Germans -- he wishes to cross the English Channel and bring them to England."
+aff,added,PC4,4,captain,"AFF4 ""the captain sympathetic"" | POW6 ""becoming increasingly angry""","The man is desperate, considering becoming a stowaway; the captain sympathetic but stubborn, becoming increasingly angry."
+pow,missed,PC4,5,captain,"AFF4 ""in trying to rescue his family""","The captain will not give in, causing the man to try to stow away aboard the ship -- he is successful, in that he gets to France and goes through many adventures with the underground, etc., in trying to rescue his family."
+pow,added,PC5,1,captain,"POW3 ""the two are arguing about the high prices""","The people are the captain of a large ocean liner and a tourist on his ship, the two are arguing about the high prices aboard ocean going vessels."
+pow,added,PC5,2,captain,"POW1 ""overcharged for meals""","The passenger has been, he says, overcharged for meals, and articles which he necessarily has to buy on board."
+pow,added,PC5,3,captain,"POW6 ""the prices are outrageous""","The passenger does not want his money back, but thinks nevertheless that the prices are outrageous."
+pow,added,PC6,4,captain,"POW1 ""figuring out how to get even""",The reporter is figuring out how to get even.
+pow,missed,PC8,1,captain,NA,The captain of the S. S. United States is engaged in a furious discussion with the representative of the French Board of Quarantine.
+aff,added,PC11,6,river,"AFF4 ""Laurie's attempts to bring him confidence""",Laurie's attempts to bring him confidence have failed.
+pow,missed,PC11,6,river,"AFF4 ""Laurie's attempts to bring him confidence""",Laurie's attempts to bring him confidence have failed.
+aff,added,PC12,3,river,"AFF1 ""feeling much a part of the heritage that they both share""",The people are reflecting upon this overwhelming implication and feeling much a part of the heritage that they both share.
+aff,missed,PC13,6,river,NA,They both want to discuss more important things but don't know how.
+pow,missed,PC14,2,river,NA,There has been violent opposition in both families.
+pow,missed,PC14,5,river,NA,Shall we wait and let our parents fight it out?
+aff,added,PC16,2,river,"AFF3 ""to spend some time with his favorite lady""",Lenin is taking time out from his revolutionary movement to spend some time with his favorite lady.
+aff,added,PC16,3,river,"AFF3 ""what better place to proposition a lady than a park bench on a beautiful day""","It is probably a Sunday afternoon, and what better place to proposition a lady than a park bench on a beautiful day."
+pow,missed,PC16,3,river,"AFF3 ""what better place to proposition a lady than a park bench on a beautiful day""","It is probably a Sunday afternoon, and what better place to proposition a lady than a park bench on a beautiful day."
+aff,added,PC16,4,river,"POW5 ""impressing her with his tales of gore and revolutionary abilities"" | AFF1 ""before he pops the big question""",He is probably impressing her with his tales of gore and revolutionary abilities before he pops the big question.
+ach,missed,PC17,4,river,NA,He has a good job with the government and she works for a small store.
+ach,added,PC19,2,river,"ACH5 ""Evel's newest idea, which is to jump over a frozen river in the winter""","They are discussing Evel's newest idea, which is to jump over a frozen river in the winter."
+pow,added,PC20,6,river,"POW2 ""found out the point of departure which the man (unknown to him) would be taking""",Jean Pierre found out the point of departure which the man (unknown to him) would be taking.
+pow,added,PC20,7,river,"POW2 ""gave Jean Pierre the man's description""",X gave Jean Pierre the man's description.
+pow,added,PC21,4,lab,"POW2 ""watching her, supervising""","Her head nurse is watching her, supervising, as the girl is kind of new at this sort of thing."
+ach,added,PC22,4,lab,"ACH4 ""too elementary or the students, too, would laugh at her ignorance of chemistry""","She was sure that whatever she did, her teacher -- Mrs. White -- would think it too elementary or the students, too, would laugh at her ignorance of chemistry."
+pow,missed,PC22,4,lab,"ACH4 ""too elementary or the students, too, would laugh at her ignorance of chemistry""","She was sure that whatever she did, her teacher -- Mrs. White -- would think it too elementary or the students, too, would laugh at her ignorance of chemistry."
+ach,added,PC22,8,lab,"ACH1 ""It all came off all right""",It all came off all right though -- but Miss Knowles knows that chemistry is not her subject.
+pow,missed,PC23,1,lab,"ACH1 ""a brilliant scientist""",The woman before the test tubes is a brilliant scientist at a well-known medical sanatorium.
+ach,added,PC23,4,lab,"ACH5 ""She is discovering in the test tube this one form""",She is discovering in the test tube this one form.
+pow,missed,PC23,6,lab,"AFF4 ""give her moral support""",The friend is about to break the news to her and give her moral support.
+ach,added,PC24,1,lab,"ACH2 ""critically noting the progress made by her advanced students""","Madame LaDean has been making the rounds of her domain, her chemistry lab, critically noting the progress made by her advanced students."
+ach,added,PC24,6,lab,"ACH4 ""a sense of futility, of despair""","Madame LaDean has a sense of futility, of despair."
+pow,added,PC25,3,lab,"POW2 ""diabolically watches over her""","One woman is stirring some formula, while the other diabolically watches over her."
+pow,added,PC25,6,lab,"ACH1 ""successful"" | POW5 ""recognized as qualified and efficient women lab technicians"" | ACH1 ""qualified and efficient""",They want to be successful and recognized as qualified and efficient women lab technicians.
+ach,added,PC28,5,lab,"ACH1 ""It apparently is an effective serum"" | POW1 ""stabs and kills her adversary with a broken test tube""",It apparently is an effective serum as the scientist does lose all ability for rational thought and stabs and kills her adversary with a broken test tube.
+ach,added,PC29,1,lab,"ACH2 ""she wanted to repeat it to make sure that it wasn't due to an error in laboratory procedures""",Mme. C. came rushing in -- she had had some unusual results from the experiment and before making any conclusions she wanted to repeat it to make sure that it wasn't due to an error in laboratory procedures.
+pow,added,PC29,4,lab,"POW2 ""dictating the materials and steps and I followed her commands""","She stood by tense, dictating the materials and steps and I followed her commands."
+ach,added,PC30,3,lab,"ACH1 ""completing the experiment satisfactorily""",But now she's on her way to completing the experiment satisfactorily.
+aff,added,PC30,4,lab,"AFF1 ""the younger student who is""",The teacher isn't married and is a bit jealous of the younger student who is.
+ach,added,PC30,6,lab,"ACH1 ""the experiment comes our correctly""",She might be a bit upset if the experiment comes our correctly.
+pow,added,PD2,1,captain,"POW4 ""telling Humphrey Bogart how to roll ball bearings between his fingers""",This is the real Captain Queeg telling Humphrey Bogart how to roll ball bearings between his fingers.
+pow,added,PD5,1,captain,"POW1 ""asking for a payoff for smuggling some items""",The captain of the ship is asking for a payoff for smuggling some items on his ship.
+pow,added,PD5,4,captain,"POW1 ""or else no items will be released to the shore""","The man will pay him at the end of the meeting, or else no items will be released to the shore."
+ach,added,PD7,4,desk,"ACH5 ""one of his models was elected President of the United States""",In that capacity one of his models was elected President of the United States.
+ach,added,PD8,3,desk,"ACH4 ""his work quality suffers as his thoughts are with his family"" | AFF1 ""his thoughts are with his family""",During these late hours his work quality suffers as his thoughts are with his family.
+pow,missed,PD12,1,river,"ACH5 ""he has become the youngest full professor at M.I.T.""",This is the bank of the Charles River where this young con artist is explaining to an innocent college student how he has become the youngest full professor at M.I.T.
+aff,missed,PD13,2,river,NA,"He does not know how to explain it to Sarah, his significant other for these past three years."
+aff,added,PD13,3,river,"AFF2 ""does not make parting any easier""",It's a cold day in Boston and the frozen Charles River does not make parting any easier.
+aff,added,PD15,2,river,"AFF3 ""light easy conversation""",Just light easy conversation.
+aff,added,PD15,5,river,"AFF3 ""have a nice quiet dinner outside in a restaurant""",They will leave and have a nice quiet dinner outside in a restaurant.
+pow,added,PD16,2,lab,"POW2 ""checking that all necessary steps are followed""","The boss, standing on the right is checking that all necessary steps are followed."
+pow,missed,PD16,4,lab,NA,The president had been bitten earlier that day by a rabid dog.
+ach,added,PD17,1,lab,"ACH1 ""high grade radium""",Madame Curie is concocting a elixir made of high grade radium which gives one a glowing sense of well being.
+aff,added,PD17,3,lab,"AFF1 ""her bashful boyfriend""",Perhaps she will volunteer her bashful boyfriend who has been seeking illumination with Madame Blavatsky.
+ach,missed,PD18,3,lab,NA,It is a race against time with no clear winner in sight.
+aff,added,PD21,5,trapeze,"AFF1 ""he forgives her""",He's decided to tell her he knows and that he forgives her if she'll never do it again.
+aff,added,PD22,2,trapeze,"AFF1 ""stimulating foreplay""",Often after dinner we would retire upstairs to our spacious bedroom for some stimulating foreplay.
+ach,added,PD22,3,trapeze,"ACH1 ""the highlight of our acrobatic fantasy phase""",The photo captures the completion of a triple jump which was the highlight of our acrobatic fantasy phase.
+aff,added,PD22,4,trapeze,"AFF2 ""disastrous for our marriage""",We might have been better off staying with the acrobatics since the high diving into a sponge was disastrous for our marriage.
+aff,added,PD24,4,trapeze,"AFF1 ""are lovers""",They are not married but are lovers.
+ach,added,PD27,3,horse,"ACH5 ""the horses would lead him to the hidden knowledge of Atlantis""",During the night he had a vision the horses would lead him to the hidden knowledge of Atlantis.
+pow,added,PD27,5,horse,"POW6 ""the collie leaves the farm in disgust""",The sad climax of this story is the collie leaves the farm in disgust for California.
+aff,added,PD29,1,horse,"AFF3 ""Father and daughter are coming back from a walk""",Father and daughter are coming back from a walk on their farming estate.
+aff,added,PD30,3,horse,"AFF1 ""She married an English man.""",She married an English man.
+pow,added,PE1,2,captain,"POW2 ""a police officer investigating a crime""",The civilian is a police officer investigating a crime which occurred aboard ship before it docked.
+pow,added,PE2,3,captain,"POW1 ""The country has been at war""",The country has been at war and a serious mission is about to begin.
+pow,added,PE2,5,captain,"POW2 ""His control in this conversation is needed""",His control in this conversation is needed.
+aff,added,PE4,3,captain,"AFF3 ""a stop off in Falmouth to pick up his wife and their suitcases, and then a long but enjoyable ride to the coast of Maine""","Then he'd have 2 weeks vacation, first a stop off in Falmouth to pick up his wife and their suitcases, and then a long but enjoyable ride to the coast of Maine."
+pow,added,PE4,6,captain,"POW6 ""lines of angry New Yorkers waiting in their cars""",8:30 P.M. and lines of angry New Yorkers waiting in their cars for the last trip today.
+pow,added,PE4,13,captain,"POW3 ""Haver started to protest, raising his hand to emphasize a point""","Haver started to protest, raising his hand to emphasize a point, then dropped it slowly, realizing that it was no use arguing with this guy."
+aff,added,PE6,3,desk,"AFF1 ""I tried to marry him""","God, I tried to marry him, but I wasn't rich and attractive enough to him."
+aff,added,PE9,4,desk,"AFF2 ""thinking how many more hours he's going to be away from them""","He's looking at the picture of his family, and thinking how many more hours he's going to be away from them as he has to redo all the plans to the building specifications again but he will do it and keep his job with the building."
+aff,missed,PE11,6,river,NA,We took turns looking at the floor arched like that old bridge.
+aff,added,PE11,12,river,"AFF4 ""it will be all right""","I know it's cold, but it will be all right."
+pow,missed,PE11,13,river,"AFF4 ""I'll hold you""",I'll hold you.
+aff,added,PE11,15,river,"AFF3 ""talk to me a little, just say something""","Now talk to me a little, just say something."
+aff,added,PE14,1,river,"AFF3 ""a man and woman, who went for a walk on a winter's day""","There is a man and woman, who went for a walk on a winter's day."
+aff,added,PE14,2,river,"AFF3 ""They went to a quiet place with a lovely bridge""",They went to a quiet place with a lovely bridge over a part where it was quiet and free of distractions.
+aff,added,PE14,3,river,"AFF3 ""They wanted to make plans for a trip to a warm climate""",They wanted to make plans for a trip to a warm climate.
+ach,added,PE18,5,lab,"ACH1 ""all of them are positive""",Now the assistant has checked ten of the twenty vials all of them are positive.
+ach,added,PE18,7,lab,"ACH5 ""They have done it.""",They have done it.
+ach,missed,PE18,8,lab,NA,Now the project is over they have won.
+ach,added,PE19,3,lab,"ACH1 ""she was getting encouraging results""","She would be glad to finish this project; glad because she was getting encouraging results, and glad because she wanted to move onto something else."
+aff,added,PE20,3,lab,"AFF1 ""appears to be interested in her""",A co-worker (possibly a male) appears to be interested in her and is about to tell her so.
+aff,added,PE20,4,lab,"AFF1 ""she may like him (or her)""","Although she will be polite, she will tell this person that although she may like him (or her) she is not interested in a serious relationship with this person."
+ach,added,PE22,4,trapeze,"ACH2 ""her partner would be there at exactly the right second to grab her""","Here she was flying 50 feet above the big top floor, attached to nothing, soaring thru the air, but confident to know that her partner would be there at exactly the right second to grab her and take her back to terra firma."
+ach,added,PE22,9,trapeze,"ACH1 ""maybe it was the best thing she had ever done""",She began to think that maybe it was the best thing she had ever done.
+ach,added,PE23,4,trapeze,"ACH2 ""this will come with time""",Perhaps this will come with time.
+aff,added,PE25,2,trapeze,"AFF1 ""They are married""",They are married and have been together as an act for many years.
+aff,added,PE25,3,trapeze,"AFF1 ""thinking how beautiful she is""",He is looking at her and thinking how beautiful she is.
+aff,added,PE25,8,trapeze,"AFF3 ""They have been talking about children""",They have been talking about children and she knows he will have to find another partner if she gets pregnant.
+aff,added,PE27,7,horse,"AFF1 ""She's come back to the farm to stay.""",She's come back to the farm to stay.
+aff,added,PE27,10,horse,"AFF1 ""He's happy at first"" | POW3 ""convinces her to go back to the city""",He's happy at first but convinces her to go back to the city.
+pow,missed,PE28,7,horse,NA,"He had company this weekend and Thistle knew that that meant tours of the farm, rides, demonstrations of currying (and then of course the city human would try it and that hurt!), and finally they would allowed to have some time to themselves."
+aff,added,PE29,6,horse,"POW6 ""He is enjoying the attention he is receiving from the younger woman"" | AFF1 ""he would like to make an advance""","He is enjoying the attention he is receiving from the younger woman and although he would like to make an advance, I doubt anything other than thoughts will occur."
+pow,missed,PF2,6,woman,NA,Exasperation at student more than colleague -- also guilt.
+pow,added,PF2,7,woman,"ACH1 ""a competent well-regarded researcher"" | POW5 ""well-regarded researcher""","Wants to be perfectly available teacher, but also wants to be a competent well-regarded researcher."
+aff,missed,PF4,4,woman,NA,She is surprised that she is able to make these calls and pleasantly surprised that her friends respond to her request.
+pow,missed,PF4,4,woman,NA,She is surprised that she is able to make these calls and pleasantly surprised that her friends respond to her request.
+aff,added,PF5,6,woman,"AFF1 ""lived with a guy, a lot of fun""","She is worked for him for a long time, and thinks sometimes about how to make the switch into Management -- she is unmarried (lived with a guy, a lot of fun but it didn't work out)."
+pow,added,PF6,4,woman,"POW5 ""worried lest Mrs. Tait feels the school was negligent""",Susan is anxious to get through as she has other jobs to do and is also worried lest Mrs. Tait feels the school was negligent.
+pow,added,PF7,2,woman,"AFF1 ""well liked"" | POW5 ""well respected""",She is well liked and well respected.
+aff,added,PF8,2,woman,"AFF4 ""the sitter is concerned""",The baby has sniffles and the sitter is concerned.
+aff,added,PF8,4,woman,"AFF4 ""she worries all afternoon""","After talking to the sitter for a few minutes she decides the baby can wait until she gets home, but she worries all afternoon!"
+aff,added,PF9,2,woman,"POW2 ""photographing her husband and another woman"" | AFF1 ""making love""",She has hired a detective (the man) who is photographing her husband and another woman making love on a secluded beach.
+aff,added,PF9,4,woman,"AFF2 ""he was leaving her for another woman""",Then one day he announced he was leaving her for another woman.
+aff,added,PF9,5,woman,"AFF2 ""she is afraid that her husband will not only leave her""","The wife is not seeking revenge, but she is afraid that her husband will not only leave her but take their children and get the money that they have sacrificed and scrimped to save up together."
+pow,missed,PF9,5,woman,"AFF2 ""she is afraid that her husband will not only leave her""","The wife is not seeking revenge, but she is afraid that her husband will not only leave her but take their children and get the money that they have sacrificed and scrimped to save up together."
+pow,added,PF10,3,woman,"POW5 ""His name will go first""","His name will go first, (if hers is there at all.)"
+ach,missed,PF10,5,woman,NA,"She writes poetry on the side, finally gets published on her own."
+aff,added,PF12,5,photographing,"AFF3 ""He listened to her, and she listened to him.""","He listened to her, and she listened to him."
+aff,added,PF12,9,photographing,"AFF3 ""they will discuss the kind of bird it was""","After he takes the picture, they will discuss the kind of bird it was, whether it was the male or the female, how soon the eggs will hatch, etc."
+aff,added,PF13,2,photographing,"AFF3 ""they go to the sanctuary for a weekend every year""",They are avid bird watchers and they go to the sanctuary for a weekend every year this season.
+aff,added,PF15,3,photographing,"AFF3 ""They both enjoy their hobby and are having a great time""",They both enjoy their hobby and are having a great time.
+pow,added,PF15,4,photographing,"POW4 ""Be sure to get the edge of the nest over their to the left""",She is pointing out some small detail in the scene he is photographing: Be sure to get the edge of the nest over their to the left.
+aff,missed,PF15,7,photographing,NA,They will take the picture and then take a bunch more before they go home for hot chocolate at 10:00.
+pow,missed,PF16,4,meeting,NA,"The lawyers feel the man is guilty, but the female attorney plans to try for a light sentence."
+pow,added,PF17,6,meeting,"POW5 ""she's a careerist""",She rationalizes this because she's a careerist.
+pow,missed,PF18,4,meeting,NA,His statement is received with serious attention by the others at the table.
+pow,missed,PF18,5,meeting,NA,The woman seems to be chairman -- she is getting ready to support and add to the statement being put forth.
+pow,missed,PF19,1,meeting,NA,"This is a high-powered board or committee meeting, perhaps even governmental."
+pow,added,PF20,3,meeting,"POW5 ""This fact alone makes her stand out.""",This fact alone makes her stand out.
+pow,added,PF21,6,meeting,"POW2 ""she is reporting back to the foreign ministry on the state of the negotiations""","The woman says little, but she is reporting back to the foreign ministry on the state of the negotiations."
+pow,missed,PF22,2,meeting,NA,His bank has had numerous fraudulent transactions uncovered so he is worried and so are his lawyers.
+pow,missed,PF22,3,meeting,NA,Eventually he is convicted and sent to prison.
+aff,missed,PF23,5,gardening,NA,"When this couple started dating, neither had much money, and they spent a lot of their time in everyday pursuits."
+aff,added,PF26,3,gardening,"AFF3 ""they have often done the job together before""","It is probably a weekend day, and they have often done the job together before."
+aff,added,PF26,8,gardening,"AFF3 ""She told him about the fun she was having in her classes in college and he was pleased""",She told him about the fun she was having in her classes in college and he was pleased.
+pow,missed,PF26,8,gardening,"AFF3 ""She told him about the fun she was having in her classes in college and he was pleased""",She told him about the fun she was having in her classes in college and he was pleased.
+aff,added,PF26,9,gardening,"AFF1 ""Both father and daughter are happy and feel at peace with the world""","Both father and daughter are happy and feel at peace with the world; all is going well, for both of them and for their family."
+pow,added,PF27,7,gardening,"POW3 ""This is difficult to convey""",This is difficult to convey when he can in fact give them everything they need in a material way.
+aff,added,PF30,1,gardening,"AFF3 ""Father and daughter on autumn afternoon, raking leaves.""","Father and daughter on autumn afternoon, raking leaves."
+ach,missed,PF30,3,gardening,NA,"But when they focus on something outside, like this activity, they do much better."
+aff,added,PF30,4,gardening,"AFF4 ""talking about what to get for wife/mother for her upcoming birthday""",Today they are talking about what to get for wife/mother for her upcoming birthday -- she's been low and menopausal for a few months.
+ach,missed,PF30,6,gardening,"AFF4 ""think up just the right present""",They're going to think up just the right present.
+aff,added,PF30,6,gardening,"AFF4 ""think up just the right present""",They're going to think up just the right present.

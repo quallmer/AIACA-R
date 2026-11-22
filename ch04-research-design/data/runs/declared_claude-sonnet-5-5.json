@@ -1,0 +1,21 @@
+{
+  "declared": "2026-11-22 00:58:48 +08",
+  "role": "main",
+  "provider": "anthropic",
+  "model": "anthropic/claude-sonnet-5-5",
+  "served_as": "Identifier as given to the API on 22 November 2026; reasoning is on by default for this model and cannot be turned off; no sampling setting is sent. The development pilot used a cap of 16,000 output tokens, which no request reached; the cap is raised to 64,000 because Calibration Set B is one long document.",
+  "max_tokens": 64000,
+  "settings": "max_tokens 64000; every other setting left at the provider's default",
+  "requests": "one independent request per document; no conversation state; package defaults for concurrency and retries",
+  "specification_version": "v0.3",
+  "specification_file": "code/achievement/winter/motive_codebook_v0.3.R",
+  "specification_file_sha256": "ec0c6de0151b086086a19b538ca93aae6bc3d097dc90dd80d84c8b295ee9ac41",
+  "instructions_sha256": "2316743c2316e3e75bb7eb3af9fb87769011f11c730b9ebd4f3ed7fb1d37f194",
+  "development_pilot": "pilot_v0.3_claude-sonnet-5-5",
+  "development_pilot_max_tokens": "16000",
+  "partition_sha256": "bcc9f1ea556bd2111d3531bb5ecd007e8a661cd8c97d245410a20c094e6f482b",
+  "dictionary_rule_sha256": "adcfe35054219c5be5510b3c58bbbb6297dbcd75d369c774e8163a2757ffaf74",
+  "quallmer": "0.6.0",
+  "ellmer": "0.5.2",
+  "R": "R version 4.6.2 (2026-10-29)"
+}

@@ -1,0 +1,150 @@
+doc,image,motive,remark,sentences,phrases
+CA2,1,POW,NA,3,the ship must be detained
+CA2,2,POW,NA,7,who had been sought after
+CA4,1,POW,(either phrase),4,trying to make a deal | someone is on his tail
+CA4,2,POW,NA,7,the Captain will be caught
+CA5,1,ACH,NA,7,the perfect place
+CA6,1,ACH,(either phrase),3|4,He wants to do what's best | doing better
+CA7,1,AFF,(either phrase),4|5,whom he loves | He is anticipating going home when work is done to his loving family
+CA7,2,AFF,NA,8,nice evening with his family
+CA7,3,ACH,NA,8,best
+CA8,1,ACH,(relative standard of excellence),6,best
+CA9,1,POW,NA,1,going to surprise his family
+CA9,2,POW,NA,5,His wife is very excited
+CA10,1,POW,NA,3,trying to blackmail him
+CA10,2,AFF,NA,4,happy new life with wife and kiddies
+CA10,3,POW,NA,6,gets it out of him
+CA10,4,AFF,NA,6,together
+CA11,1,AFF,NA,2,He likes her very much
+CA11,2,ACH,NA,5,move up
+CA12,1,AFF,(also next sentence),3|4,They have been going together for a while and enjoy being together and discussing things they have in common
+CA12,2,AFF,(either phrase),5|6,wants to know the plans and dreams of the other | They will probably get married
+CA13,1,AFF,NA,2,enjoy each others company
+CA14,1,POW,NA,6,"Fred was struck, speechless"
+CA14,2,AFF,NA,8,As he took her hand they sat on the bench
+CA14,3,AFF,(either phrase),11|12,"I love you, Janet | I love you, Fred"
+CA15,1,POW,NA,2,"He is entranced by her beauty, brains and eccentric behavior"
+CA15,2,POW,NA,4,She is attracted and impressed but essentially frustrated that he always acts like a stick-in-the-mud
+CA15,3,AFF,NA,5,goes on to marry
+CA16,1,POW,NA,2,gets the publicity
+CA16,2,ACH,NA,2,progress
+CA16,3,ACH,(either phrase),5|6,proud of her work and accomplishments | she is good at her job
+CA17,1,ACH,(also next sentence),3|4,breakthrough and get good results
+CA17,2,ACH,NA,5,They want to make a contribution to science
+CA18,1,ACH,NA,2,Both seem to have knowledge and authority
+CA18,2,ACH,NA,4,has good potential
+CA18,3,POW,NA,4,observes her carefully
+CA18,4,ACH,NA,5,wants this woman to succeed
+CA18,5,POW,"label 'Pow, Aff (sympathetic helping concern)'",5,"will give her every chance she can, for she too is a wife and mother"
+CA18,6,AFF,"label 'Pow, Aff (sympathetic helping concern)'",5,"will give her every chance she can, for she too is a wife and mother"
+CA19,1,ACH,NA,1,find a cure
+CA19,2,POW,NA,4,many people would be saved
+CA19,3,ACH,NA,5,what they had dreamed of for so long
+CA19,4,ACH,NA,7,They had finally won
+CA20,1,ACH,(or either phrase from next sentence),1|2,Nobel-prize winning scientist | working on a cure for AIDS | discovered
+CA20,2,ACH,NA,3,staggering breakthrough
+CA20,3,POW,"(either clause; or ""catches"" or ""fires"" in next sentence)",3|4,"stopping wars, death, destruction, polution of the environment, unjust imbalance of wealth etc | she is plotting to sabotage the experiments"
+CA21,1,ACH,NA,1,dreamed of being the star of the show
+CA21,2,POW,NA,3,to prove to them all
+CA21,3,ACH,(either phrase),3|4,she is good | prove to be a star
+CA22,1,POW,NA,2,had been after her
+CA22,2,AFF,NA,5,if he really loved her
+CA23,1,POW,label 'Pow; Ach',1,well-known
+CA23,2,ACH,label 'Pow; Ach',1,skill
+CA23,3,POW,(or either phrase in the next sentence),2|3,brought up | were killed | shelling attack
+CA23,4,AFF,NA,5,Thrilled to be reunited
+CA24,1,POW,(either phrase),5,they were driven | crashing down on their dreams
+CA24,2,AFF,NA,7,talking to girl friends
+CA25,1,ACH,"(not Aff; ""acting as one"" not clearly warm)",5,taken a lot of time to get it right
+CA25,2,POW,NA,8,the crowd is applauding
+CA27,1,ACH,NA,6,superb
+CA27,2,AFF,NA,9,As we walked along a mountain trail he told me of his childhood
+CA28,1,AFF,NA,3,They talk and walk together for a while
+CA29,1,POW,(her wandering is part of intentional act of time travel),3,"He is delighted to find a beautiful, exotic, cultured young woman wandering"
+CA29,2,AFF,(either phrase),5|6,grows to be fond of him | They become great friends
+CA29,3,AFF,(in this case),10,comes to visit
+CA30,1,AFF,NA,1,walking and talking with the horses across the meadow
+CA30,2,AFF,(not negated),10,Fathers are sweet to hug
+CB,1,AFF,NA,1,friends
+CB,2,AFF,NA,2,welcome back
+CB,3,POW,NA,5,great honor you have bestowed on me
+CB,4,POW,(metaphoricaly),11,We have lighted the world
+CB,5,ACH,label 'Ach; Aff',11,inventions
+CB,6,AFF,label 'Ach; Aff',11,aid
+CB,7,AFF,NA,13,we stand together
+CB,8,ACH,label 'Ach; Pow',15,greatness
+CB,9,POW,label 'Ach; Pow',15,glory
+CB,10,ACH,NA,17,better
+CB,11,ACH,NA,19,for the first time in history
+CB,12,POW,NA,19,we the people allow it to have
+CB,13,POW,NA,24,to rob us
+CB,14,ACH,NA,25,the most productive people on earth
+CB,15,ACH,NA,27,There are no limits to growth and human progress
+CB,16,ACH,(next sentence also scorable),29|30,more people are employed today than ever before in our history
+CB,17,ACH,(next sentence also scorable),33|34,great
+CB,18,POW,(government as actor),34,government's grip
+CB,19,ACH,NA,35,we developed new technologies
+CB,20,AFF,NA,35,preserved peace in a troubled world
+CB,21,POW,(either phrase),35,supported the struggle | turned the tide of history
+CB,22,ACH,NA,36,poised for greatness
+CB,23,POW,NA,38,Let history say of us
+CB,24,ACH,(either phrase),38|39,reached for her best | has served us well
+CB,25,AFF,NA,39,united in the common cause
+CB,26,ACH,NA,40,remarkable
+CB,27,POW,NA,40,start the world over again
+CB,28,AFF,NA,42,bond was re-established
+CB,29,AFF,NA,44,we were fellow laborers
+CB,30,AFF,NA,46,let us stand as one
+CB,31,ACH,NA,47,we must not repeat the well-intentioned errors
+CB,32,POW,NA,48,spiraling demands of a bloated federal establishment
+CB,33,ACH,NA,51,25 straight months of economic growth
+CB,34,POW,NA,51,unleash the drive and entrepreneurial genius
+CB,35,ACH,"(""genius"" could also be scored)",51,progress
+CB,36,POW,NA,52,interferencce in people's lives
+CB,37,ACH,NA,54,greatest
+CB,38,POW,"label 'Pow, Aff'",54,"who heal our sick, feed the hungry, protect peace among nations"
+CB,39,AFF,"label 'Pow, Aff'",54,"who heal our sick, feed the hungry, protect peace among nations"
+CB,40,ACH,NA,54,better
+CB,41,POW,NA,55,tear down economic barriers and liberate the spirit
+CB,42,AFF,NA,56,"friends, together"
+CB,43,ACH,NA,57,"new opportunities for growth, a more productive"
+CB,44,AFF,NA,57,united
+CB,45,ACH,NA,57,lead the technological revolution
+CB,46,AFF,NA,57,love
+CB,47,ACH,NA,58,"dynamic economy, with more citizens working"
+CB,48,POW,(next sentence could also have been scored),66|67,freezing government program spending
+CB,49,POW,(either phrase),68,protect future generations | them into servitude
+CB,50,ACH,NA,70,better
+CB,51,AFF,NA,71,compassion
+CB,52,POW,(either phrase),72,to reduce dependency | upgrade the dignity
+CB,53,ACH,NA,73,growing economy
+CB,54,AFF,(either phrase),73,support from family and community | compassion is the way of life
+CB,55,POW,(either phrase),73,are cared for | protected
+CB,56,AFF,NA,76,brotherhood of man
+CB,57,AFF,NA,78,"together, arm in arm"
+CB,58,ACH,NA,79,best
+CB,59,POW,NA,80,limitations we should put on our national government
+CB,60,AFF,NA,82,prayer for peace
+CB,61,ACH,NA,85,greatest military buildup in the history of man
+CB,62,POW,NA,85,"awesome, offensive weapons"
+CB,63,ACH,"(""capability"" here suggests that the ""progress"" is toward a goal)",86,progress
+CB,64,POW,(any of three phrases; either of two phrases in next sentence could also have been scored),94|95,"threat of mutual assured destruction | use of nuclear weapons | retaliate, and destroy"
+CB,65,POW,NA,96,destroy nuclear missiles
+CB,66,POW,NA,98,It would destroy weapons
+CB,67,POW,(either phrase),101,ridding the world | threat
+CB,68,ACH,NA,106,progress
+CB,69,AFF,(either phrase),107,staunchest friend | best ally
+CB,70,POW,NA,108,conquer poverty
+CB,71,AFF,label 'Aff; Pow',108,preserve peace
+CB,72,POW,label 'Aff; Pow',109,blow we inflict
+CB,73,ACH,NA,111,go forward
+CB,74,POW,NA,112,leading the world
+CB,75,ACH,NA,112,new age of economic expansion
+CB,76,AFF,(either phrase),113|114,we worked and acted together | friends
+CB,77,AFF,NA,120,lonely
+CB,78,POW,NA,120,struggle
+CB,79,AFF,NA,120,call out encouragement to each other
+CB,80,AFF,NA,124,we are together as of old
+CB,81,AFF,label 'Aff; Pow',126,hold us close
+CB,82,POW,label 'Aff; Pow',126,fill the world with our sound
+CB,83,AFF,NA,126,"unity, affection, and love"

@@ -1,0 +1,224 @@
+---
+title: "Scoring Motive Imagery with an LLM Coder"
+subtitle: "A report on the Chapter 4 worked example"
+---
+
+This report documents the worked example of Chapter 4, *Designing AI-Assisted Content Analysis*. The chapter gives the summary. This page gives the materials, the procedure, the sequence of attempts, and the results, with links to the code behind each figure. The runs were made on 21 and 22 November 2026.
+
+## 1. Summary
+
+The question was whether an LLM coder, given written instructions, can score achievement, affiliation-intimacy, and power imagery as Winter's (1994) manual requires of a trained human scorer: a category agreement of .85 or better with the expert on each motive.
+
+The table gives the result on material that took no part in developing the instructions: 30 stories told aloud in an interview and three political speeches, from the manual's practice Sets G to J. The figure is category agreement for the three motives together.
+
+| Coding instructions | Model | Stories | Speeches |
+|:--|:--|--:|--:|
+| First frozen version (v0.3) | Claude Sonnet 5.5 | .75 | .53 |
+| First frozen version (v0.3) | Claude Opus 5.5 | .79 | .63 |
+| Revised (v0.6) | Claude Sonnet 5.5 | .81 | .77 |
+| Revised (v0.6) | Claude Opus 5.5 | .83 | .80 |
+| Revised, with 90 worked examples | Claude Sonnet 5.5 | .80 | .79 |
+| Revised, with 90 worked examples | Claude Opus 5.5 | .80 | .80 |
+| *Required of a trained human scorer* | | *.85* | *.85* |
+
+1. **Revising the instructions did most of the work, and the gain carried over to new material.** On the speeches it was worth 17 to 24 points, and on the stories four to six.
+2. **A more capable model helped under the first instructions and hardly at all under the revised ones.** Opus was ahead of Sonnet by four to ten points under v0.3, and by two or three under v0.6, which is within what a single run varies.
+3. **Worked examples added nothing on new material**, although they had appeared to add about five points on the material the instructions were revised on.
+4. **No configuration reached the standard.** The best came within two to five points of it.
+5. **Figures on the material used for revision ran several points high.** The revised configurations scored .80 to .88 on the calibration sets, on which they were revised, and .77 to .83 on the new material.
+
+At the level of the story, where Pang and Ring (2020) report agreement among human coders, two LLM coders agreed with each other as well as their human coders did (section 7).
+
+## 2. The task and the human benchmarks
+
+**The scoring system.** Winter's manual scores three motives in running text. A scorer marks each *image*: a phrase expressing a standard of excellence (achievement), warm relations (affiliation-intimacy), or impact on others (power). The unit is the sentence. The same motive in two consecutive sentences is scored once, unless another motive comes between (manual, p. 21).
+
+**The index.** Category agreement is twice the number of agreements divided by the scorer's images plus the expert's. Agreement on absence earns nothing. The same motive in the same sentence, or in the same pair of adjacent sentences, is an agreement (pp. 30–31). The figures in this report use that rule unless they say "same sentence".
+
+**The standard.** A scorer should reach .85 on each motive, and try for .90 (p. 30).
+
+**How a human reaches it.** The manual allows 25 to 30 hours of practice. The trainee scores practice sets with the expert's scoring and explanations to hand afterwards, at first after every story, and may consult the manual throughout. The two calibration sets are then a final check: one blind attempt against expert scoring that someone else holds until the trainee has finished (pp. 28–30). The manual's documentation reports novices above .85, for the three motives combined, on the last three practice sets.
+
+**Agreement among human coders.** Pang and Ring (2020) report the intraclass correlation of story-level motive scores (two-way, consistency, average rating): .90 for achievement, .96 for affiliation, and .83 for power among three coders on 30 stories (p. 555), and .85, .78, and .84 between two coders on 393 stories (p. 557).
+
+**What was not available.** No text in our material was scored by two human coders, and no independent human's scoring of the calibration sets. The human figures above are published summaries and could not be recomputed.
+
+## 3. Materials and what each was used for
+
+| Material | Size | Reference | Role |
+|:--|:--|:--|:--|
+| Practice sets A to F | 180 stories, 1,142 sentences | Expert scoring as Pang and Ring transcribed it, by sentence | Development of v0.2 and v0.3. Sets A to C later supplied the worked examples |
+| Calibration Set A | 30 stories, 216 sentences | The manual's sealed expert scoring, transcribed here | Reserved test of v0.3. Then development of v0.4 to v0.6 |
+| Calibration Set B | One speech, 128 sentences | The same | The same |
+| Emails, first test | Nine writers, 5,815 emails, 14,615 sentences | Pang and Ring's labels, one of two coders for each email | Reserved test of v0.3 |
+| Emails, hold-out | Nine writers, 4,574 emails | The same | Not coded |
+| Practice sets G to J | 30 interview stories and three speeches, 455 sentences | The manual's expert scoring, transcribed here | Final check. Took no part in development |
+
+The source files and the saved model runs are in the chapter's `data/` folder. The [data page](../data.qmd) gives their sources and terms.
+
+Three references were transcribed for this work, each twice and independently by AI assistants, with the two entries compared:
+
+- **Calibration Set B and Sets G to J (text)**, from page images, compared word for word with the scan's text layer. Every difference was a fault of the text layer ([`01b_calibration_b.R`](analysis/01b_calibration_b.R), [`01c_practice_sets.R`](analysis/01c_practice_sets.R)).
+- **The expert scoring of the calibration sets** (149 images) and **of Sets G to J** (222 labelled images, 219 after merging labels the expert says to score once). The two entries agree on every image ([`06b_calibration_key.R`](analysis/06b_calibration_key.R), [`13b_final_key.R`](analysis/13b_final_key.R)).
+
+The transcriptions have not been checked by a person.
+
+## 4. Procedure common to every run
+
+- **One request for each document**, independent of every other. The document is sent as a numbered list of its sentences.
+- **The model lists images; a fixed rule counts them.** The model returns, for each sentence, the images it finds: the motive, the criterion, and the words that carry it. The manual's counting rule is then applied in code, so that a disagreement with the expert can be traced either to a judgment or to the rule. Both functions are in the specification file ([`codebook/motive_codebook_v0.3.R`](codebook/motive_codebook_v0.3.R)).
+- **The coding specification is a `quallmer` codebook.** Runs are made with `qlm_code()`, repeated or given to another model with `qlm_replicate()`, and compared with `qlm_compare()` and `qlm_validate()` ([`R/setup.R`](R/setup.R)).
+- **Settings.** An output cap of 64,000 tokens, and every other setting at the provider's default.
+- **Models.** `anthropic/claude-sonnet-5-5` was the main coder throughout. `deepseek/deepseek-flash` was the declared second coder for the first test. `anthropic/claude-opus-5-5` was added later as a more capable model.
+
+## 5. The sequence of attempts
+
+### 5.1 Before any model was run
+
+The design was fixed from the practice sets alone ([`00_design_figures.R`](analysis/00_design_figures.R)): how rare the imagery is (achievement in 85 of 1,142 sentences), how the reference records it, what a dictionary matches, and how large a test would need to be. Every document was assigned once to development or to reserve ([`01_partition.R`](analysis/01_partition.R)).
+
+A dictionary rule was fixed as the bar an LLM coder had to beat ([`03_dictionary.R`](analysis/03_dictionary.R)): a sentence is scored for achievement if three or more of its word stems fall in three General Inquirer categories. It reached .24 on the practice stories and .47 on Calibration Set A.
+
+### 5.2 A first codebook, and one round of development (v0.2 to v0.3)
+
+The first specification, [v0.2](codebook/motive_codebook_v0.2.R), was a condensed restatement of the manual's rules in new wording, with no examples. It was piloted on the 180 practice stories ([`04_pilot.R`](analysis/04_pilot.R)), the disagreements were read, and ten changes were made, each restoring a rule of the manual that the condensation had narrowed or widened ([`codebook/REVISIONS.md`](codebook/REVISIONS.md), v0.3).
+
+| Practice stories, Sonnet 5.5 | v0.2 | v0.3 |
+|:--|--:|--:|
+| Achievement | .74 | .80 |
+| Affiliation-intimacy | .72 | .78 |
+| Power | .71 | .74 |
+
+Version 0.3 was then frozen, and the two coders declared, before any reserved material was coded.
+
+### 5.3 The reserved test of v0.3
+
+**The calibration sets** ([`06_reserved.R`](analysis/06_reserved.R), [`07_validate_calibration.R`](analysis/07_validate_calibration.R)). Both coders' output was saved, and only then was the sealed expert scoring opened.
+
+| | Achievement | Affiliation-intimacy | Power | All three |
+|:--|--:|--:|--:|--:|
+| Set A (stories), Sonnet 5.5 | .78 | .74 | .71 | .74 |
+| Set A (stories), `deepseek-flash` | .77 | .77 | .89 | .81 |
+| Set A (stories), dictionary rule | .47 | | | |
+| Set B (speech), Sonnet 5.5 | .61 | .73 | .39 | .59 |
+| Set B (speech), `deepseek-flash` | .68 | .73 | .70 | .70 |
+| Set B (speech), dictionary rule | .34 | | | |
+
+Neither coder met the standard. Both were well above the dictionary rule. A repeat of the main coder with nothing changed agreed with its first coding at a Krippendorff's alpha of .88 to .99 on Set A.
+
+**The emails** ([`07_validate_emails.R`](analysis/07_validate_emails.R)). Against Pang and Ring's labels the main coder found most of the labelled imagery (recall .84, .63, and .43 for the three motives) and marked three to six times as many sentences as the labels did (precision .25, .13, and .07). Reading the disagreements showed that the labels cannot measure precision ([`08_disagreements.R`](analysis/08_disagreements.R)). They mark a motive in 311 of 5,815 emails, and they treat the same wording differently: of 44 sentences that call a job or piece of work good, great, or excellent, the labels mark achievement in 25. Each email was scored by one of two coders, whose reliability was established on picture stories and not on email (Pang and Ring, 2020, p. 557). The emails were not used further, and the hold-out was not coded.
+
+### 5.4 Refining the instructions (v0.4 to v0.6)
+
+Refining a codebook against expert coding is part of the research design. Once the calibration sets had been compared with their key they became development material, and the disagreements on them were read.
+
+The main coder's errors were systematic, and each concerned a rule the manual states. Three examples:
+
+- The expert scores a single word of excellence standing alone. The coder wanted a fuller statement of performance.
+- The expert scores unrequested help as power, and as affiliation too where warmth is shown. The coder recorded affiliation alone.
+- The expert scores power exercised by a government, an institution, or an unnamed agent. The coder passed over it, which is why it found 7 of the 29 power images in the speech.
+
+Each pattern was taken to the manual's wording before anything was changed. [`codebook/REVISIONS.md`](codebook/REVISIONS.md) lists every change with its page and the cases that prompted it, and what was left alone because the manual does not settle it.
+
+| Version | What it added |
+|:--|:--|
+| [v0.4](codebook/motive_codebook_v0.4.R) | Eleven changes restoring rules of the manual |
+| [v0.5](codebook/motive_codebook_v0.5.R) | One rule decided by an author where the manual is silent: the stock courtesies of a message are not scored |
+| [v0.6](codebook/motive_codebook_v0.6.R) | Seven further changes from a second reading, mostly for dense political prose |
+
+### 5.5 A more capable model, and worked examples
+
+Claude Opus 5.5 was run under each version ([`11_stronger_model.R`](analysis/11_stronger_model.R)). Then 90 practice stories (sets A to C), each sentence followed by the motives the expert scored in it, were appended to the v0.6 instructions as worked examples ([`12_worked_examples.R`](analysis/12_worked_examples.R)). This is in-context learning: the examples sit in the system prompt of every request, and no model is trained. The examples are built from the practice stories when the script runs.
+
+Category agreement on the calibration sets, all three motives together:
+
+| | v0.3 | v0.5 | v0.6 | v0.6 with 90 examples |
+|:--|--:|--:|--:|--:|
+| Set A (stories), Sonnet 5.5 | .74 | .86 | .85 | .85 |
+| Set A (stories), Opus 5.5 | .79 | .88 | .84 | .88 |
+| Set B (speech), Sonnet 5.5 | .59 | .79 | .80 | .85 |
+| Set B (speech), Opus 5.5 | .63 | .76 | .80 | .84 |
+
+With 90 examples, Opus reached .85 or better on each motive in the calibration stories (.85, .88, .90). These figures are on the material the instructions were revised on, and they are not a test.
+
+### 5.6 The final check on new material
+
+Sets G to J had not been opened. Their text was transcribed and divided into sentences ([`01c_practice_sets.R`](analysis/01c_practice_sets.R)). The configuration was recorded: v0.6 with the 90 examples, Sonnet 5.5 and Opus 5.5. Both coded the 33 documents once ([`13_final_check.R`](analysis/13_final_check.R)), and only then was the expert's scoring opened and transcribed ([`13b_final_key.R`](analysis/13b_final_key.R)). The sets were afterwards coded under v0.3 and under v0.6 without examples, neither of which was changed in the light of the scoring ([`13d_final_baselines.R`](analysis/13d_final_baselines.R)).
+
+Category agreement with the expert ([`13c_final_compare.R`](analysis/13c_final_compare.R)):
+
+| | Achievement | Affiliation-intimacy | Power | All three |
+|:--|--:|--:|--:|--:|
+| **Stories (Set G)** | | | | |
+| v0.3, Sonnet 5.5 | .86 | .79 | .68 | .75 |
+| v0.3, Opus 5.5 | .74 | .83 | .78 | .79 |
+| v0.6, Sonnet 5.5 | .86 | .76 | .83 | .81 |
+| v0.6, Opus 5.5 | .80 | .76 | .89 | .83 |
+| v0.6 with examples, Sonnet 5.5 | .67 | .79 | .84 | .80 |
+| v0.6 with examples, Opus 5.5 | .70 | .76 | .85 | .80 |
+| **Speeches (Sets H, I, J)** | | | | |
+| v0.3, Sonnet 5.5 | .53 | .51 | .55 | .53 |
+| v0.3, Opus 5.5 | .64 | .52 | .71 | .63 |
+| v0.6, Sonnet 5.5 | .83 | .72 | .75 | .77 |
+| v0.6, Opus 5.5 | .79 | .81 | .79 | .80 |
+| v0.6 with examples, Sonnet 5.5 | .84 | .74 | .78 | .79 |
+| v0.6 with examples, Opus 5.5 | .82 | .78 | .80 | .80 |
+
+The expert scored 10 achievement, 27 affiliation-intimacy, and 45 power images in the stories, and 47, 37, and 53 in the speeches.
+
+## 6. What changed the result, and what did not
+
+| Step | On the calibration sets, where the revision was done | On new material |
+|:--|:--|:--|
+| Revising the instructions (v0.3 to v0.6) | Stories +5 to +11 points, speech +17 to +21 | Stories +4 to +6, speeches +17 to +24 |
+| A more capable model | +4 to +5 under v0.3, none under v0.6 | +4 to +10 under v0.3, +2 to +3 under v0.6 |
+| Worked examples | Stories none to +4, speech +4 to +5 | Stories -1 to -3, speeches none to +2 |
+
+The gain from the instructions is the only one that held on new material at the size it showed in development. The gain from the examples did not.
+
+## 7. Beside the human coders
+
+**Against the expert.** No configuration reached the .85 that a trained human scorer must reach. On new material the best was .83 on the stories and .80 on the speeches.
+
+**Against each other.** At the level of the story, the two LLM coders of the first test agreed with each other as well as Pang and Ring's human coders did ([`10_human_benchmarks.R`](analysis/10_human_benchmarks.R); v0.3, Calibration Set A):
+
+| Intraclass correlation of story-level scores | Achievement | Affiliation-intimacy | Power |
+|:--|--:|--:|--:|
+| Three human coders, 30 stories (Pang and Ring, p. 555) | .90 | .96 | .83 |
+| Two human coders, 393 stories (p. 557) | .85 | .78 | .84 |
+| Sonnet 5.5 and `deepseek-flash` | .90 | .96 | .90 |
+| Sonnet 5.5 and the expert | .91 | .86 | .81 |
+
+The two measures ask different things. The intraclass correlation asks whether coders order stories alike by how much imagery they hold. Category agreement asks whether they scored the same images. The LLM coders did the first as well as humans and the second less well. Their agreement with each other is also partly shared error: on affiliation they agreed with each other at .96 and with the expert at .86.
+
+## 8. Limits
+
+- **Single runs.** Each figure is one run. A repeat of the same coder under the same instructions moved calibration figures by up to four points.
+- **Small counts.** Calibration Set A holds 21 to 23 expert images for each motive, and the stories of Set G only ten for achievement. One agreement more or less moves such a figure by several points.
+- **References transcribed by AI assistants.** Each was entered twice and the entries agree, but no person has checked them.
+- **Sentence division.** Our sentences end only at a full stop, question mark, or exclamation mark. The expert sometimes treats a pause in a spoken story as the end of a sentence. The cost is small: the expert's own images score .95 to .99 against themselves under our rule.
+- **The human comparison is not like for like.** A trainee has the manual with its examples and many hours of corrected practice. The coders had a restatement of the rules, and in one configuration 90 scored stories. The human figures are also on other texts.
+- **Prior exposure.** The manual's stories and some of the speeches are public, and a model may have seen them, or their scoring. The instructions tell the model to use nothing it recalls, which is a precaution and not evidence.
+- **Selection.** The more capable model, the examples, and the revised instructions were all chosen after the first test. Only Sets G to J were kept apart from those choices.
+- **Not done.** `deepseek-flash` was not run under v0.6 or on Sets G to J. The email hold-out was not coded. The disagreements on Sets G to J have not been read.
+
+## 9. Reproducing the figures
+
+Run each script from the chapter's folder, in the order of its number. A run is made once and saved: sourcing a script again reads the saved run back and makes no new request.
+
+| Stage | Scripts |
+|:--|:--|
+| Design and partition | [`00_design_figures.R`](analysis/00_design_figures.R), [`01_partition.R`](analysis/01_partition.R), [`01b_calibration_b.R`](analysis/01b_calibration_b.R), [`01c_practice_sets.R`](analysis/01c_practice_sets.R) |
+| Checks, baseline, and pilot | [`02_codebook_checks.R`](analysis/02_codebook_checks.R), [`03_dictionary.R`](analysis/03_dictionary.R), [`04_pilot.R`](analysis/04_pilot.R) |
+| Reserved test of v0.3 | [`06_reserved.R`](analysis/06_reserved.R), [`06b_calibration_key.R`](analysis/06b_calibration_key.R), [`07_validate_calibration.R`](analysis/07_validate_calibration.R), [`07_validate_emails.R`](analysis/07_validate_emails.R) |
+| Refinement | [`08_disagreements.R`](analysis/08_disagreements.R), [`09_revision_pilot.R`](analysis/09_revision_pilot.R), [`11_stronger_model.R`](analysis/11_stronger_model.R), [`12_worked_examples.R`](analysis/12_worked_examples.R) |
+| Human benchmarks | [`10_human_benchmarks.R`](analysis/10_human_benchmarks.R) |
+| Final check | [`13_final_check.R`](analysis/13_final_check.R), [`13b_final_key.R`](analysis/13b_final_key.R), [`13c_final_compare.R`](analysis/13c_final_compare.R), [`13d_final_baselines.R`](analysis/13d_final_baselines.R) |
+
+**Cost.** Coding the 33 documents of the final check cost 0.70 US dollars with Sonnet 5.5 and 2.48 with Opus 5.5, with the long instructions cached by the provider after the first group of requests. The 5,815 emails of the first test took about 20 minutes with Sonnet 5.5 and about two hours with `deepseek-flash`.
+
+## Sources
+
+Pang, J. S., & Ring, H. (2020). Automated coding of implicit motives: A machine-learning approach. *Motivation and Emotion*, 44, 549–566.
+
+Winter, D. G. (1994). *Manual for scoring motive imagery in running text* (Version 4.2). University of Michigan.

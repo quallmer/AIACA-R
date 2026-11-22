@@ -1,0 +1,19 @@
+{
+  "purpose": "development pilot (practice sets PA to PF)",
+  "saved": "2026-11-21 22:24:08 +08",
+  "model": "deepseek/deepseek-flash",
+  "settings": "max_tokens 64000; all other settings left at the provider's defaults",
+  "specification_version": "v0.3",
+  "specification_file": "code/achievement/winter/motive_codebook_v0.3.R",
+  "specification_file_sha256": "4931f27d65239f5f98fda2a83ec00a5a75ddbb94dfe8aba52c5edc23a3980cd3",
+  "instructions_sha256": "2316743c2316e3e75bb7eb3af9fb87769011f11c730b9ebd4f3ed7fb1d37f194",
+  "requests": 180,
+  "failed_requests": 0,
+  "documents_with_problems": 1,
+  "transport": "json_mode",
+  "quallmer": "0.6.0",
+  "ellmer": "0.5.2",
+  "R": "R version 4.6.2 (2026-10-29)",
+  "minutes": 16.3,
+  "partition_sha256": "bcc9f1ea556bd2111d3531bb5ecd007e8a661cd8c97d245410a20c094e6f482b"
+}

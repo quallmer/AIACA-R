@@ -47,8 +47,10 @@ website:
         contents:
           # When the chapter's pages arrive, make this a section and list
           # them under `contents:` in order, ending with exercises.qmd.
-          - text: "4. Designing AI-Assisted Content Analysis"
+          - section: "4. Designing AI-Assisted Content Analysis"
             href: ch04-research-design/index.qmd
+            contents:
+              - ch04-research-design/report.qmd
   page-footer:
     left: "Seraphine F. Maerz and Kenneth Benoit"
     right: "Companion to *AI-Assisted Content Analysis* (Sage)"

@@ -1,0 +1,75 @@
+project:
+  type: website
+  output-dir: _site
+  # Only .qmd pages are rendered. README.md and CLAUDE.md are for the
+  # repository, and folders that begin with an underscore are ignored.
+  render:
+    - "*.qmd"
+    - "ch*/*.qmd"
+  # Makes each tutorial page's code downloadable as a script, and each
+  # chapter's code as one archive.
+  post-render:
+    - tools/make-downloads.R
+
+website:
+  title: "AI-Assisted Content Analysis"
+  description: "Companion workbook to the book by Seraphine F. Maerz and Kenneth Benoit: worked examples, code, data, and exercises."
+  site-url: https://quallmer.github.io/AIACA-R/
+  repo-url: https://github.com/quallmer/AIACA-R
+  repo-actions: [source, issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  search: true
+  navbar:
+    title: "AI-Assisted Content Analysis"
+    left:
+      - text: "Companion Workbook"
+        href: index.qmd
+      - text: "Getting Started"
+        href: getting-started.qmd
+      - text: "Data"
+        href: data.qmd
+    right:
+      - icon: github
+        href: https://github.com/quallmer/AIACA-R
+        aria-label: "Source on GitHub"
+  # The sidebar follows the parts and chapters of the book. A chapter appears
+  # here when its companion material exists.
+  sidebar:
+    style: floating
+    collapse-level: 2
+    contents:
+      - text: "About This Workbook"
+        href: index.qmd
+      - getting-started.qmd
+      - data.qmd
+      - section: "Part I: Foundations"
+        contents:
+          # When the chapter's pages arrive, make this a section and list
+          # them under `contents:` in order, ending with exercises.qmd.
+          - text: "4. Designing AI-Assisted Content Analysis"
+            href: ch04-research-design/index.qmd
+  page-footer:
+    left: "Seraphine F. Maerz and Kenneth Benoit"
+    right: "Companion to *AI-Assisted Content Analysis* (Sage)"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    df-print: paged
+    link-external-newwindow: true
+
+execute:
+  # Results are computed once and stored in _freeze/, which is committed. The
+  # site then builds with no API key and without the source data.
+  freeze: auto
+  message: false
+  warning: false

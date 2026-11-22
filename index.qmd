@@ -1,0 +1,56 @@
+---
+title: "Companion Workbook"
+subtitle: "Worked examples, code, data, and exercises for *AI-Assisted Content Analysis*"
+toc: true
+---
+
+::: callout-note
+## Draft
+
+This workbook is being written alongside the book. Pages, code, and results may change.
+:::
+
+This is the companion workbook to *AI-Assisted Content Analysis*, by Seraphine F. Maerz and Kenneth Benoit (Sage, forthcoming). The book sets out the methodology of content analysis and qualitative coding when a large language model (LLM) does the coding. The workbook shows how each procedure is carried out: the full worked examples, the code that produced every figure, the data, and exercises.
+
+The book does not depend on any software. The workbook uses R and the authors' package [`quallmer`](https://quallmer.github.io/quallmer/), which is one implementation of the procedures the book describes. Readers who work in Python or another environment will find that the steps transfer.
+
+## How the Workbook Is Organised
+
+The workbook follows the parts and chapters of the book. A chapter's section has three kinds of page.
+
+- **Worked example.** The study that the chapter presents in summary is given here in full, one step to a page. Each page explains the step, shows the R code, and shows what the code returned.
+- **Downloads.** Every page's code can be downloaded as a script, and a chapter's code as one archive. The [data page](data.qmd) lists each dataset, its source, and the terms on which it may be used.
+- **Exercises.** Each chapter ends with exercises that apply its procedures to new material or vary a design choice, with solutions that can be shown or hidden.
+
+## Three Ways to Use It
+
+1. **Read.** Every page shows the results its code produced when the authors ran it. Nothing needs to be installed.
+2. **Run from saved output.** A request to a model is made once and its output saved. Where the terms of the source material allow, the saved output is provided, so that every later step can be run without an API key and without cost.
+3. **Run live.** With an API key for a model provider, the coding itself can be repeated, or run with another model. [Getting Started](getting-started.qmd) explains the setup.
+
+## Chapters {#chapters}
+
+| | Chapter | Companion material |
+|:--|:-----------|:--|
+| | **Part I: Foundations** | |
+| 1 | Introduction: A New Era for Coding and Content Analysis | [Not yet available]{.status-pending} |
+| 2 | Our Approach to Content Analysis | [Not yet available]{.status-pending} |
+| 3 | Understanding Generative AI for Content Analysis | [Not yet available]{.status-pending} |
+| 4 | Designing AI-Assisted Content Analysis | [In preparation](ch04-research-design/index.qmd){.status-ready} |
+| 5 | Addressing Ethics and Responsible LLM Usage | [Not yet available]{.status-pending} |
+| | **Part II: AI-Assisted Workflow** | |
+| 6 | Acquiring and Preparing Content | [Not yet available]{.status-pending} |
+| 7 | Units, Context and Segmentation | [Not yet available]{.status-pending} |
+| 8 | Prompting as Codebook Design | [Not yet available]{.status-pending} |
+| 9 | Applying Closed Codebooks with LLMs | [Not yet available]{.status-pending} |
+| 10 | Conducting Inductive Coding Cycles with LLMs | [Not yet available]{.status-pending} |
+| 11 | Coding Multimodal Content with Multimodal Models | [Not yet available]{.status-pending} |
+| | **Part III: Analysis and Evaluation** | |
+| 12 | Analysing AI-Assisted Coding Outputs | [Not yet available]{.status-pending} |
+| 13 | Measuring Reliability and Agreement | [Not yet available]{.status-pending} |
+| 14 | Assessing Validity and Interpretive Credibility | [Not yet available]{.status-pending} |
+| 15 | Replication and Reproducibility | [Not yet available]{.status-pending} |
+| 16 | A Practical Guide to AI-Assisted Content Analysis | [Not yet available]{.status-pending} |
+| 17 | Open Problems and the Methodological Agenda | [Not yet available]{.status-pending} |
+
+: {tbl-colwidths="[6,62,32]"}

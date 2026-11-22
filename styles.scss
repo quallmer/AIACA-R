@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+
+// The book's link colour in PDF is a dark blue; the site uses the same family.
+$link-color: #1f4e79;
+$navbar-bg: #1f4e79;
+$navbar-fg: #ffffff;
+$font-size-root: 17px;
+
+/*-- scss:rules --*/
+
+// Status badges in the chapter table on the home page.
+.status-ready {
+  color: #1a6b3c;
+  font-weight: 600;
+}
+
+.status-pending {
+  color: #6c757d;
+}
+
+// Download buttons at the top of a tutorial page.
+.downloads {
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.downloads .btn {
+  margin-right: 0.5rem;
+}

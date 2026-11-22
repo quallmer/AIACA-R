@@ -1,0 +1,68 @@
+---
+title: "Getting Started"
+---
+
+Nothing needs to be installed to read the workbook: every page shows the results its code produced. This page is for readers who want to run the code.
+
+## R and an Editor
+
+The workbook uses [R](https://www.r-project.org/), a free environment for statistical computing. Install the current version, and an editor such as [RStudio](https://posit.co/download/rstudio-desktop/) or [Positron](https://positron.posit.co/).
+
+## Packages
+
+The examples use `quallmer` for coding with an LLM and for comparing and validating the results, the `tidyverse` packages for handling data, and a few others that each chapter names.
+
+```r
+install.packages(c("tidyverse", "readxl", "quanteda", "pak"))
+
+# quallmer, from its development repository
+pak::pak("quallmer/quallmer")
+```
+
+The [`quallmer` website](https://quallmer.github.io/quallmer/) documents every function used here.
+
+## The Workbook's Files
+
+The source of every page, with its code, is in the workbook's [repository](https://github.com/quallmer/AIACA-R). Clone it, or download it as an archive from the repository's *Code* menu, and open the folder as a project in the editor. Each chapter has a folder of its own, and the code on a chapter's pages is written to run from inside that folder.
+
+Each page also has a button that downloads its code as a script.
+
+## Data
+
+Some of the material the examples use cannot be redistributed here. Where that is so, a script in the chapter's folder, `get-data.R`, downloads the files from the source into a folder named `data/` beside the chapter's pages. The [data page](data.qmd) lists every dataset with its source and terms.
+
+## An API Key
+
+Sending text to a model requires an account with a provider and an API key. `quallmer` reads the key from an environment variable, which is best set in the file `.Renviron` so that it never appears in a script:
+
+```r
+usethis::edit_r_environ()
+```
+
+Add a line for each provider to be used, save the file, and restart R. For example:
+
+```
+ANTHROPIC_API_KEY=your-key-here
+```
+
+Never put a key in a script, and never commit `.Renviron` to a repository.
+
+A model is named by its provider and its identifier. The request below asks a model to code a sample of film reviews with a sentiment codebook that ships with `quallmer`:
+
+```r
+library(quallmer)
+
+coded <- qlm_code(
+  data_corpus_LMRDsample,
+  codebook = data_codebook_sentiment,
+  model = "anthropic/claude-sonnet-5-5"
+)
+```
+
+## Running Without a Key
+
+A request costs money and its result can vary from one run to the next. The examples therefore make each request once, save what the model returned, and read the saved output on every later run. Where the saved output is provided, each step after the coding can be run with no key and at no cost, and gives the figures printed on the page.
+
+## What a Run Costs
+
+Each chapter reports what its example cost to run and how long it took. Costs depend on the model and change often, so check the provider's current prices before coding a large corpus, and try a small sample first.

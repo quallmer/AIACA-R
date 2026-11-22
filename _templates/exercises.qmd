@@ -1,0 +1,44 @@
+---
+title: "Exercises"
+---
+
+<!--
+Template for a chapter's exercises. Copy it into the chapter's folder as
+exercises.qmd and list it last in the chapter's section of the sidebar.
+-->
+
+The exercises use the material of this chapter's worked example. Those marked *no key needed* run from the saved output. The others send requests to a model and need an API key ([Getting Started](../getting-started.qmd)).
+
+## Exercise 1: A Short Title {.unnumbered}
+
+*No key needed.*
+
+State the task in one or two sentences, and say what the reader should produce.
+
+::: {.callout-tip collapse="true"}
+## Solution
+
+Explain the approach in a sentence, then give the code.
+
+```{r}
+#| eval: false
+# solution code
+```
+
+Say what result to expect and what it shows.
+:::
+
+## Exercise 2: A Short Title {.unnumbered}
+
+*Needs an API key.*
+
+State the task.
+
+::: {.callout-tip collapse="true"}
+## Solution
+
+```{r}
+#| eval: false
+# solution code
+```
+:::

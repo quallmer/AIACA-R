@@ -1,0 +1,29 @@
+---
+title: "Designing AI-Assisted Content Analysis"
+subtitle: "Chapter 4: the worked example in full"
+---
+
+::: callout-note
+## In preparation
+
+The pages for this example are being prepared. This page describes what they will contain.
+:::
+
+Chapter 4 of the book assembles its decisions into the design of one study and presents part of it. The whole study is given here.
+
+The study codes three kinds of motive imagery in short texts: achievement, affiliation-intimacy, and power. Its coding scheme is Winter's (1994) *Manual for Scoring Motive Imagery in Running Text*, which states the standard a trained human scorer must reach against an expert's scoring. The question is whether an LLM coder, given written instructions, reaches that standard, and what in the design of the study moves the answer.
+
+## What the Example Will Contain
+
+Each stage will have its own pages, with the code and the results it produced.
+
+1. **Design and partition.** What can be established from the material before any text is coded, and the assignment of every document to development or to reserve.
+2. **The coding specification.** The written instructions given to the model, in each of their versions, and the checks made on them before they met any source text.
+3. **A baseline and a pilot.** A dictionary rule as the bar an LLM coder has to beat, and a pilot on the development material.
+4. **The reserved test.** Coding the reserved material once with each coder, and comparing the result with the expert's scoring.
+5. **Refinement.** Reading the disagreements, revising the instructions, and trying a more capable model and worked examples.
+6. **Human benchmarks.** The LLM coders beside the published agreement of human coders.
+7. **A final check** on material that took no part in development.
+8. **Exercises.**
+
+The material the example uses, and how to obtain it, is listed on the [data page](../data.qmd).

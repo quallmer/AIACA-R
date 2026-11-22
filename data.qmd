@@ -1,0 +1,35 @@
+---
+title: "Data"
+---
+
+::: callout-note
+## Draft
+
+The terms listed here are being confirmed with the sources. Until that is done, the workbook redistributes no source text.
+:::
+
+This page lists the material each chapter's example uses: where it comes from, the terms on which it may be used, and how to obtain it.
+
+## How Data Are Provided
+
+- **Material the workbook may redistribute** is in the chapter's folder and can be downloaded from the chapter's pages.
+- **Material it may not redistribute** is downloaded from its source by the script `get-data.R` in the chapter's folder. The script puts the files in a folder named `data/` beside the chapter's pages, where the code expects them.
+- **Model output** is saved when a request is made. It is provided where it contains no source text that the workbook may not redistribute.
+
+## Chapter 4: Motive Imagery in Running Text
+
+| Material | Source | Terms | How it is obtained |
+|:-----|:-----|:-----|:-----|
+| Practice and calibration stories from Winter's manual, with expert scoring by sentence (`UD1_sentences.xlsx`) | Replication data for Pang and Ring (2020), <https://osf.io/563xn/> | The deposit is licensed CC BY-NC-SA 4.0. The story texts are from Winter's manual, which reserves all rights | Downloaded from the deposit by `get-data.R` |
+| Sentences from the Enron Email Corpus, scored for the three motives (`UD2_sentences.xlsx`) | The same deposit | CC BY-NC-SA 4.0 | Downloaded from the deposit by `get-data.R` |
+| *Manual for Scoring Motive Imagery in Running Text* (Winter, 1994): the scoring rules, practice sets, calibration sets, and their expert scoring | University of Michigan Deep Blue, <https://deepblue.lib.umich.edu/handle/2027.42/117563> | All rights reserved by the author | Obtained by the reader from the deposit. Not reproduced here |
+| General Inquirer dictionary categories | To be confirmed | To be confirmed | Not yet included |
+| Model output for each run | This workbook | To be confirmed | Not yet included |
+
+: {tbl-colwidths="[30,25,25,20]"}
+
+### Sources
+
+Pang, J. S., & Ring, H. (2020). Automated coding of implicit motives: A machine-learning approach. *Motivation and Emotion*, *44*, 549–566. <https://doi.org/10.1007/s11031-020-09832-8>
+
+Winter, D. G. (1994). *Manual for scoring motive imagery in running text* (Version 4.2). Unpublished instrument, University of Michigan.

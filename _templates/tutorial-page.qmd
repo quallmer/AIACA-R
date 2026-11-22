@@ -1,0 +1,58 @@
+---
+title: "The Step This Page Covers"
+---
+
+<!--
+Template for one step of a chapter's worked example. Copy it into the
+chapter's folder as NN-short-name.qmd and add the page to the sidebar in
+_quarto.yml. Folders that begin with an underscore are not rendered.
+
+The download button below needs no file in the repository: after each render,
+tools/make-downloads.R extracts the page's code to NN-short-name.R beside the
+rendered page. Change the file name in the link to match the page.
+-->
+
+::: downloads
+[Download this page's code](NN-short-name.R){.btn .btn-outline-primary .btn-sm}
+:::
+
+One or two paragraphs on what this step does and why the design needs it, in plain prose, before any code.
+
+```{r}
+#| label: setup
+# Packages, the coding specification, and the helpers every page shares.
+source("R/setup.R")
+```
+
+## A Step That Makes No Request
+
+Say what the code computes, then show it. The output appears under the chunk.
+
+```{r}
+#| label: describe
+# stories |> count(set)
+```
+
+## A Step That Sends Text to a Model
+
+A request is made once and saved. `run_once()` reads the saved output back on every later render, so the page never codes a document twice and renders without an API key.
+
+```{r}
+#| label: code
+# coded <- run_once(
+#   "label-for-this-run",
+#   qlm_code(inputs, codebook, model = models[["main"]], name = "main")
+# )
+```
+
+A chunk that would always make a request, with no saved output to read, is shown but not run:
+
+```{r}
+#| label: live-only
+#| eval: false
+# checked <- qlm_code(inputs, codebook, model = models[["main"]])
+```
+
+## What the Step Shows
+
+Close with what the reader should take from the output, and a link to the next page.

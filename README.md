@@ -27,4 +27,4 @@ Some of the material the examples use cannot be redistributed. `data.qmd` lists 
 
 ## Licence
 
-To be decided.
+The workbook's code and pages are licensed under the GNU General Public License, version 3 (see `LICENSE`). Datasets and other source material keep the terms of their sources, which `data.qmd` lists.

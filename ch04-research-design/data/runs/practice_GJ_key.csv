@@ -1,0 +1,220 @@
+doc,image,motive,remark,sentences,phrases
+G1,1,POW,,2,this person has gotten shot
+G2,1,POW,,5,Maybe she's killing her
+G2,2,POW,,6,her mother is killing her
+G2,3,POW,these elipses are periods,6,they got in an argument
+G2,4,POW,any one of the three phrases,6,mother's killing | they had a huge fight | mother is killing her
+G3,1,POW,unsolicited help,2,she carried her down the stairs to get her to the hospital
+G3,2,AFF,either phrase; next sentence also scorable,3|4,remembered all the good things they shared | how sad she's been since her sister has been ill
+G3,3,AFF,,5,how much she loves her sister
+G3,4,POW,,5,"carry her sister to the car, get her to the hospital"
+G3,5,AFF,,5,they've got more time together
+G4,1,POW,,3,she is very upset about her son going to war
+G4,2,AFF,,3,she is very upset about her son going to war
+G4,3,POW,,6,talking to her and trying to encourage her and tell her that everything will be all right
+G4,4,AFF,,6,talking to her and trying to encourage her and tell her that everything will be all right
+G4,5,POW,"""checking her,"" as unsolicited help, would also be scorable",7,she's trying to persuade her
+G4,6,POW,,8,Josephine is trying to cheer her up and comfort her
+G4,7,AFF,,8,Josephine is trying to cheer her up and comfort her
+G5,1,POW,,1,She's strangling him
+G5,2,POW,,2,they have been arguing about something
+G5,3,POW,,5,He did something or said something that made her angry
+G5,4,POW,,7,He came home and he said something that made her mad or did something that hurt her
+G5,5,POW,,8,He put her down
+G5,6,POW,,10,his anger taken out on her
+G7,1,AFF,,4,maybe they start up a relationship between her and the painter
+G8,1,ACH,,9,to better her life
+G8,2,ACH,"""lead in a ""ballet"" is also scorable as a standard of excellence",11|12,The dreams that she's had of becoming a successful dancer
+G9,1,POW,,3,she's very touched by how the child observed her
+G9,2,POW,implied careful control,8,she is so strict with certain children
+G10,1,ACH,,6,figures out what is best
+G12,1,POW,,2,two people killing the third person
+G12,2,POW,"previous ellipsis marks a completed thought unit, and so is equivalent to the end of a sentence",3,maybe actually planned that this third person be killed
+G12,3,POW,,4,asking two people to kill this third person
+G14,1,ACH,,1,he's very experienced
+G14,2,POW,,1,his fame and he has such a big ego
+G14,3,POW,implied concern with reputation,3,he lets his reputation
+G14,4,ACH,,4,whether they do a good job
+G14,5,POW,,4,his name stands out
+G15,1,POW,,4,they are trying to save him
+G16,1,AFF,,2,expressing their love for one another
+G16,2,AFF,,4,they are both giving each other love
+G17,1,AFF,next phrase also scorable,4,he is offering comfort
+G17,2,POW,next phrase also scorable,4,he is offering comfort | in a position of control
+G17,3,AFF,either phrase,8,is fairly lonely | searching for companionship
+G18,1,AFF,,2,have given them a big party with all their friends and relatives
+G18,2,AFF,next sentence also scorable,4|5,sharing in all the love and joy
+G19,1,POW,,1,reassuring
+G19,2,AFF,,1,reassuring
+G19,3,ACH,,1,"not sure if she is going to make it, if she's going to be successful"
+G19,4,ACH,"borderline; ""good"" suggests excellence as well as morality",1,if she tries it is very good
+G19,5,POW,,2,she's going to cheer her up
+G19,6,AFF,,2,she's going to cheer her up
+G20,1,AFF,next phrase also scorable,1|2,is very happy to see each other | holding each other and enjoying being close
+G20,2,AFF,,3,happy to be back together
+G20,3,POW,,3,is supporting them
+G20,4,AFF,,4,friend
+G20,5,AFF,,4,friend
+G20,6,POW,,7,he's holding her and making her feel better
+G20,7,AFF,,7,he's holding her and making her feel better
+G21,1,POW,"""murdered"" in next phrase also scorable",5,he kills
+G21,2,POW,,5,to kill someone
+G21,3,POW,,7,To kill him
+G21,4,POW,either phrase,8,To kill whoever | who killed this person
+G21,5,POW,either phrase,12|13,he's gotten killed | who's killed you
+G22,1,POW,,3,that was killed
+G22,2,AFF,,4,he's upset that his brother is gone
+G22,3,AFF,,6,to actually mourn his death
+G23,1,AFF,,2,change the outcome so that maybe he won't die a lonely old man
+G23,2,ACH,,4,improve
+G25,1,POW,,2,to scare away any kids
+G25,2,POW,,5,wants to take the chance to scare them and have the upper hand
+G25,3,POW,,6,he gives them the scare of their lives
+G26,1,POW,,3,she'll be in control as far as making sure that everything is taken care of or overseeing
+G26,2,AFF,,6|7,the two are very attracted to each other | they end up getting together and live happily ever after
+G27,1,ACH,unique accomplishment,3,the first one to have ever gotten an education in her family
+G27,2,AFF,,4,very close to her family
+G28,1,ACH,,9,she has become a successful business woman
+G28,2,POW,,10,her parents had instilled in her
+G28,3,AFF,,10,loves herself and her family
+G29,1,POW,,5,the mother is kinda cooking up a plan or plot for her daughter to get together with this man
+G29,2,POW,,8,her mother to chose who she is marrying
+G29,3,AFF,either phrase,8,will fall in love with this man | grow up to like him
+G29,4,POW,,8,he'll take care of her
+H,1,AFF,,3,to join in running with me
+H,2,AFF,,5,sadness and isolation
+H,3,ACH,negative affect about failure,11,the forward movement of America has been reversed
+H,4,POW,,16,America fights
+H,5,ACH,either clause,16,"economic growth | alone among countries, the American economy has the strength to prosper"
+H,6,POW,,21,to get rid of
+H,7,POW,,25|26,wield great economic power | trying to stop
+H,8,POW,,27|28,to fight inflation by putting people out of work | forcing men and women to suffer
+H,9,ACH,implied concern to do better,29,worst depression since Herbert Hoover's
+H,10,ACH,,31,better
+H,11,AFF,,43,we must seek a common existence
+H,12,AFF,,43,Common existence
+H,13,POW,"""protect"" has a nurturant sense here",47,it must protect the condition in which they can remain
+H,14,AFF,"""protect"" has a nurturant sense here",47,it must protect the condition in which they can remain
+H,15,POW,"hypothetical effect, or next sentence",49|50|51,individual and family can be reduced to myth | worked to combat
+H,16,ACH,,51,we created the least bureaucratic public enterprises in modern governmental history
+H,17,AFF,,53,restore a sense of community
+H,18,POW,personified force,57,consumed by uncontrollable inflation
+H,19,POW,,59,dominated
+H,20,AFF,not Pow; effect is too vague and reflexive,61,net beneath which we will not let one another fall
+H,21,ACH,,63,financially sound
+H,22,POW,,64,"regulation, we can control"
+H,23,AFF,metaphor for people together,65,reunion
+H,24,POW,not a denial; next sentence is also scorable,66|67|68,Anti-neighborhood practices like red-lining and block-busting must be reversed | forced separation
+H,25,POW,,68,Discrimination against working women must be stopped
+H,26,AFF,,69,to care for their children
+H,27,POW,,70,to allow
+H,28,AFF,,70,to live together
+H,29,AFF,,70,together
+H,30,AFF,,75,beloved
+H,31,AFF,either phrase,76|77,still separated but now seamless world | common existence
+H,32,POW,next sentence also could have been scored,79|80,"Seeking dominion, we have meddled too much abroad"
+H,33,POW,,81,we opposed
+H,34,ACH,"""best""",83,best
+H,35,POW,"""fight""",83,fight
+H,36,POW,,85,aid
+H,37,AFF,,85,we move toward closer relations
+H,38,POW,,85,subverts governments
+H,39,AFF,or next sentence,85|86,friends | friends
+H,40,POW,,87,to redefine the role of government
+H,41,AFF,,88,commitment to a common existence
+H,42,AFF,,91,a more positive role with our European and Japanese partners
+H,43,POW,,93,ideals that moved nations and shook the world
+H,44,ACH,,95|96,better | better
+H,45,POW,any of these three phrases,98|99,which a demagogue can invoke | win some passing applause | releases the worst instincts of people
+H,46,ACH,,103,greatest
+H,47,AFF,any of three phrases,104,together | mutual | commitment to one another
+H,48,AFF,,106,friends
+H,49,POW,either this phrase or the next sentence,107|108,I am fortified by my family
+H,50,AFF,,108,they have encouraged me
+H,51,AFF,,110|111,nourish | inspire
+H,52,POW,either phrase,110|111,nourish | inspire
+H,53,AFF,,114,together
+H,54,POW,,116,summons
+H,55,ACH,,116,best
+H,56,ACH,,118,a better life
+H,57,POW,,118,the memory of those days and of John Kennedy is still an inspiration to their minds and a lift to their hearts
+I,1,AFF,,1,humane understanding of people's needs
+I,2,POW,,2,open new opportunities
+I,3,ACH,next sentence also scorable,2|3,improved quality of life
+I,4,ACH,,4,higher quality of life
+I,5,ACH,,6,great
+I,6,POW,,6,to build a new spirit among our people
+I,7,ACH,,6,forward motion
+I,8,POW,,8,supply the kind of leadership the United States needs to restore confidence in itself
+I,9,ACH,"""turning around"" means ""improve"" here",10,sound ideas for turning the economy around
+I,10,ACH,,12,demonstrated some of my ability
+I,11,ACH,,15,to move this country ahead
+I,12,ACH,in this context,18,creative programs and new directions
+I,13,POW,,18,our relative position in the world will continue to decline
+I,14,AFF,,20,concern for people and their problems
+I,15,ACH,"""sound"" suggests excellence",20,to carry out a sound program
+I,16,ACH,next sentence also could be scored,22|23,tremendous human talent
+I,17,ACH,any of these four phrases,29|30,to achieve this goal | sound | growth | sound and healthy
+I,18,ACH,,32,"better, healthier places"
+I,19,ACH,next sentence could have been scored,34|35|36,"modern, businesslike | modernizing"
+I,20,ACH,,36,businesslike
+I,21,ACH,"""intelligent,"" in previous sentence, also scorable",37|38,to develop their talents to the maximum
+I,22,ACH,,41,the only thing we have that's greater than present wealth is our future potential
+I,23,POW,,43,invigorate the private sector
+I,24,ACH,,44,economic growth
+I,25,POW,,44,stimulate
+I,26,AFF,,48,to take care of human needs
+I,27,AFF,not negated by derogatory use,50,cozy relationship
+I,28,POW,great impact,50,"is driving up the price of food, housing and fuel"
+I,29,ACH,,51,economic growth
+I,30,POW,or next sentence,51|52|53,stand up to those mega-businesses | urging
+I,31,ACH,,52,road of innovation and renewed prosperity
+I,32,ACH,,56,healthy economic base
+I,33,POW,,57,position in the world
+I,34,POW,or next sentence,57|60|61,our position in the world | our international position so been threatened
+I,35,POW,marginal; here suggests prestige,61,looks to the United States
+I,36,POW,,63,seek out our weaknesses
+I,37,POW,either phrase,66|67,to put Americans back to work | regain its preeminent position in the world
+I,38,ACH,,72,businesslike basis with executive leadership and managerial skill
+I,39,ACH,,74,good judgment
+I,40,POW,,75,impress upon the minds
+I,41,ACH,,76,"seeking something new, and better"
+I,42,AFF,,77,join me
+I,43,POW,,77,turning this country around
+I,44,ACH,,77,better
+J,1,POW,not warm enough for Aff,1,all he has done to heal our land
+J,2,POW,,4,require
+J,3,AFF,,4,love mercy
+J,4,ACH,,7,milestone in the long quest for freedom
+J,5,POW,"either phrase, but not both",7|8,which excited | urge
+J,6,ACH,,9,the first society
+J,7,POW,effect on others,10,an exceptional appeal
+J,8,AFF,either phrase,11|12,stay close to you | Let us create together a new national spirit of unity and trust
+J,9,AFF,,14,learn together and laugh together and work together and pray together
+J,10,ACH,,14,we will triumph together in the right
+J,11,ACH,,17,better
+J,12,AFF,,20,united
+J,13,ACH,,20,no prize was beyond our grasp
+J,14,POW,,21,glory
+J,15,ACH,,23,We reject the prospect of failure or mediocrity or an inferior quality of life
+J,16,AFF,,24,compassionate
+J,17,ACH,,25,struggling to enhance
+J,18,ACH,"here, ""great"" suggests excellence",27,great
+J,19,AFF,,29,together
+J,20,ACH,,29,do our best
+J,21,ACH,,29,best
+J,22,POW,either phrase,30,to enhance freedom in other lands | worthy of emulation
+J,23,POW,,34,craving and now demanding their place in the sun
+J,24,ACH,,36,no nobler nor more ambitious task
+J,25,POW,,36,shape
+J,26,AFF,,36,peaceful world that is truly humane
+J,27,POW,,37|38,we will fight our wars
+J,28,POW,hypothetical,42,others can dominate | threat
+J,29,ACH,,44,wisdom
+J,30,POW,,44,to limit the world's armaments
+J,31,POW,,46,urge
+J,32,AFF,borderline,46,join us
+J,33,POW,,47,people might say this about our nation
+J,34,AFF,,48,"torn down the barriers that separated those of different race and region and religion, and where there had been mistrust, built unity"
+J,35,POW,"or ""nations might say"" in next sentence",48|49,enabled our people to be proud
+J,36,AFF,,49,built a lasting peace

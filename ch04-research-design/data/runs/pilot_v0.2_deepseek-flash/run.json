@@ -1,0 +1,20 @@
+{
+  "purpose": "development pilot (practice sets PA to PF)",
+  "saved": "2026-11-21 22:05:12 +08",
+  "model": "deepseek/deepseek-flash",
+  "settings": "max_tokens 16000; all other settings left at the provider's defaults",
+  "specification_version": "v0.2",
+  "specification_file": "code/achievement/winter/motive_codebook_v0.2.R",
+  "specification_file_sha256": "3a11be423c864d0e9c47098d32d4626a58dfcd568a069e10e883ec620472a18d",
+  "instructions_sha256": "23bbd1d0353aae8c0284000ff827eeb8c6a79721d470a4236fc5a107f393ea0e",
+  "requests": 180,
+  "failed_requests": 18,
+  "documents_with_problems": 18,
+  "transport": "json_mode",
+  "quallmer": "0.6.0",
+  "ellmer": "0.5.2",
+  "R": "R version 4.6.2 (2026-10-29)",
+  "minutes": 14.8,
+  "partition_sha256": "bcc9f1ea556bd2111d3531bb5ecd007e8a661cd8c97d245410a20c094e6f482b",
+  "note": "failed_requests corrected from 180 to 18 on 2026-11-21: the first count mistook empty error entries for failures. All 18 were cut off at the 16000-token output cap."
+}

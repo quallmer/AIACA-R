@@ -1,0 +1,345 @@
+doc,cue,sentence,text,expert,main,second
+CA1,captain,1,Two people are having a conversation.,NA,NA,NA
+CA1,captain,2,"One is the boat captain, the other is a passenger.",NA,NA,NA
+CA1,captain,3,The passenger booked a cruise.,NA,NA,NA
+CA1,captain,4,The captain is telling the passenger all about his ship.,NA,NA,NA
+CA1,captain,5,He thinks the passenger wants information about the ship itself.,NA,NA,NA
+CA1,captain,6,"The passenger wants information about the ship's speed, route, safety, etc.",NA,NA,NA
+CA1,captain,7,They will take the cruise and have a good time.,NA,"AFF3 ""have a good time""",NA
+CA1,captain,8,"The weather will probably be good and the passenger will eat well, look around at all ports of call, and sunbathe a lot.",NA,NA,NA
+CA1,captain,9,"He will have a nice vacation and arrive back home, Satisfied.",NA,NA,NA
+CA2,captain,1,Two men are engaged in a Serious Conversation.,NA,NA,NA
+CA2,captain,2,One is the Captain of a Luxury liner about to set sail.,NA,NA,NA
+CA2,captain,3,"The other, a private detective, who has just told the captain the ship must be detained.","POW ""the ship must be detained""","POW1 ""the ship must be detained""","POW3 ""told the captain the ship must be detained"""
+CA2,captain,4,"It is feared that an illegal passenger is on board, a passenger wanted very much by the police.",NA,NA,"POW6 ""It is feared"" | POW2 ""wanted very much by the police"""
+CA2,captain,5,"The Captain is skeptical, and wants definite proof that there is such a dangerous person.",NA,NA,NA
+CA2,captain,6,The proof given by the detective is not enough for the Captain to delay departure.,NA,NA,"POW3 ""proof given by the detective"""
+CA2,captain,7,"The Luxury liner sails, along with the Cat burglar who had been sought after.","POW ""who had been sought after""",NA,"POW2 ""had been sought after"""
+CA3,captain,1,The captain and one of his passengers are talking about a problem the passengers having with his cabin.,NA,NA,NA
+CA3,captain,2,The water is leaking in his porthole.,NA,NA,NA
+CA3,captain,3,"The captain explains, that this happens at times and he will see its taken care of immediately.",NA,NA,"ACH2 ""taken care of immediately"""
+CA3,captain,4,"Mr. Smith, the passenger, says all right, goes back to the cabin and waits for someone to come.",NA,NA,NA
+CA3,captain,5,"After a short wait, a man comes and fixes the porthole.",NA,NA,NA
+CA3,captain,6,As Mr. Smith trip continues he is pleased to find no more water coming in.,NA,NA,"POW6 ""he is pleased"""
+CA4,captain,1,It's 1952.,NA,NA,NA
+CA4,captain,2,The Captain of the cruise liner is smuggling drugs hidden in antique figurines from the South China Seas.,NA,NA,NA
+CA4,captain,3,Sort of a Maltese Falcon scenario.,NA,NA,NA
+CA4,captain,4,"Captain is trying to make a deal with the man in the hat who is an undercover agent unbeknownst to the Captain, although he knows that someone is on his tail and he is in a hot spot.","POW ""trying to make a deal | someone is on his tail""","POW2 ""someone is on his tail""","POW2 ""someone is on his tail"""
+CA4,captain,5,He's trying to get out of it and walking right into it.,NA,NA,NA
+CA4,captain,6,The man in the hat is just listening.,NA,NA,"POW2 ""just listening"""
+CA4,captain,7,Eventually the Captain will be caught.,"POW ""the Captain will be caught""",NA,"POW1 ""will be caught"""
+CA4,captain,8,He will cook his own goose.,NA,NA,NA
+CA5,captain,1,"Now, listen Bill.",NA,NA,NA
+CA5,captain,2,We found the cashmere sweaters in this little shop in Sydney.,NA,NA,NA
+CA5,captain,3,"This little Kangaroo Lady actually taught me a new knit and purl stitch, two loops over and three under produces an iris pattern.",NA,NA,NA
+CA5,captain,4,Very pretty in ivory and purple with a green background.,NA,NA,"ACH1 ""Very pretty"""
+CA5,captain,5,But what hope do we have of getting the diamonds in?,NA,NA,NA
+CA5,captain,6,"Oh, see the rhinestones on the little, wide armhole vest, just wash the glitter off.",NA,NA,NA
+CA5,captain,7,A few more are in my knitting-needles and I really found the perfect place.,"ACH ""the perfect place""",NA,"ACH1 ""perfect place"""
+CA5,captain,8,Use them as hem weights.,NA,NA,NA
+CA5,captain,9,"Well, then we should have enough to go home to England forever.",NA,NA,NA
+CA5,captain,10,"Not forever, just until we know no one is chasing us.",NA,NA,NA
+CA6,desk,1,"This man is a architect for a large company who is having thoughts about leaving the company and opening his own architectural firm, to design homes, building, for his own clients, rather than buildings, complexes for his company.",NA,NA,NA
+CA6,desk,2,"He is thinking of the security that his present company gives him financially and security wise, and for his family, but he thinks what would really make him happier at work and at home is being his own boss.",NA,NA,NA
+CA6,desk,3,He wants to do what's best for him and his family.,"ACH ""He wants to do what's best | doing better""",NA,NA
+CA6,desk,4,"What he now will do is tell his wife, and make plans to gradually go on his own, doing a few independent jobs on his own, and then when his own business is doing better, will leave his present company.","ACH ""He wants to do what's best | doing better""","ACH1 ""when his own business is doing better""","ACH2 ""when his own business is doing better"""
+CA7,desk,1,This man is a draftsman of some sort and he is at work.,NA,NA,NA
+CA7,desk,2,He prepared for this job by going to school-college --  for many years.,NA,NA,NA
+CA7,desk,3,He likes his work.,NA,NA,NA
+CA7,desk,4,"The picture on his desk is his family, whom he loves.","AFF ""whom he loves | He is anticipating going home when work is done to his loving family""","AFF1 ""his family, whom he loves""","AFF1 ""whom he loves"""
+CA7,desk,5,He is anticipating going home when work is done to his loving family.,"AFF ""whom he loves | He is anticipating going home when work is done to his loving family""","AFF1 ""going home when work is done to his loving family""","AFF1 ""his loving family"""
+CA7,desk,6,He wants to get his work done soon.,NA,NA,NA
+CA7,desk,7,He will finish his work and go home for dinner.,NA,"AFF3 ""go home for dinner""",NA
+CA7,desk,8,"After a nice evening with his family, he will be back at work tomorrow, doing the best job he can on his drafting.","AFF ""nice evening with his family"" | ACH ""best""","AFF3 ""a nice evening with his family"" | ACH1 ""doing the best job he can""","AFF3 ""a nice evening with his family"" | ACH1 ""doing the best job he can"""
+CA8,desk,1,"A man deep in thought, being torn by a decision he must make.",NA,NA,NA
+CA8,desk,2,He is an industrial architect working on plans to build a Nuclear Plant in his home town.,NA,NA,NA
+CA8,desk,3,It is a small town with good family people.,NA,NA,NA
+CA8,desk,4,People who need jobs which the plant would provide.,NA,NA,NA
+CA8,desk,5,"The company planning to build the plant, he feels, is not a reliable one, and has made mistakes in the past.",NA,NA,"ACH4 ""he feels, is not a reliable one, and has made mistakes in the past"""
+CA8,desk,6,"But the townspeople need jobs, and feel this is the best thing.","ACH ""best""",NA,NA
+CA8,desk,7,"This architect will decide that although the plant will provide work for his fellow townsmen, it is far too dangerous to complete the plans and put his family in danger.",NA,"AFF4 ""put his family in danger""",NA
+CA9,desk,1,"Mr. Jones, an architect is going to surprise his family by building them a new house.","POW ""going to surprise his family""","AFF4 ""surprise his family by building them a new house""","POW6 ""surprise his family"""
+CA9,desk,2,As he gazes at their picture he tries to picture in his mind the kind of house they would really love.,NA,"AFF4 ""the kind of house they would really love""","POW6 ""they would really love"""
+CA9,desk,3,As the house come to mind he quickly sketches it down.,NA,NA,NA
+CA9,desk,4,"That night he takes it home and tells his wife, next week we begin a new house.",NA,NA,NA
+CA9,desk,5,"His wife is very excited, but anxious, so much to do, how will we get it all done.","POW ""His wife is very excited""","POW6 ""His wife is very excited""","POW6 ""very excited"" | POW6 ""anxious"""
+CA9,desk,6,"Her husband exclaims, don't worry everything will work out.",NA,"AFF4 ""don't worry everything will work out""","AFF4 ""don't worry everything will work out"""
+CA10,desk,1,1938 movie.,NA,NA,NA
+CA10,desk,2,This man is an architect whose business is in trouble.,NA,NA,NA
+CA10,desk,3,Someone from his past has emerged and is trying to blackmail him.,"POW ""trying to blackmail him""","POW1 ""trying to blackmail him""","POW1 ""trying to blackmail him"""
+CA10,desk,4,"Not wanting to threaten the happy new life with wife and kiddies he has established since breaking free and changing his ways, he is now facing the torturous decision of whether or not to do something dishonest (embezzle money) to keep the blackmailer quiet.","AFF ""happy new life with wife and kiddies""","AFF1 ""the happy new life with wife and kiddies""","AFF1 ""happy new life with wife and kiddies"" | POW6 ""torturous decision"""
+CA10,desk,5,He is torn.,NA,NA,"POW6 ""He is torn"""
+CA10,desk,6,"He tries to cover it up but eventually his wife suspects something is wrong, gets it out of him, they take it on together and all works out in the end.","POW ""gets it out of him"" | AFF ""together""","POW2 ""his wife suspects something is wrong, gets it out of him"" | AFF3 ""they take it on together""","POW2 ""gets it out of him"""
+CA10,desk,7,"(I feel a bit cynical about this ending -- I like the idea, but it sounds a bit smarmy, like a 1938 movie, perhaps!)",NA,NA,"ACH4 ""sounds a bit smarmy"""
+CA11,river,1,This is a couple that works together in an office in Cambridge.,NA,NA,"AFF1 ""couple"""
+CA11,river,2,"He likes her very much, but he is kind of the office nerd, someone that everyone gets along with, but who everyone kind of feels sorry for or thinks is a bother sometime.","AFF ""He likes her very much""","AFF1 ""He likes her very much"" | AFF4 ""everyone kind of feels sorry for""","AFF1 ""likes her very much"" | AFF4 ""feels sorry for"""
+CA11,river,3,"She has gone out for a walk in the early spring, during her lunch hour, to get some fresh air and exercise.",NA,NA,NA
+CA11,river,4,"He went out also, and followed her, to have a chance to talk away from the office.",NA,"AFF3 ""to have a chance to talk away from the office""","AFF3 ""chance to talk away from the office"""
+CA11,river,5,"She is looking off in the distance, thinking that she would like to change jobs, move up, and yet he is going on and on about his more immediate hopes and plans for his life.","ACH ""move up""","ACH2 ""she would like to change jobs, move up""","ACH2 ""change jobs, move up"""
+CA11,river,6,He will stay working there for a long time.,NA,NA,NA
+CA11,river,7,She'll probably leave for another job in a year or so.,NA,NA,NA
+CA12,river,1,Two people in a park.,NA,NA,NA
+CA12,river,2,They are a young couple-probably not married.,NA,NA,NA
+CA12,river,3,They have been going together for a while and enjoy being together and discussing things they have in common and their goals in life.,"AFF ""They have been going together for a while and enjoy being together and discussing things they have in common""","AFF3 ""enjoy being together and discussing things they have in common""","AFF3 ""enjoy being together and discussing things they have in common"""
+CA12,river,4,They want to get to know each other better.,"AFF ""They have been going together for a while and enjoy being together and discussing things they have in common""","AFF1 ""They want to get to know each other better""","AFF1 ""want to get to know each other better"""
+CA12,river,5,Each of them wants to know the plans and dreams of the other.,"AFF ""wants to know the plans and dreams of the other | They will probably get married""","AFF1 ""Each of them wants to know the plans and dreams of the other""","AFF1 ""wants to know the plans and dreams of the other"""
+CA12,river,6,They will probably get married sometime in the future; they both seem too young now.,"AFF ""wants to know the plans and dreams of the other | They will probably get married""","AFF1 ""They will probably get married sometime in the future""","AFF1 ""get married"""
+CA12,river,7,They will finish schooling and get jobs and find a place to live.,NA,NA,NA
+CA13,river,1,"Two people sitting together, perhaps at lunch time break.",NA,NA,NA
+CA13,river,2,"They seem to know each other, and enjoy each others company.","AFF ""enjoy each others company""","AFF1 ""enjoy each others company""","AFF1 ""enjoy each others company"""
+CA13,river,3,"The both work for the same company, and have taken a walk after lunch.",NA,NA,"AFF3 ""taken a walk after lunch"""
+CA13,river,4,"Now they are sitting, more likely discussing some work related matter.",NA,NA,NA
+CA14,river,1,Janet asked her husband Fred to meet her on the river.,NA,NA,NA
+CA14,river,2,She was so excited.,NA,NA,NA
+CA14,river,3,How long they had waited for this to happen.,NA,NA,NA
+CA14,river,4,"Fred appeared and she rushed to him, tears in her eyes.",NA,"AFF1 ""she rushed to him, tears in her eyes""","AFF1 ""rushed to him, tears in her eyes"""
+CA14,river,5,"Fred, she said, we're going to have a baby.",NA,NA,NA
+CA14,river,6,"Fred was struck, speechless.","POW ""Fred was struck, speechless""","POW6 ""Fred was struck, speechless""","POW6 ""struck, speechless"""
+CA14,river,7,He thought it would never happen.,NA,NA,NA
+CA14,river,8,As he took her hand they sat on the bench.,"AFF ""As he took her hand they sat on the bench""","AFF3 ""As he took her hand they sat on the bench""","AFF1 ""took her hand"""
+CA14,river,9,Fred was beaming from ear to ear.,NA,"POW6 ""Fred was beaming from ear to ear""","POW6 ""beaming from ear to ear"""
+CA14,river,10,"This is the best news, what we've both waited for so long.",NA,NA,"POW6 ""This is the best news"""
+CA14,river,11,"I love you, Janet.","AFF ""I love you, Janet | I love you, Fred""","AFF1 ""I love you, Janet""","AFF1 ""I love you"""
+CA14,river,12,"I love you, Fred.","AFF ""I love you, Janet | I love you, Fred""","AFF1 ""I love you, Fred""","AFF1 ""I love you"""
+CA15,river,1,"By the Charles River, Harvard law student with a Radcliffe Art History major.",NA,NA,NA
+CA15,river,2,"He is entranced by her beauty, brains and eccentric behavior, though fearful that her questionable background might not be acceptable to his stuffy blue-blood family, in fact to himself.","POW ""He is entranced by her beauty, brains and eccentric behavior""","AFF1 ""entranced by her beauty, brains and eccentric behavior""","POW6 ""entranced by her beauty, brains and eccentric behavior"" | POW5 ""fearful that her questionable background might not be acceptable to his stuffy blue-blood family"""
+CA15,river,3,He is snotty and repressed.,NA,NA,NA
+CA15,river,4,She is attracted and impressed but essentially frustrated that he always acts like a stick-in-the-mud.,"POW ""She is attracted and impressed but essentially frustrated that he always acts like a stick-in-the-mud""","AFF1 ""attracted"" | POW6 ""frustrated that he always acts like a stick-in-the-mud""","AFF1 ""attracted"" | POW6 ""impressed"" | POW6 ""frustrated that he always acts like a stick-in-the-mud"""
+CA15,river,5,They are together for a couple of years but as she grows in herself she finally has the presence of self and mind (unlike myself) to realize that it will never work and goes on to marry an equally eccentric physicist from MIT.,"AFF ""goes on to marry""","AFF1 ""goes on to marry an equally eccentric physicist""","AFF3 ""They are together for a couple of years"" | ACH2 ""she grows in herself"" | ACH1 ""presence of self and mind"" | AFF1 ""marry"""
+CA16,lab,1,There are two research scientists who work in a lab doing medical research.,NA,NA,NA
+CA16,lab,2,"The woman on the left is the head of the program, and usually gets the publicity when any progress or results happen.","POW ""gets the publicity"" | ACH ""progress""","POW5 ""usually gets the publicity""","POW2 ""head of the program"" | POW5 ""gets the publicity"""
+CA16,lab,3,"The woman on the right does most of the background, hard, routine work, and doesn't get much credit for the work done.",NA,NA,NA
+CA16,lab,4,"The woman on the left is the boss, and is somewhat autocratic -- work is work, you do it and you get paid for it.",NA,"POW2 ""somewhat autocratic""","POW2 ""is the boss, and is somewhat autocratic"""
+CA16,lab,5,"The right side woman is rather shy and unassertive, but proud of her work and accomplishments.","ACH ""proud of her work and accomplishments | she is good at her job""","ACH1 ""proud of her work and accomplishments""","ACH1 ""proud of her work and accomplishments"""
+CA16,lab,6,"She is going to ask her boss for a raise, because she knows she is good at her job.","ACH ""proud of her work and accomplishments | she is good at her job""","ACH1 ""she is good at her job""","POW3 ""ask her boss for a raise"" | ACH1 ""she is good at her job"""
+CA16,lab,7,"The boss will give her a raise, because she knows the other woman is the backbone of the program.",NA,NA,NA
+CA17,lab,1,Two women are working in a lab.,NA,NA,NA
+CA17,lab,2,They are both researchers.,NA,NA,NA
+CA17,lab,3,They have studied and done research for a long time on this project and are thinking it would be nice to have a breakthrough and get good results.,"ACH ""breakthrough and get good results""","ACH5 ""have a breakthrough"" | ACH1 ""get good results""","ACH5 ""have a breakthrough"" | ACH1 ""get good results"""
+CA17,lab,4,They want the research to go well and be productive.,"ACH ""breakthrough and get good results""","ACH2 ""want the research to go well and be productive""","ACH2 ""go well and be productive"""
+CA17,lab,5,They want to make a contribution to science.,"ACH ""They want to make a contribution to science""","ACH5 ""make a contribution to science""",NA
+CA17,lab,6,"They will get results, which will get them a step closer to a solution to the problem.",NA,"ACH5 ""a step closer to a solution to the problem""","ACH2 ""a step closer to a solution to the problem"""
+CA17,lab,7,"They will continue doing research, searching for the truth in small pieces.",NA,"ACH5 ""searching for the truth in small pieces""",NA
+CA18,lab,1,Two women in a laboratory.,NA,NA,NA
+CA18,lab,2,"Both seem to have knowledge and authority: The older one in the background is probably the Professor, and the other the Student.","ACH ""Both seem to have knowledge and authority""",NA,NA
+CA18,lab,3,The student is a mother and wife gone back to school to become a doctor.,NA,NA,"ACH2 ""gone back to school to become a doctor"""
+CA18,lab,4,"The professor feels this student has good potential, and observes her carefully.","ACH ""has good potential"" | POW ""observes her carefully""","ACH1 ""has good potential"" | POW2 ""observes her carefully""","ACH1 ""good potential"" | POW2 ""observes her carefully"""
+CA18,lab,5,"The professor wants this woman to succeed and will give her every chance she can, for she too is a wife and mother.","ACH ""wants this woman to succeed"" | POW ""will give her every chance she can, for she too is a wife and mother"" | AFF ""will give her every chance she can, for she too is a wife and mother""","ACH1 ""wants this woman to succeed"" | AFF4 ""will give her every chance she can, for she too is a wife and mother""","ACH1 ""wants this woman to succeed"" | POW4 ""will give her every chance she can"" | AFF4 ""for she too is a wife and mother"""
+CA19,lab,1,"They had been trying for days, months, years to find a cure for the deadly disease.","ACH ""find a cure""","ACH5 ""trying for days, months, years to find a cure for the deadly disease""","ACH5 ""trying for days, months, years to find a cure"""
+CA19,lab,2,Finally they were on the threshold of something.,NA,NA,NA
+CA19,lab,3,"As they stood and watched the chemicals mix, their breaths were held in anticipation.",NA,NA,NA
+CA19,lab,4,If this worked many people would be saved finally from AIDS.,"POW ""many people would be saved""","ACH5 ""many people would be saved finally from AIDS""","ACH1 ""If this worked"" | POW1 ""many people would be saved finally from AIDS"""
+CA19,lab,5,"As she dropped the specimen into the test tube, what they had dreamed of for so long happened.","ACH ""what they had dreamed of for so long""",NA,NA
+CA19,lab,6,"It worked, as they looked at each other their eyes were full of tears and excitement.",NA,"ACH1 ""It worked""","ACH1 ""It worked"""
+CA19,lab,7,They had finally won.,"ACH ""They had finally won""","ACH3 ""They had finally won.""","ACH3 ""won"""
+CA20,lab,1,A Nobel-prize winning scientist (with test-tube) and her considerably less-talented assistant who has always been jealous of her.,"ACH ""Nobel-prize winning scientist | working on a cure for AIDS | discovered""","ACH1 ""A Nobel-prize winning scientist"" | ACH1 ""considerably less-talented assistant""","ACH1 ""Nobel-prize winning scientist"""
+CA20,lab,2,In working on a cure for AIDS they have inadvertently discovered (or think they have) an antidote for advanced adolescent narcissism in men (guess who I'm angry at today).,"ACH ""Nobel-prize winning scientist | working on a cure for AIDS | discovered""","ACH5 ""In working on a cure for AIDS"" | ACH5 ""inadvertently discovered (or think they have) an antidote"" | POW6 ""guess who I'm angry at today""","ACH5 ""working on a cure for AIDS"" | ACH5 ""inadvertently discovered"""
+CA20,lab,3,"The assistant realizes that this could be a staggering breakthrough for mankind, stopping wars, death, destruction, pollution of the environment, unjust imbalance of wealth etc., but her personal grudge against her boss perverts her perspective and she is plotting to sabotage the experiments so that they never will be known to modern science.","ACH ""staggering breakthrough"" | POW ""stopping wars, death, destruction, polution of the environment, unjust imbalance of wealth etc | she is plotting to sabotage the experiments""","ACH5 ""could be a staggering breakthrough for mankind"" | POW6 ""her personal grudge against her boss"" | POW1 ""she is plotting to sabotage the experiments""","ACH5 ""staggering breakthrough"" | POW1 ""stopping wars, death, destruction, pollution of the environment, unjust imbalance of wealth etc."" | POW1 ""plotting to sabotage the experiments so that they never will be known"""
+CA20,lab,4,"Her boss catches her in the lab one night trying to alter the results, understands what is going on, stops her, fires her, but not before explaining that, in fact the antidote only worked on brain cells up to the age of sixteen thereby only replicating a natural life process, and was therefore useless.","POW ""stopping wars, death, destruction, polution of the environment, unjust imbalance of wealth etc | she is plotting to sabotage the experiments""","POW2 ""catches her in the lab one night"" | POW1 ""stops her, fires her""","POW1 ""trying to alter the results"" | POW1 ""stops her"" | POW1 ""fires her"""
+CA21,trapeze,1,"A young trapeze artist, who has always dreamed of being the star of the show, now has her chance.","ACH ""dreamed of being the star of the show""","POW5 ""dreamed of being the star of the show""","POW5 ""dreamed of being the star of the show"""
+CA21,trapeze,2,"The real star of the show had quit the circus that day, over a contract dispute.",NA,NA,NA
+CA21,trapeze,3,"Now this young girl will have her chance to prove to them all, even the young man she is working with, and admires greatly that she is good!","POW ""to prove to them all"" | ACH ""she is good | prove to be a star""","POW5 ""prove to them all"" | ACH1 ""she is good""","POW3 ""prove to them all"" | AFF1 ""admires greatly"" | ACH1 ""she is good"""
+CA21,trapeze,4,"She is unsure at first, but does prove to be a star after all!","ACH ""she is good | prove to be a star""","ACH1 ""does prove to be a star after all""","ACH1 ""prove to be a star"""
+CA22,trapeze,1,"As the trapeze swung her higher and higher, Faye realized she could never leave the circus.",NA,NA,NA
+CA22,trapeze,2,Chris had been after her for months to go.,"POW ""had been after her""","POW3 ""had been after her for months to go""","POW3 ""Chris had been after her for months to go"""
+CA22,trapeze,3,She had almost relented.,NA,NA,NA
+CA22,trapeze,4,"But, now has she swung back and forth ready to swing a double somersault -- Daniel, her catcher, waiting.",NA,"ACH5 ""ready to swing a double somersault""","ACH5 ""ready to swing a double somersault"""
+CA22,trapeze,5,She knew Chris would have to love her life if he really loved her.,"AFF ""if he really loved her""","AFF1 ""Chris would have to love her life if he really loved her""","AFF1 ""if he really loved her"""
+CA23,trapeze,1,"The last performance of stunning trapeze artiste, well-known for her skill, body and hair.","POW ""well-known"" | ACH ""skill""","ACH1 ""stunning trapeze artiste"" | POW5 ""well-known for her skill, body and hair""","POW5 ""well-known"" | ACH1 ""skill"""
+CA23,trapeze,2,"An orphan, found and brought up by a circus family has decided to run away from the circus go to Paris and find her roots.","POW ""brought up | were killed | shelling attack""",NA,NA
+CA23,trapeze,3,"She gets work as a fashion model, where her face is seen and recognized by her mother's sister who contacts her, tells her  parents were killed in the war shortly after she had wandered away from them during a shelling attack.","POW ""brought up | were killed | shelling attack""",NA,"POW1 ""killed in the war"""
+CA23,trapeze,4,She quits modelling (after having made a lot of money) finding it shallow and boring.,NA,NA,NA
+CA23,trapeze,5,Thrilled to be reunited with what remains of her family she settles near them in Paris and pursues a writing career.,"AFF ""Thrilled to be reunited""","AFF1 ""Thrilled to be reunited with what remains of her family""","AFF1 ""Thrilled to be reunited with what remains of her family"" | AFF1 ""settles near them"""
+CA24,trapeze,1,"Supple gypsy spinners swinging from town to town, summer fair to winter carnival.",NA,NA,NA
+CA24,trapeze,2,"Spinning upward and around, sometimes on trapezes tied to telephone poles while comrades sell cotton candy.",NA,NA,NA
+CA24,trapeze,3,"Cokes, and caramel candy.",NA,NA,NA
+CA24,trapeze,4,No place to call home; no chance to return.,NA,"AFF2 ""No place to call home; no chance to return.""",NA
+CA24,trapeze,5,"To small towns near Budapest, Kracow, and Sofia from where they were driven by guns and tanks crashing down on their dreams.","POW ""they were driven | crashing down on their dreams""","POW1 ""driven by guns and tanks crashing down on their dreams""","POW1 ""driven by guns and tanks"""
+CA24,trapeze,6,"She was a doctor, and he wrote short stories about bow ties and high heels.",NA,NA,NA
+CA24,trapeze,7,"She liked Tokaiazii, with onions and cheese on cafe chairs talking to girl friends, flirting with every man.","AFF ""talking to girl friends""","AFF3 ""on cafe chairs talking to girl friends""","AFF3 ""talking to girl friends"" | AFF1 ""flirting with every man"""
+CA24,trapeze,8,She likes Rochester with its broken down center.,NA,NA,NA
+CA24,trapeze,9,It feels like home.,NA,NA,"AFF1 ""feels like home"""
+CA24,trapeze,10,He likes Miami; sun and women unlike home.,NA,NA,"AFF1 ""likes Miami; sun and women"""
+CA25,trapeze,1,These two trapeze artists have been working together for about 6 months.,NA,NA,NA
+CA25,trapeze,2,He had been working at the circus for about a year when she came along.,NA,NA,NA
+CA25,trapeze,3,He needed a new partner so he asked if she was interested.,NA,NA,NA
+CA25,trapeze,4,Together they have been rehearsing the new act.,NA,"ACH2 ""rehearsing the new act""",NA
+CA25,trapeze,5,It has taken a lot of time to get it right.,"ACH ""taken a lot of time to get it right""","ACH2 ""to get it right""","ACH2 ""get it right"""
+CA25,trapeze,6,Finally they feel they are acting as one.,NA,"AFF1 ""acting as one""","AFF1 ""acting as one"""
+CA25,trapeze,7,Tonight they are performing in public for the first time.,NA,"ACH5 ""performing in public for the first time""","ACH5 ""for the first time"""
+CA25,trapeze,8,They have just completed a double spin and the crowd is applauding.,"POW ""the crowd is applauding""","ACH1 ""completed a double spin"" | POW5 ""the crowd is applauding""","POW5 ""the crowd is applauding"""
+CA25,trapeze,9,This is what they have been waiting for.,NA,NA,"POW5 ""This is what they have been waiting for"""
+CA26,horse,1,A man and woman are walking through a meadow with their horses.,NA,NA,NA
+CA26,horse,2,The man takes care of the horses all the time.,NA,NA,NA
+CA26,horse,3,The woman comes to visit regularly.,NA,NA,NA
+CA26,horse,4,"She likes horses and riding, but has to live in the city, where she works.",NA,NA,NA
+CA26,horse,5,The man is telling her facts about horses.,NA,NA,NA
+CA26,horse,6,She wants to know how her horse is doing and information about horses in general.,NA,NA,NA
+CA26,horse,7,The man enjoys talking about horses.,NA,NA,NA
+CA26,horse,8,It is a beautiful day to be outside.,NA,NA,NA
+CA26,horse,9,"The woman and her dog will have a nice day and go back to the city, but they will be back next week.",NA,NA,NA
+CA26,horse,10,The man will come for the horses and feed them.,NA,NA,NA
+CA27,horse,1,I have never seen such beautiful country as Ireland.,NA,NA,NA
+CA27,horse,2,It took my breath away.,NA,NA,NA
+CA27,horse,3,"The rolling green hills, even the rain couldn't dampen my spirits.",NA,NA,NA
+CA27,horse,4,Then I met a man who worked on a large farm.,NA,NA,NA
+CA27,horse,5,"He loved animals, especially horses.",NA,NA,"AFF1 ""He loved animals"""
+CA27,horse,6,The two draft horses he had with him were superb.,"ACH ""superb""",NA,NA
+CA27,horse,7,I asked him to tell me some stories of this country of his.,NA,NA,NA
+CA27,horse,8,I'm sure he had many.,NA,NA,NA
+CA27,horse,9,"As we walked along a mountain trail he told me of his childhood, and how he came to love his country and these animals so well.","AFF ""As we walked along a mountain trail he told me of his childhood""","AFF3 ""As we walked along a mountain trail he told me of his childhood""","AFF3 ""As we walked along a mountain trail he told me of his childhood"" | AFF1 ""love his country and these animals so well"""
+CA27,horse,10,I left Ireland a little freer and more hopeful knowing life could be so fulfilling.,NA,NA,NA
+CA28,horse,1,"A woman on a vacation, away from her hectic work schedule and city life, has taken a walk into a nearby field to pick wildflowers for her room.",NA,NA,NA
+CA28,horse,2,"She meets a kind old' Gentlemen, his dog, and two beautiful horses.",NA,"AFF1 ""She meets a kind old' Gentlemen""","AFF1 ""kind old' Gentlemen"""
+CA28,horse,3,They talk and walk together for a while.,"AFF ""They talk and walk together for a while""","AFF3 ""They talk and walk together for a while.""","AFF3 ""talk and walk together"""
+CA28,horse,4,"The little old' man after hearing her story of why she is there, explaining that everyone needs a break, or rest from their work.",NA,NA,NA
+CA28,horse,5,Just like his beautiful animals need to be let loose each day to wander the fields.,NA,NA,NA
+CA29,horse,1,"By virtue of a time travel box, an Indian Maharani from the 17th century travels forward and is dropped into a field in turn-of-the-century Northern England.",NA,NA,NA
+CA29,horse,2,"Totally confused, she wanders over the fields till she runs into a local farmer whose wife has recently died.",NA,NA,NA
+CA29,horse,3,"He is delighted to find a beautiful, exotic, cultured young woman wandering helpless on his land.","POW ""He is delighted to find a beautiful, exotic, cultured young woman wandering""","AFF1 ""He is delighted to find a beautiful, exotic, cultured young woman""",NA
+CA29,horse,4,He offers her a place to stay in exchange for help around the house (about which she knows nothing having had servants all her life).,NA,NA,"POW4 ""offers her a place to stay"""
+CA29,horse,5,She is a bit put off at first but grows to be fond of him as they try to break the language barrier.,"AFF ""grows to be fond of him | They become great friends""","AFF1 ""grows to be fond of him""","AFF1 ""grows to be fond of him"""
+CA29,horse,6,"They become great friends and she even begins to like country life, though missing the luxury and amenities of the Indian court.","AFF ""grows to be fond of him | They become great friends""","AFF1 ""They become great friends""","AFF1 ""become great friends"""
+CA29,horse,7,She is endowed with psychic powers and realizes she can send them both back to India for a little visit.,NA,NA,NA
+CA29,horse,8,He thinks this is swell and off they go.,NA,NA,NA
+CA29,horse,9,He loves the Indian court but after a while misses his horses and the countryside and knows he's getting old and his death is coming.,NA,NA,NA
+CA29,horse,10,She sends him back but comes to visit occasionally.,"AFF ""comes to visit""",NA,"AFF3 ""comes to visit occasionally"""
+CA29,horse,11,When he dies she takes his dog back to India.,NA,NA,NA
+CA30,horse,1,"Father and daughter, home for a week, walking and talking with the horses across the meadow where she used to play.","AFF ""walking and talking with the horses across the meadow""","AFF3 ""walking and talking""","AFF3 ""walking and talking"""
+CA30,horse,2,"He wants her to stay, but she has a home, a husband, children and his parents in the city.",NA,"AFF1 ""He wants her to stay""","AFF1 ""He wants her to stay"""
+CA30,horse,3,"Yes, she misses the grape harvest with all the pickers.",NA,NA,"AFF2 ""she misses the grape harvest with all the pickers"""
+CA30,horse,4,And she remembers her first kiss at the side of the maple tree that is gone now.,NA,"AFF1 ""her first kiss""","AFF1 ""her first kiss"""
+CA30,horse,5,"Father's dog and Clydesdales never change, though.",NA,NA,NA
+CA30,horse,6,He wants her home.,NA,"AFF1 ""He wants her home""","AFF1 ""He wants her home"""
+CA30,horse,7,He wants her to bring the children more often.,NA,"AFF1 ""He wants her to bring the children more often""","AFF1 ""He wants her to bring the children more often"""
+CA30,horse,8,They should know horses.,NA,NA,NA
+CA30,horse,9,"She can't talk to him anymore, never could.",NA,NA,"AFF2 ""can't talk to him anymore"""
+CA30,horse,10,"Fathers are sweet to hug, but they know so little of life.","AFF ""Fathers are sweet to hug""","AFF1 ""Fathers are sweet to hug""","AFF1 ""sweet to hug"""
+CB,NA,1,"Senator Mathias, Chief Justice Burger, Vice President Bush, Speaker O'Neill, Senator Dole, reverend clergy, members of my family, friends, and my fellow citizens: This day has been made brighter by the presence here of one who for a time has been absent.","AFF ""friends""","AFF1 ""This day has been made brighter by the presence here of one""","AFF1 ""made brighter by the presence here"""
+CB,NA,2,"Sen. John Stennis, God bless you and welcome back.","AFF ""welcome back""",NA,NA
+CB,NA,3,"There is, however, one who is not with us today.",NA,NA,NA
+CB,NA,4,Representative Gillis Long of Louisiana left us last night and I wonder if we could all join in a moment of silent prayer.,NA,NA,NA
+CB,NA,5,There are no words adequate to express my thanks for the great honor you have bestowed on me.,"POW ""great honor you have bestowed on me""","POW5 ""the great honor you have bestowed on me""","POW5 ""great honor"""
+CB,NA,6,I will do my utmost to be deserving of your trust.,NA,NA,NA
+CB,NA,7,"This day, as Senator Mathias told us, is the 50th time we the people have celebrated this historic occasion.",NA,NA,NA
+CB,NA,8,"When the first President, George Washington, placed his hand upon the Bible, he stood less than a single day's journey by horseback from raw, untamed wilderness.",NA,NA,NA
+CB,NA,9,There were 4 million Americans in the Union of 13 states.,NA,NA,NA
+CB,NA,10,"Today, we are 60 times as many in a Union of 50 States.",NA,NA,NA
+CB,NA,11,"We have lighted the world with our inventions, gone to the aid of mankind wherever in the world there was a cry for help, journeyed to the moon and safely returned.","POW ""We have lighted the world"" | ACH ""inventions"" | AFF ""aid""","ACH5 ""lighted the world with our inventions"" | AFF4 ""gone to the aid of mankind wherever in the world there was a cry for help"" | ACH5 ""journeyed to the moon and safely returned""","POW1 ""lighted the world"" | ACH5 ""inventions"" | AFF4 ""gone to the aid of mankind"" | ACH5 ""journeyed to the moon"""
+CB,NA,12,So much has changed.,NA,NA,NA
+CB,NA,13,And yet we stand together as we did two centuries ago.,"AFF ""we stand together""",NA,"AFF1 ""stand together"""
+CB,NA,14,"When I took this oath four years ago, I did so in a time of economic stress.",NA,NA,NA
+CB,NA,15,Voices were raised saying that we had to look to our past for the greatness and glory.,"ACH ""greatness"" | POW ""glory""",NA,"POW5 ""greatness and glory"""
+CB,NA,16,"But we, the present-day Americans, are not given to looking backward.",NA,NA,NA
+CB,NA,17,"In this blessed land, there is always a better tomorrow.","ACH ""better""",NA,NA
+CB,NA,18,"Four years ago, I spoke to you of a new beginning and we have accomplished that.",NA,NA,"ACH1 ""we have accomplished that"""
+CB,NA,19,"But in another sense, our new beginning is a continuation of that beginning created two centuries ago; then for the first time in history, a people said, ""government is not our master, it is our servant;"" and government's only power will be that which we the people allow it to have.","ACH ""for the first time in history"" | POW ""we the people allow it to have""","ACH5 ""then for the first time in history, a people said""","ACH5 ""for the first time in history"" | POW2 ""we the people allow it to have"""
+CB,NA,20,That system never failed us.,NA,NA,NA
+CB,NA,21,"But, for a time, we failed those principles.",NA,NA,NA
+CB,NA,22,Over recent years we asked things of the federal government that it was not equipped to give.,NA,NA,NA
+CB,NA,23,We yielded authority to government that properly belonged at local or state levels or in the hands of the citizenry.,NA,NA,NA
+CB,NA,24,We allowed taxes and inflation to rob us of our earnings and savings.,"POW ""to rob us""","POW1 ""taxes and inflation to rob us of our earnings and savings""",NA
+CB,NA,25,We watched the great industrial machine that had made us the most productive people on earth slow and the number of unemployed increase.,"ACH ""the most productive people on earth""","ACH1 ""the most productive people on earth""","ACH1 ""most productive people on earth"""
+CB,NA,26,"By 1980, we knew it was time to renew our faith, to strive with all our strength toward the ultimate in individual freedom, consistent with an orderly society.",NA,NA,NA
+CB,NA,27,"We believed then and now: There are no limits to growth and human progress, when men and women are free to follow their dreams.","ACH ""There are no limits to growth and human progress""","ACH2 ""There are no limits to growth and human progress""","ACH2 ""growth and human progress"""
+CB,NA,28,And we were right to believe.,NA,NA,NA
+CB,NA,29,"Tax rates have been reduced, inflation cut dramatically, and more people are employed today than ever before in our history.","ACH ""more people are employed today than ever before in our history""","ACH5 ""more people are employed today than ever before in our history""","ACH2 ""more people are employed today than ever before"""
+CB,NA,30,"We are creating a nation, once again vibrant, robust, and alive.","ACH ""more people are employed today than ever before in our history""",NA,"ACH1 ""vibrant, robust, and alive"""
+CB,NA,31,There are many mountains yet to climb.,NA,NA,NA
+CB,NA,32,"We will not rest until every American enjoys the fullness of freedom, dignity, and opportunity which is our birthright as citizens.",NA,NA,NA
+CB,NA,33,It is our birthright as citizens of this great republic.,"ACH ""great""",NA,NA
+CB,NA,34,"If we meet this challenge, these will be years that Americans have restored their confidence and tradition of progress; When our values of faith, family, work and neighborhood were restated for a modern age; When our economy was finally freed from government's grip.","ACH ""great"" | POW ""government's grip""","ACH2 ""restored their confidence and tradition of progress""","ACH2 ""tradition of progress"""
+CB,NA,35,"When we made sincere efforts at meaningful arms reduction, by rebuilding our defenses, our economy, we developed new technologies that preserved peace in a troubled world; When America courageously supported the struggle for individual liberty, self-government, and free enterprise throughout the world, and turned the tide of history away from totalitarian darkness and into the warm sunlight of human freedom.","ACH ""we developed new technologies"" | AFF ""preserved peace in a troubled world"" | POW ""supported the struggle | turned the tide of history""","ACH5 ""we developed new technologies that preserved peace"" | POW1 ""turned the tide of history away from totalitarian darkness""","ACH5 ""developed new technologies"" | POW1 ""preserved peace"" | POW1 ""turned the tide of history"""
+CB,NA,36,"My fellow citizens, our nation is poised for greatness.","ACH ""poised for greatness""",NA,"ACH2 ""poised for greatness"""
+CB,NA,37,We must do what we know is right and do it with all our might.,NA,NA,NA
+CB,NA,38,"Let history say of us, these were golden years--when the American Revolution was reborn, when freedom gained new life, when America reached for her best.","POW ""Let history say of us"" | ACH ""reached for her best | has served us well""","ACH2 ""when America reached for her best""","POW5 ""Let history say of us"" | ACH2 ""reached for her best"""
+CB,NA,39,"Our two-party system has served us well over the years, but never better than in those times of great challenge, when we came together not as Democrats or Republicans, but as Americans united in the common cause.","ACH ""reached for her best | has served us well"" | AFF ""united in the common cause""","ACH1 ""Our two-party system has served us well over the years"" | AFF1 ""Americans united in the common cause""","ACH1 ""served us well"" | AFF1 ""united in the common cause"""
+CB,NA,40,"Two of our Founding Fathers, a Boston lawyer named Adams and a Virginia planter named Jefferson, members of that remarkable group who met in Independence Hall and dared to think they could start the world over again, left us an important lesson.","ACH ""remarkable"" | POW ""start the world over again""","ACH5 ""dared to think they could start the world over again""","ACH5 ""start the world over again"""
+CB,NA,41,They had become in the years spent in government bitter political rivals.,NA,NA,NA
+CB,NA,42,"In the presidential election of 1800, many years later when both were retired, and age had softened their anger, did they begin to speak to each other through letters and bond was re-established between those two who had helped create this government of ours.","AFF ""bond was re-established""","AFF1 ""bond was re-established between those two""","AFF3 ""speak to each other through letters"" | AFF1 ""bond was re-established"" | ACH5 ""helped create this government"""
+CB,NA,43,"In 1826, the 50th anniversary of the Declaration of Independence, they both died, died on the same day, within a few hours of each other, and that day was the Fourth of July.",NA,NA,NA
+CB,NA,44,"In one of those letters exchanged in the sunset of their lives, Jefferson wrote, ""It carries me back to the times when, beset with difficulties and dangers, we were fellow laborers in the same cause, struggling for what is most valuable to man, his right of self government.","AFF ""we were fellow laborers""",NA,NA
+CB,NA,45,"Laboring always at the same oar, with some wave ever ahead threatening to overwhelm us, and yet passing harmless . . . we rode through the storm with heart and hand.""",NA,NA,"AFF1 ""with heart and hand"""
+CB,NA,46,"With heart and hand, let us stand as one today: One people under God determined that our future shall be worthy of our past.","AFF ""let us stand as one""","AFF1 ""With heart and hand, let us stand as one today"" | ACH2 ""determined that our future shall be worthy of our past""","AFF1 ""stand as one"""
+CB,NA,47,"As we do, we must not repeat the well-intentioned errors of our past.","ACH ""we must not repeat the well-intentioned errors""",NA,"ACH4 ""must not repeat the well-intentioned errors"""
+CB,NA,48,"We must never again abuse the trust of working men and women, by sending their earnings on a futile chase after the spiraling demands of a bloated federal establishment.","POW ""spiraling demands of a bloated federal establishment""",NA,NA
+CB,NA,49,You elected us in 1980 to end this prescription for disaster.,NA,NA,NA
+CB,NA,50,I do not believe you reelected us in 1984 to reverse course.,NA,NA,NA
+CB,NA,51,At the heart of our efforts is one idea vindicated by 25 straight months of economic growth: Freedom and incentives unleash the drive and entrepreneurial genius that are the core of human progress.,"ACH ""25 straight months of economic growth"" | POW ""unleash the drive and entrepreneurial genius"" | ACH ""progress""","ACH1 ""entrepreneurial genius""","ACH2 ""25 straight months of economic growth"" | ACH1 ""entrepreneurial genius"" | ACH2 ""human progress"""
+CB,NA,52,"We have begun to increase the rewards for work, savings and investment, reduce the increase in the cost and size of government and its interferencce in people's lives.","POW ""interferencce in people's lives""",NA,NA
+CB,NA,53,"We must simplify our tax system, make it more fair and bring the rates down for all who work and earn.",NA,NA,NA
+CB,NA,54,"We must think anew and move with new boldness, so every American who seeks work can find work: so the least among us have an equal chance to achieve the greatest things--to be heroes who heal our sick, feed the hungry, protect peace among nations, and leave this world a better place.","ACH ""greatest"" | POW ""who heal our sick, feed the hungry, protect peace among nations"" | AFF ""who heal our sick, feed the hungry, protect peace among nations"" | ACH ""better""","ACH5 ""achieve the greatest things"" | AFF4 ""heal our sick, feed the hungry""","ACH1 ""achieve the greatest things"" | AFF4 ""heal our sick, feed the hungry"""
+CB,NA,55,The time has come for a new American Emancipation--a great national drive to tear down economic barriers and liberate the spirit of enterprise in the most distressed areas of our country.,"POW ""tear down economic barriers and liberate the spirit""",NA,"ACH5 ""new American Emancipation"" | POW1 ""tear down economic barriers"""
+CB,NA,56,"My friends, together we can do this, and do it we must, so help me God.","AFF ""friends, together""",NA,NA
+CB,NA,57,"From new freedom will spring new opportunities for growth, a more productive, fulfilled and united people, and a stronger America--an America that will lead the technological revolution, and also open its mind, heart, and soul to the treasures of literature, music and poetry, and the values of faith, courage, and love.","ACH ""new opportunities for growth, a more productive"" | AFF ""united"" | ACH ""lead the technological revolution"" | AFF ""love""","ACH2 ""a more productive, fulfilled and united people"" | AFF1 ""united people"" | ACH5 ""lead the technological revolution"" | AFF1 ""the values of faith, courage, and love""","ACH2 ""opportunities for growth"" | ACH1 ""more productive"" | AFF1 ""united people"" | POW1 ""lead the technological revolution"" | AFF1 ""love"""
+CB,NA,58,"A dynamic economy, with more citizens working and paying taxes, will be our strongest tool to bring down budget deficits.","ACH ""dynamic economy, with more citizens working""",NA,NA
+CB,NA,59,But an almost unbroken 50 years of deficit spending has finally brought us to a time of reckoning.,NA,NA,NA
+CB,NA,60,"We have come to a turning point, a moment for hard decisions.",NA,NA,NA
+CB,NA,61,I have asked the Cabinet and staff a question and now I put the same question to you.,NA,NA,NA
+CB,NA,62,"If not us, who?",NA,NA,NA
+CB,NA,63,"If not now, when?",NA,NA,NA
+CB,NA,64,"It must be done now, by all of us going forward with a program aimed at reaching a balanced budget.",NA,NA,NA
+CB,NA,65,We can then begin reducing the national debt.,NA,NA,NA
+CB,NA,66,I will shortly submit a budget to the Congress aimed at freezing government program spending for the next year.,"POW ""freezing government program spending""",NA,NA
+CB,NA,67,Beyond that we must take further steps to permanently control government's power to tax and spend.,"POW ""freezing government program spending""",NA,"POW2 ""control government's power to tax and spend"""
+CB,NA,68,We must act now to protect future generations from government's desire to spend its citizens' money and tax them into servitude when the bills come due.,"POW ""protect future generations | them into servitude""","POW1 ""tax them into servitude""","POW1 ""tax them into servitude"""
+CB,NA,69,Let us make it unconstitutional for the federal government to spend more than the federal government takes in.,NA,NA,"POW2 ""make it unconstitutional for the federal government to spend more"""
+CB,NA,70,We have already started returning to the people and to state and local governments responsibilities better handled by them.,"ACH ""better""",NA,"ACH1 ""better handled by them"""
+CB,NA,71,There is a place for the federal government in matters of social compassion.,"AFF ""compassion""","AFF4 ""matters of social compassion""",NA
+CB,NA,72,But our fundamental goals must be to reduce dependency and upgrade the dignity of those who are infirm or disadvantaged.,"POW ""to reduce dependency | upgrade the dignity""",NA,"ACH2 ""reduce dependency and upgrade the dignity"""
+CB,NA,73,"And here, a growing economy and support from family and community offer our best chance for a society where compassion is the way of life, where the old and infirm are cared for, the young and, yes, the unborn protected, and the unfortunate looked after and made self-sufficient.","ACH ""growing economy"" | AFF ""support from family and community | compassion is the way of life"" | POW ""are cared for | protected""","AFF4 ""compassion is the way of life, where the old and infirm are cared for""","ACH2 ""growing economy"" | AFF4 ""support from family and community"" | AFF4 ""compassion is the way of life"""
+CB,NA,74,There is another area where federal government can play a part.,NA,NA,NA
+CB,NA,75,"As an older American, I remember a time when people of different race, creed, or ethnic origin in our land found hatred and prejudice installed in social custom and, yes, in law.",NA,NA,NA
+CB,NA,76,"There is no story more heartening in our history than the progress we've made toward the ""brotherhood of man"" that God intended for us.","AFF ""brotherhood of man""","ACH2 ""the progress we've made"" | AFF1 ""brotherhood of man""","ACH2 ""progress we've made"" | AFF1 ""brotherhood of man"""
+CB,NA,77,Let us resolve there will be no turning back or hesitation on the road to an America rich in dignity and abundant with opportunity for all our citizens.,NA,NA,NA
+CB,NA,78,"Let us resolve that we the people will build an American opportunity society, in which all of us--white and black, rich and poor, young and old--will go forward together, arm in arm.","AFF ""together, arm in arm""","AFF1 ""go forward together, arm in arm""","AFF1 ""go forward together, arm in arm"""
+CB,NA,79,"Again, let us remember that, though our heritage is one of blood lines from every corner of the earth, we are all Americans pledged to carry on this last, best hope of man on earth.","ACH ""best""",NA,NA
+CB,NA,80,"I have spoken of our domestic goals, and the limitations we should put on our national government.","POW ""limitations we should put on our national government""",NA,NA
+CB,NA,81,"Now let me turn to a task that is, above all, the primary responsibility of national government--the safety and security of our people.",NA,NA,NA
+CB,NA,82,"Today, we utter no prayer more fervently than the ancient prayer for peace on earth.","AFF ""prayer for peace""",NA,NA
+CB,NA,83,"Yet history has shown that peace does not come, nor will our freedom be preserved, by good will alone.",NA,NA,NA
+CB,NA,84,There are those in the world who scorn our vision of human dignity and freedom.,NA,NA,NA
+CB,NA,85,"One nation, the Soviet Union, has conducted the greatest military buildup in the history of man, building arsenals of awesome, offensive weapons.","ACH ""greatest military buildup in the history of man"" | POW ""awesome, offensive weapons""","POW1 ""building arsenals of awesome, offensive weapons""","POW1 ""greatest military buildup"""
+CB,NA,86,We've made progress in restoring our defense capability.,"ACH ""progress""","ACH2 ""We've made progress in restoring our defense capability""","ACH2 ""made progress"""
+CB,NA,87,But much remains to be done.,NA,NA,NA
+CB,NA,88,"There must be no wavering by us, nor any doubts by others, that America will meet her responsibilities to remain free, secure, and at peace.",NA,NA,NA
+CB,NA,89,"There is only one way safely and legitimately to reduce the cost of national security, and that is to reduce the need for it.",NA,NA,NA
+CB,NA,90,"And, this we are trying to do in negotiations with the Soviet Union.",NA,NA,NA
+CB,NA,91,We are not just discussing limits on any further increase of nuclear weapons.,NA,NA,NA
+CB,NA,92,"We seek, instead, to reduce their numbers.",NA,NA,"ACH2 ""reduce their numbers"""
+CB,NA,93,"We seek the total elimination, one day, of nuclear weapons from the face of earth.",NA,NA,"ACH5 ""total elimination"""
+CB,NA,94,"For decades, we and the Soviets have lived under the threat of mutual assured destruction; if either resorted to the use of nuclear weapons, the other could retaliate, and destroy the one who had started it.","POW ""threat of mutual assured destruction | use of nuclear weapons | retaliate, and destroy""","POW1 ""the other could retaliate, and destroy the one who had started it""","POW1 ""threat of mutual assured destruction"" | POW1 ""retaliate, and destroy the one who had started it"""
+CB,NA,95,"Is there either logic or morality in believing that, if one side threatens to kill tens of millions of our people, our only recourse is to threaten tens of millions of theirs?","POW ""threat of mutual assured destruction | use of nuclear weapons | retaliate, and destroy""","POW1 ""if one side threatens to kill tens of millions of our people""","POW1 ""threatens to kill tens of millions"" | POW1 ""threaten tens of millions of theirs"""
+CB,NA,96,I have approved a research program to see if a security shield can be developed that will destroy nuclear missiles before they reach their target.,"POW ""destroy nuclear missiles""","ACH5 ""a security shield can be developed that will destroy nuclear missiles""","ACH5 ""research program to see if a security shield can be developed"" | POW1 ""destroy nuclear missiles"""
+CB,NA,97,It wouldn't kill people.,NA,NA,NA
+CB,NA,98,It would destroy weapons; it wouldn't militarize space.,"POW ""It would destroy weapons""",NA,"POW1 ""would destroy weapons"""
+CB,NA,99,It would help demilitarize the arsenals of earth.,NA,NA,"ACH2 ""demilitarize the arsenals"""
+CB,NA,100,Such a shield could render nuclear weapons obsolete.,NA,NA,"POW1 ""render nuclear weapons obsolete"""
+CB,NA,101,"So, we will meet with the Soviets hoping that we can agree on a formula for ridding the world of the threat of nuclear destruction.","POW ""ridding the world | threat""",NA,"ACH2 ""ridding the world of the threat of nuclear destruction"""
+CB,NA,102,"We strive for peace and security, we are heartened by the changes all around us.",NA,NA,NA
+CB,NA,103,"Since the turn of the century, the number of democracies in the world has grown fourfold.",NA,NA,NA
+CB,NA,104,"Today, human freedom is on the march, and nowhere more so than in our own hemisphere.",NA,NA,NA
+CB,NA,105,Freedom is one of the deepest and noblest aspirations of the human spirit.,NA,NA,NA
+CB,NA,106,"People worldwide hunger for the right of self-determination, for those inalienable rights that make for human dignity and progress.","ACH ""progress""",NA,NA
+CB,NA,107,"America must remain freedom's staunchest friend, for freedom is our best ally.","AFF ""staunchest friend | best ally""","AFF1 ""freedom's staunchest friend""",NA
+CB,NA,108,"And, it is the world's only hope to conquer poverty and preserve peace.","POW ""conquer poverty"" | AFF ""preserve peace""","ACH5 ""the world's only hope to conquer poverty""",NA
+CB,NA,109,Every blow we inflict against poverty will be a blow against its dark allies of oppression and war.,"POW ""blow we inflict""","POW1 ""Every blow we inflict against poverty""","POW1 ""Every blow we inflict"""
+CB,NA,110,Every victory for human freedom will be a victory for world peace.,NA,NA,NA
+CB,NA,111,"So we go forward today, a nation still mighty in its youth and powerful in its purpose.","ACH ""go forward""",NA,NA
+CB,NA,112,"With our alliances strengthened, with our economy leading the world to a new age of economic expansion, we look to a future rich in possibilities.","POW ""leading the world"" | ACH ""new age of economic expansion""",NA,"POW1 ""leading the world"" | ACH2 ""economic expansion"""
+CB,NA,113,"And all of this is because we worked and acted together, not as members of political parties, but as Americans.","AFF ""we worked and acted together | friends""",NA,NA
+CB,NA,114,"My friends, we live in a world lit by lightning.","AFF ""we worked and acted together | friends""",NA,NA
+CB,NA,115,"So much is changing and will change, but so much endures, and transcends time.",NA,NA,NA
+CB,NA,116,"History is a ribbon, always unfurling; history is a journey.",NA,NA,NA
+CB,NA,117,"And as we continue our journey, we think of those who traveled it before us.",NA,NA,NA
+CB,NA,118,"We stand again at the steps of this symbol of our democracy--well, we would would be standing at the steps of our symbol of democracy if it wasn't so cold.",NA,NA,NA
+CB,NA,119,Now we're standing inside the symbol of our democracy--and we see and hear again the echoes of our past.,NA,NA,NA
+CB,NA,120,"A general falls to his knees in the hard snow of Valley Forge; a lonely President paces the darkened halls, and ponders his struggle to preserve the Union; the men of the Alamo call out encouragement to each other; a settler pushes west and sings a song, and the song echos out forever and fills the unknowing air.","AFF ""lonely"" | POW ""struggle"" | AFF ""call out encouragement to each other""","AFF2 ""a lonely President paces the darkened halls"" | AFF4 ""the men of the Alamo call out encouragement to each other""","AFF2 ""lonely President"" | AFF4 ""call out encouragement to each other"""
+CB,NA,121,"It is the American sound; It is hopeful, big-hearted, idealistic--daring, decent, and fair.",NA,"AFF1 ""big-hearted""","AFF1 ""big-hearted"""
+CB,NA,122,"That's our heritage, that's our song.",NA,NA,NA
+CB,NA,123,We sing it still.,NA,NA,NA
+CB,NA,124,"For all our problems, our differences, we are together as of old.","AFF ""we are together as of old""",NA,"AFF1 ""we are together as of old"""
+CB,NA,125,We raise our voices to the God who is the author of this most tender music.,NA,NA,NA
+CB,NA,126,"And may He continue to hold us close as we fill the world with our sound--in unity, affection, and love.","AFF ""hold us close"" | POW ""fill the world with our sound"" | AFF ""unity, affection, and love""","AFF1 ""hold us close as we fill the world with our sound--in unity, affection, and love""","AFF1 ""hold us close"" | AFF1 ""unity, affection, and love"""
+CB,NA,127,"One people under God, dedicated to the dream of freedom He has placced in the human heart, called upon now to pass that dream on to a waiting and hopeful world.",NA,NA,NA
+CB,NA,128,God bless you and may God bless America.,NA,NA,NA

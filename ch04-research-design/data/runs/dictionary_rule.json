@@ -1,0 +1,20 @@
+{
+  "motive": "ACH",
+  "categories": ["Means", "Persist", "Complet"],
+  "stem": true,
+  "k": 3,
+  "senses": "ignored",
+  "chosen_on": "development sentences (practice sets PA to PF)",
+  "development": {
+    "reference": 85,
+    "coder": 140,
+    "agreements": 27,
+    "missed": 58,
+    "added": 113,
+    "precision": 0.1929,
+    "recall": 0.3176,
+    "category_agreement": 0.24
+  },
+  "dictionary_file": "code/achievement/geninquirer/inquireraugmented.csv",
+  "dictionary_sha256": "d678241529f76c71099458e0dd8f20afcd776bb27f1dfd485f6c8ca7a5dc9297"
+}

@@ -1,0 +1,163 @@
+doc,page,image,motive,phrases,remark,unsure
+CA1,2,0,,,---,
+CA2,2,1,POW,the ship must be detained,,
+CA2,2,2,POW,who had been sought after,,
+CA3,2,0,,,---,
+CA3,2,0,,,"(not Pow; the pleasure is due to the effect of the act, not the act itself)",
+CA4,3,1,POW,trying to make a deal | someone is on his tail,(either phrase),
+CA4,3,2,POW,the Captain will be caught,,
+CA5,3,1,ACH,the perfect place,,
+CA5,3,0,,,(Pow is negated),
+CA6,3,1,ACH,He wants to do what's best | doing better,(either phrase),label sits one line below the line where the first underline starts
+CA6,3,0,,,(not enough warmth for Aff),
+CA7,4,1,AFF,whom he loves | He is anticipating going home when work is done to his loving family,(either phrase),label sits one line below the line where 'whom he' starts
+CA7,4,2,AFF,nice evening with his family,,
+CA7,4,3,ACH,best,,
+CA8,4,1,ACH,best,(relative standard of excellence),label sits one line above the underlined word
+CA8,4,0,,,(not Aff; no warmth),
+CA9,4,1,POW,going to surprise his family,,
+CA9,4,0,,,(not Aff; gazing is instrumental here),
+CA9,4,2,POW,His wife is very excited,,
+CA10,4,1,POW,trying to blackmail him,,
+CA10,4,2,AFF,happy new life with wife and kiddies,,
+CA10,4,0,,,(not Pow; questioning),
+CA10,4,3,POW,gets it out of him,,
+CA10,4,4,AFF,together,,
+CA11,5,1,AFF,He likes her very much,,
+CA11,5,0,,,"(not Aff; no warm, companionate activity occurs)",
+CA11,5,2,ACH,move up,,label sits one line below 'move up' (pushed down by the note above it)
+CA12,5,1,AFF,They have been going together for a while and enjoy being together and discussing things they have in common,(also next sentence),"remark points to next sentence, which carries no underline"
+CA12,5,2,AFF,wants to know the plans and dreams of the other | They will probably get married,(either phrase),
+CA13,5,1,AFF,enjoy each others company,,
+CA14,5,1,POW,"Fred was struck, speechless",,
+CA14,5,2,AFF,As he took her hand they sat on the bench,,
+CA14,5,0,,,(no standard of excellence),
+CA14,5,3,AFF,"I love you, Janet | I love you, Fred",(either phrase),label sits one line below the underlined line (pushed down by the note above it)
+CA15,6,1,POW,"He is entranced by her beauty, brains and eccentric behavior",,
+CA15,6,2,POW,She is attracted and impressed but essentially frustrated that he always acts like a stick-in-the-mud,,label sits one line below the line where 'She is' starts
+CA15,6,3,AFF,goes on to marry,,
+CA16,6,1,POW,gets the publicity,,
+CA16,6,2,ACH,progress,,
+CA16,6,3,ACH,proud of her work and accomplishments | she is good at her job,(either phrase),
+CA17,6,1,ACH,breakthrough and get good results,(also next sentence),"remark points to next sentence, which carries no underline"
+CA17,6,2,ACH,They want to make a contribution to science,,
+CA18,6,1,ACH,Both seem to have knowledge and authority,,
+CA18,6,2,ACH,has good potential,,
+CA18,6,3,POW,observes her carefully,,"four labels stacked on consecutive lines; assigned to underlines in order of appearance, lines do not match exactly"
+CA18,6,4,ACH,wants this woman to succeed,,assigned by order of appearance; label line is one below where the underline starts
+CA18,6,5,POW,"will give her every chance she can, for she too is a wife and mother",(sympathetic helping concern),"joint label 'Pow, Aff' on one line with one remark after Aff; cannot tell whether Pow and Aff own different parts of this underline"
+CA18,6,6,AFF,"will give her every chance she can, for she too is a wife and mother",(sympathetic helping concern),"joint label 'Pow, Aff' on one line; same underline entered for both"
+CA19,7,1,ACH,find a cure,,
+CA19,7,2,POW,many people would be saved,,
+CA19,7,3,ACH,what they had dreamed of for so long,,
+CA19,7,4,ACH,They had finally won,,
+CA20,7,1,ACH,Nobel-prize winning scientist | working on a cure for AIDS | discovered,(or either phrase from next sentence),
+CA20,7,2,ACH,staggering breakthrough,,
+CA20,7,3,POW,"stopping wars, death, destruction, polution of the environment, unjust imbalance of wealth etc | she is plotting to sabotage the experiments","(either clause; or ""catches"" or ""fires"" in next sentence)",label sits one line below where 'stopping wars' starts; unclear whether the underline includes the full stop after 'etc'
+CA21,7,1,ACH,dreamed of being the star of the show,,
+CA21,7,2,POW,to prove to them all,,
+CA21,7,3,ACH,she is good | prove to be a star,(either phrase),
+CA22,7,1,POW,had been after her,,
+CA22,7,2,AFF,if he really loved her,,
+CA23,8,1,POW,well-known,,joint label 'Pow; Ach' on one line; assigned by order to the two underlines on that line
+CA23,8,2,ACH,skill,,joint label 'Pow; Ach' on one line; assigned by order to the two underlines on that line
+CA23,8,3,POW,brought up | were killed | shelling attack,(or either phrase in the next sentence),
+CA23,8,4,AFF,Thrilled to be reunited,,
+CA24,8,1,POW,they were driven | crashing down on their dreams,(either phrase),
+CA24,8,2,AFF,talking to girl friends,,
+CA25,8,1,ACH,taken a lot of time to get it right,"(not Aff; ""acting as one"" not clearly warm)",
+CA25,8,2,POW,the crowd is applauding,,
+CA26,9,0,,,---,
+CA27,9,1,ACH,superb,,
+CA27,9,2,AFF,As we walked along a mountain trail he told me of his childhood,,label sits one line below where 'As we walked' starts
+CA28,9,1,AFF,They talk and walk together for a while,,
+CA29,10,1,POW,"He is delighted to find a beautiful, exotic, cultured young woman wandering",(her wandering is part of intentional act of time travel),
+CA29,10,2,AFF,grows to be fond of him | They become great friends,(either phrase),
+CA29,10,3,AFF,comes to visit,(in this case),
+CA30,10,1,AFF,walking and talking with the horses across the meadow,,label sits one line below where 'walking' starts
+CA30,10,2,AFF,Fathers are sweet to hug,(not negated),
+CB,11,1,AFF,friends,,
+CB,11,2,AFF,welcome back,,
+CB,11,3,POW,great honor you have bestowed on me,,
+CB,11,4,POW,We have lighted the world,(metaphoricaly),
+CB,11,5,ACH,inventions,,joint label 'Ach; Aff' on one line; assigned by order to the two underlines on that line
+CB,11,6,AFF,aid,,joint label 'Ach; Aff' on one line; assigned by order to the two underlines on that line
+CB,11,7,AFF,we stand together,,
+CB,11,8,ACH,greatness,,joint label 'Ach; Pow' on one line; assigned by order to the two underlines on that line
+CB,11,9,POW,glory,,joint label 'Ach; Pow' on one line; assigned by order to the two underlines on that line
+CB,11,10,ACH,better,,
+CB,11,11,ACH,for the first time in history,,
+CB,11,12,POW,we the people allow it to have,,
+CB,12,13,POW,to rob us,,
+CB,12,14,ACH,the most productive people on earth,,
+CB,12,15,ACH,There are no limits to growth and human progress,,
+CB,12,16,ACH,more people are employed today than ever before in our history,(next sentence also scorable),
+CB,12,17,ACH,great,(next sentence also scorable),
+CB,12,18,POW,government's grip,(government as actor),label sits one line above the underlined phrase
+CB,12,19,ACH,we developed new technologies,,
+CB,12,20,AFF,preserved peace in a troubled world,,
+CB,12,21,POW,supported the struggle | turned the tide of history,(either phrase),label sits one line below where 'supported the' starts
+CB,12,22,ACH,poised for greatness,,
+CB,12,23,POW,Let history say of us,,
+CB,13,24,ACH,reached for her best | has served us well,(either phrase),second phrase is in the next paragraph and has no label of its own
+CB,13,25,AFF,united in the common cause,,
+CB,13,26,ACH,remarkable,,
+CB,13,27,POW,start the world over again,,label sits one line below where 'start' begins
+CB,13,28,AFF,bond was re-established,,
+CB,13,29,AFF,we were fellow laborers,,
+CB,13,30,AFF,let us stand as one,,
+CB,13,31,ACH,we must not repeat the well-intentioned errors,,label sits one line below where 'we must' begins
+CB,13,32,POW,spiraling demands of a bloated federal establishment,,
+CB,13,33,ACH,25 straight months of economic growth,,
+CB,13,34,POW,unleash the drive and entrepreneurial genius,,underline runs over the page break from p13 to p14
+CB,14,35,ACH,progress,"(""genius"" could also be scored)",
+CB,14,36,POW,interferencce in people's lives,,"label sits one line below where the underline starts; first word read as printed 'interferencce' (doubled c), not fully certain at this resolution"
+CB,14,37,ACH,greatest,,
+CB,14,38,POW,"who heal our sick, feed the hungry, protect peace among nations",,"joint label 'Pow, Aff' on one line; cannot tell whether Pow and Aff own different parts of this underline, so the whole underline is entered for both"
+CB,14,39,AFF,"who heal our sick, feed the hungry, protect peace among nations",,"joint label 'Pow, Aff' on one line; same underline entered for both"
+CB,14,40,ACH,better,,
+CB,14,41,POW,tear down economic barriers and liberate the spirit,,label sits one line below where 'tear down' starts
+CB,14,42,AFF,"friends, together",,
+CB,14,43,ACH,"new opportunities for growth, a more productive",,
+CB,14,44,AFF,united,,
+CB,14,45,ACH,lead the technological revolution,,
+CB,14,46,AFF,love,,
+CB,14,47,ACH,"dynamic economy, with more citizens working",,
+CB,14,48,POW,freezing government program spending,(next sentence could also have been scored),
+CB,14,49,POW,protect future generations | them into servitude,(either phrase),
+CB,15,50,ACH,better,,
+CB,15,51,AFF,compassion,,
+CB,15,52,POW,to reduce dependency | upgrade the dignity,(either phrase),
+CB,15,53,ACH,growing economy,,
+CB,15,54,AFF,support from family and community | compassion is the way of life,(either phrase),four underlines follow two 'either phrase' labels; split two and two is my best assignment
+CB,15,55,POW,are cared for | protected,(either phrase),"label is level with 'protected', one line below 'are cared for'; 'are cared for' could instead belong to the Aff label above"
+CB,15,56,AFF,brotherhood of man,,
+CB,15,57,AFF,"together, arm in arm",,
+CB,15,58,ACH,best,,
+CB,15,59,POW,limitations we should put on our national government,,
+CB,15,60,AFF,prayer for peace,,
+CB,15,61,ACH,greatest military buildup in the history of man,,
+CB,15,62,POW,"awesome, offensive weapons",,"label sits one line below where 'awesome,' starts"
+CB,16,63,ACH,progress,"(""capability"" here suggests that the ""progress"" is toward a goal)",
+CB,16,64,POW,"threat of mutual assured destruction | use of nuclear weapons | retaliate, and destroy",(any of three phrases; either of two phrases in next sentence could also have been scored),
+CB,16,65,POW,destroy nuclear missiles,,
+CB,16,66,POW,It would destroy weapons,,
+CB,16,67,POW,ridding the world | threat,(either phrase),
+CB,16,0,,,(no Aff; not warm enough),
+CB,16,68,ACH,progress,,
+CB,16,69,AFF,staunchest friend | best ally,(either phrase),
+CB,16,70,POW,conquer poverty,,
+CB,16,71,AFF,preserve peace,,joint label 'Aff; Pow' on the line below where 'preserve' starts; assigned by order ('preserve peace' then 'blow we inflict')
+CB,16,72,POW,blow we inflict,,joint label 'Aff; Pow' on one line; assigned by order
+CB,16,0,,,(not Aff; peace not described with warth),
+CB,17,73,ACH,go forward,,
+CB,17,74,POW,leading the world,,
+CB,17,75,ACH,new age of economic expansion,,
+CB,17,76,AFF,we worked and acted together | friends,(either phrase),second phrase 'friends' is in the next paragraph and has no label of its own
+CB,17,77,AFF,lonely,,
+CB,17,78,POW,struggle,,
+CB,17,79,AFF,call out encouragement to each other,,
+CB,17,80,AFF,we are together as of old,,
+CB,17,81,AFF,hold us close,,joint label 'Aff; Pow' on one line; assigned by order to the two underlines on that line
+CB,17,82,POW,fill the world with our sound,,joint label 'Aff; Pow' on one line; assigned by order to the two underlines on that line
+CB,17,83,AFF,"unity, affection, and love",,

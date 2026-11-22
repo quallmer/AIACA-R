@@ -5,26 +5,26 @@ title: "Data"
 ::: callout-note
 ## Draft
 
-The terms listed here are being confirmed with the sources. Until that is done, the workbook redistributes no source text.
+Permission to reproduce the material from Winter's manual has been requested and is not yet confirmed. The material will be removed from the workbook if it is not given.
 :::
 
 This page lists the material each chapter's example uses: where it comes from, the terms on which it may be used, and how to obtain it.
 
 ## How Data Are Provided
 
-- **Material the workbook may redistribute** is in the chapter's folder and can be downloaded from the chapter's pages.
-- **Material it may not redistribute** is downloaded from its source by the script `get-data.R` in the chapter's folder. The script puts the files in a folder named `data/` beside the chapter's pages, where the code expects them.
-- **Model output** is saved when a request is made. It is provided where it contains no source text that the workbook may not redistribute.
+- **Material the workbook includes** is in a folder named `data/` beside the chapter's pages, where the code expects it.
+- **Material it may not include** is downloaded from its source by the script `get-data.R` in the chapter's folder, which puts the files in the same folder.
+- **Model output** is saved when a request is made, in `data/runs/`, and read back afterwards, so that the pages run without an API key.
 
 ## Chapter 4: Motive Imagery in Running Text
 
 | Material | Source | Terms | How it is obtained |
 |:-----|:-----|:-----|:-----|
-| Practice and calibration stories from Winter's manual, with expert scoring by sentence (`UD1_sentences.xlsx`) | Replication data for Pang and Ring (2020), <https://osf.io/563xn/> | The deposit is licensed CC BY-NC-SA 4.0. The story texts are from Winter's manual, which reserves all rights | Downloaded from the deposit by `get-data.R` |
-| Sentences from the Enron Email Corpus, scored for the three motives (`UD2_sentences.xlsx`) | The same deposit | CC BY-NC-SA 4.0 | Downloaded from the deposit by `get-data.R` |
-| *Manual for Scoring Motive Imagery in Running Text* (Winter, 1994): the scoring rules, practice sets, calibration sets, and their expert scoring | University of Michigan Deep Blue, <https://deepblue.lib.umich.edu/handle/2027.42/117563> | All rights reserved by the author | Obtained by the reader from the deposit. Not reproduced here |
-| General Inquirer dictionary categories | To be confirmed | To be confirmed | Not yet included |
-| Model output for each run | This workbook | To be confirmed | Not yet included |
+| Practice and calibration stories from Winter's manual, with expert scoring by sentence (`UD1_sentences.xlsx`) | Replication data for Pang and Ring (2020), <https://osf.io/563xn/> | The deposit is licensed CC BY-NC-SA 4.0. The story texts are from Winter's manual | Included in `ch04-research-design/data/` |
+| Sentences from the Enron Email Corpus, scored for the three motives (`UD2_sentences.xlsx`) | The same deposit | CC BY-NC-SA 4.0 | Included in `ch04-research-design/data/` |
+| Calibration Set B and practice Sets G to J: their text, divided into sentences, and their expert scoring, with the expert scoring of Calibration Set A (`data/runs/calibration_*`, `data/runs/practice_GJ_*`) | Transcribed for this workbook from Winter (1994), University of Michigan Deep Blue, <https://deepblue.lib.umich.edu/handle/2027.42/117563> | All rights reserved by the author. Reproduced here for the example, with attribution, while permission is sought | Included in `ch04-research-design/data/runs/` |
+| General Inquirer dictionary categories (`inquireraugmented.csv`) | The Harvard General Inquirer (Stone et al., 1966) | Long published and widely reused in research. Included as fair use | Included in `ch04-research-design/analysis/geninquirer/` |
+| Model output for each run (`data/runs/*/coded.rds`) | This workbook | The runs contain the texts they coded, so the terms above apply to them | Included in `ch04-research-design/data/runs/` |
 
 : {tbl-colwidths="[30,25,25,20]"}
 

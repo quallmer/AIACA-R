@@ -1,0 +1,153 @@
+doc,page,image,motive,phrases,remark,also_next_sentence
+CA1,2,0,,,---,FALSE
+CA2,2,1,POW,the ship must be detained,,FALSE
+CA2,2,2,POW,who had been sought after,,FALSE
+CA3,2,0,,,"--- (not Pow; the pleasure is due to the effect of the act, not the act itself)",FALSE
+CA4,3,1,POW,trying to make a deal | someone is on his tail,(either phrase),FALSE
+CA4,3,2,POW,the Captain will be caught,,FALSE
+CA5,3,1,ACH,the perfect place,,FALSE
+CA6,3,1,ACH,He wants to do what's best | doing better,(either phrase),FALSE
+CA7,4,1,AFF,whom he loves | He is anticipating going home when work is done to his loving family,(either phrase),FALSE
+CA7,4,2,AFF,nice evening with his family,,FALSE
+CA7,4,3,ACH,best,,FALSE
+CA8,4,1,ACH,best,(relative standard of excellence),FALSE
+CA9,4,1,POW,going to surprise his family,,FALSE
+CA9,4,2,POW,His wife is very excited,,FALSE
+CA10,4,1,POW,trying to blackmail him,,FALSE
+CA10,4,2,AFF,happy new life with wife and kiddies,,FALSE
+CA10,4,3,POW,gets it out of him,,FALSE
+CA10,4,4,AFF,together,,FALSE
+CA11,5,1,AFF,He likes her very much,,FALSE
+CA11,5,2,ACH,move up,,FALSE
+CA12,5,1,AFF,They have been going together for a while and enjoy being together and discussing things they have in common,(also next sentence),TRUE
+CA12,5,2,AFF,wants to know the plans and dreams of the other | They will probably get married,(either phrase),FALSE
+CA13,5,1,AFF,enjoy each others company,,FALSE
+CA14,5,1,POW,"Fred was struck, speechless",,FALSE
+CA14,5,2,AFF,As he took her hand they sat on the bench,,FALSE
+CA14,5,3,AFF,"I love you, Janet | I love you, Fred",(either phrase),FALSE
+CA15,6,1,POW,"He is entranced by her beauty, brains and eccentric behavior",,FALSE
+CA15,6,2,POW,She is attracted and impressed but essentially frustrated that he always acts like a stick-in-the-mud,,FALSE
+CA15,6,3,AFF,goes on to marry,,FALSE
+CA16,6,1,POW,gets the publicity,,FALSE
+CA16,6,2,ACH,progress,,FALSE
+CA16,6,3,ACH,proud of her work and accomplishments | she is good at her job,(either phrase),FALSE
+CA17,6,1,ACH,breakthrough and get good results,(also next sentence),TRUE
+CA17,6,2,ACH,They want to make a contribution to science,,FALSE
+CA18,6,1,ACH,Both seem to have knowledge and authority,,FALSE
+CA18,6,2,ACH,has good potential,,FALSE
+CA18,6,3,POW,observes her carefully,,FALSE
+CA18,6,4,ACH,wants this woman to succeed,,FALSE
+CA18,6,5,POW,"will give her every chance she can, for she too is a wife and mother","label 'Pow, Aff (sympathetic helping concern)'",FALSE
+CA18,6,6,AFF,"will give her every chance she can, for she too is a wife and mother","label 'Pow, Aff (sympathetic helping concern)'",FALSE
+CA19,7,1,ACH,find a cure,,FALSE
+CA19,7,2,POW,many people would be saved,,FALSE
+CA19,7,3,ACH,what they had dreamed of for so long,,FALSE
+CA19,7,4,ACH,They had finally won,,FALSE
+CA20,7,1,ACH,Nobel-prize winning scientist | working on a cure for AIDS | discovered,(or either phrase from next sentence),FALSE
+CA20,7,2,ACH,staggering breakthrough,,FALSE
+CA20,7,3,POW,"stopping wars, death, destruction, polution of the environment, unjust imbalance of wealth etc | she is plotting to sabotage the experiments","(either clause; or ""catches"" or ""fires"" in next sentence)",TRUE
+CA21,7,1,ACH,dreamed of being the star of the show,,FALSE
+CA21,7,2,POW,to prove to them all,,FALSE
+CA21,7,3,ACH,she is good | prove to be a star,(either phrase),FALSE
+CA22,7,1,POW,had been after her,,FALSE
+CA22,7,2,AFF,if he really loved her,,FALSE
+CA23,8,1,POW,well-known,label 'Pow; Ach',FALSE
+CA23,8,2,ACH,skill,label 'Pow; Ach',FALSE
+CA23,8,3,POW,brought up | were killed | shelling attack,(or either phrase in the next sentence),FALSE
+CA23,8,4,AFF,Thrilled to be reunited,,FALSE
+CA24,8,1,POW,they were driven | crashing down on their dreams,(either phrase),FALSE
+CA24,8,2,AFF,talking to girl friends,,FALSE
+CA25,8,1,ACH,taken a lot of time to get it right,"(not Aff; ""acting as one"" not clearly warm)",FALSE
+CA25,8,2,POW,the crowd is applauding,,FALSE
+CA26,9,0,,,---,FALSE
+CA27,9,1,ACH,superb,,FALSE
+CA27,9,2,AFF,As we walked along a mountain trail he told me of his childhood,,FALSE
+CA28,9,1,AFF,They talk and walk together for a while,,FALSE
+CA29,10,1,POW,"He is delighted to find a beautiful, exotic, cultured young woman wandering",(her wandering is part of intentional act of time travel),FALSE
+CA29,10,2,AFF,grows to be fond of him | They become great friends,(either phrase),FALSE
+CA29,10,3,AFF,comes to visit,(in this case),FALSE
+CA30,10,1,AFF,walking and talking with the horses across the meadow,,FALSE
+CA30,10,2,AFF,Fathers are sweet to hug,(not negated),FALSE
+CB,11,1,AFF,friends,,FALSE
+CB,11,2,AFF,welcome back,,FALSE
+CB,11,3,POW,great honor you have bestowed on me,,FALSE
+CB,11,4,POW,We have lighted the world,(metaphoricaly),FALSE
+CB,11,5,ACH,inventions,label 'Ach; Aff',FALSE
+CB,11,6,AFF,aid,label 'Ach; Aff',FALSE
+CB,11,7,AFF,we stand together,,FALSE
+CB,11,8,ACH,greatness,label 'Ach; Pow',FALSE
+CB,11,9,POW,glory,label 'Ach; Pow',FALSE
+CB,11,10,ACH,better,,FALSE
+CB,11,11,ACH,for the first time in history,,FALSE
+CB,11,12,POW,we the people allow it to have,,FALSE
+CB,12,13,POW,to rob us,,FALSE
+CB,12,14,ACH,the most productive people on earth,,FALSE
+CB,12,15,ACH,There are no limits to growth and human progress,,FALSE
+CB,12,16,ACH,more people are employed today than ever before in our history,(next sentence also scorable),TRUE
+CB,12,17,ACH,great,(next sentence also scorable),TRUE
+CB,12,18,POW,government's grip,(government as actor),FALSE
+CB,12,19,ACH,we developed new technologies,,FALSE
+CB,12,20,AFF,preserved peace in a troubled world,,FALSE
+CB,12,21,POW,supported the struggle | turned the tide of history,(either phrase),FALSE
+CB,12,22,ACH,poised for greatness,,FALSE
+CB,12,23,POW,Let history say of us,,FALSE
+CB,13,24,ACH,reached for her best | has served us well,(either phrase),FALSE
+CB,13,25,AFF,united in the common cause,,FALSE
+CB,13,26,ACH,remarkable,,FALSE
+CB,13,27,POW,start the world over again,,FALSE
+CB,13,28,AFF,bond was re-established,,FALSE
+CB,13,29,AFF,we were fellow laborers,,FALSE
+CB,13,30,AFF,let us stand as one,,FALSE
+CB,13,31,ACH,we must not repeat the well-intentioned errors,,FALSE
+CB,13,32,POW,spiraling demands of a bloated federal establishment,,FALSE
+CB,13,33,ACH,25 straight months of economic growth,,FALSE
+CB,13,34,POW,unleash the drive and entrepreneurial genius,,FALSE
+CB,14,35,ACH,progress,"(""genius"" could also be scored)",FALSE
+CB,14,36,POW,interferencce in people's lives,,FALSE
+CB,14,37,ACH,greatest,,FALSE
+CB,14,38,POW,"who heal our sick, feed the hungry, protect peace among nations","label 'Pow, Aff'",FALSE
+CB,14,39,AFF,"who heal our sick, feed the hungry, protect peace among nations","label 'Pow, Aff'",FALSE
+CB,14,40,ACH,better,,FALSE
+CB,14,41,POW,tear down economic barriers and liberate the spirit,,FALSE
+CB,14,42,AFF,"friends, together",,FALSE
+CB,14,43,ACH,"new opportunities for growth, a more productive",,FALSE
+CB,14,44,AFF,united,,FALSE
+CB,14,45,ACH,lead the technological revolution,,FALSE
+CB,14,46,AFF,love,,FALSE
+CB,14,47,ACH,"dynamic economy, with more citizens working",,FALSE
+CB,14,48,POW,freezing government program spending,(next sentence could also have been scored),TRUE
+CB,14,49,POW,protect future generations | them into servitude,(either phrase),FALSE
+CB,15,50,ACH,better,,FALSE
+CB,15,51,AFF,compassion,,FALSE
+CB,15,52,POW,to reduce dependency | upgrade the dignity,(either phrase),FALSE
+CB,15,53,ACH,growing economy,,FALSE
+CB,15,54,AFF,support from family and community | compassion is the way of life,(either phrase),FALSE
+CB,15,55,POW,are cared for | protected,(either phrase),FALSE
+CB,15,56,AFF,brotherhood of man,,FALSE
+CB,15,57,AFF,"together, arm in arm",,FALSE
+CB,15,58,ACH,best,,FALSE
+CB,15,59,POW,limitations we should put on our national government,,FALSE
+CB,15,60,AFF,prayer for peace,,FALSE
+CB,15,61,ACH,greatest military buildup in the history of man,,FALSE
+CB,15,62,POW,"awesome, offensive weapons",,FALSE
+CB,16,63,ACH,progress,"(""capability"" here suggests that the ""progress"" is toward a goal)",FALSE
+CB,16,64,POW,"threat of mutual assured destruction | use of nuclear weapons | retaliate, and destroy",(any of three phrases; either of two phrases in next sentence could also have been scored),TRUE
+CB,16,65,POW,destroy nuclear missiles,,FALSE
+CB,16,66,POW,It would destroy weapons,,FALSE
+CB,16,67,POW,ridding the world | threat,(either phrase),FALSE
+CB,16,68,ACH,progress,,FALSE
+CB,16,69,AFF,staunchest friend | best ally,(either phrase),FALSE
+CB,16,70,POW,conquer poverty,,FALSE
+CB,16,71,AFF,preserve peace,label 'Aff; Pow',FALSE
+CB,16,72,POW,blow we inflict,label 'Aff; Pow',FALSE
+CB,17,73,ACH,go forward,,FALSE
+CB,17,74,POW,leading the world,,FALSE
+CB,17,75,ACH,new age of economic expansion,,FALSE
+CB,17,76,AFF,we worked and acted together | friends,(either phrase),FALSE
+CB,17,77,AFF,lonely,,FALSE
+CB,17,78,POW,struggle,,FALSE
+CB,17,79,AFF,call out encouragement to each other,,FALSE
+CB,17,80,AFF,we are together as of old,,FALSE
+CB,17,81,AFF,hold us close,label 'Aff; Pow',FALSE
+CB,17,82,POW,fill the world with our sound,label 'Aff; Pow',FALSE
+CB,17,83,AFF,"unity, affection, and love",,FALSE

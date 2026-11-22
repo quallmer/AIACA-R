@@ -19,9 +19,9 @@
 **/*.quarto_ipynb
 *_cache/
 
-# Source material and saved model runs that may not be redistributed.
-# NO trailing slash: a symlink is a file to git, so "data/" would not match one.
-/ch*/data
+# A chapter's data/ folder is committed where data.qmd records that its
+# contents may be included. To keep a chapter's data out of the repository,
+# add its folder here (no trailing slash, so that a symlink is matched too).
 
 # Per-machine Claude configuration
 /.claude/

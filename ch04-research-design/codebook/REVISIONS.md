@@ -65,7 +65,7 @@ By the brief's stopping rule the remaining errors are unsystematic, or systemati
 
 ## v0.4 (22 November 2026) — draft, not frozen
 
-Drafted by an AI assistant at KB's instruction, after the reserved run under v0.3 fell short of the manual's standard on both calibration sets and the disagreements were read (`LOG.md`, step 8). Each pattern in the disagreements was taken to the manual's wording before anything was changed. Every change restores or spells out a rule the manual states. No change was made only because a reference disagreed, and the patterns the manual does not settle were left alone (below). KB has not read the file.
+Drafted by an AI assistant at KB's instruction, after the reserved run under v0.3 fell short of the manual's standard on both calibration sets and the disagreements were read (`LOG.md`, step 8). Each pattern in the disagreements was taken to the manual's wording before anything was changed. Every change restores or spells out a rule the manual states. No change was made only because a reference disagreed, and the patterns the manual does not settle were left alone (below).
 
 The schema, the input format, the counting rule, and the agreement index are unchanged. The instructions' SHA-256 begins `908ac155f32b5225`.
 
@@ -143,7 +143,7 @@ The calibration sets and practice sets `PA` to `PF` are now development material
 
 ## v0.5 (22 November 2026) — draft, not frozen
 
-Version 0.4 with one rule added. KB decided on 22 November that the stock courtesies of email are not scored (`notes/decisions/04-decisions.qmd`). It is a version of its own so that the runs made under v0.4 still correspond to the text they used. Written by an AI assistant at KB's instruction. KB has not read the file. Instructions SHA-256 `724b3ae6b965b035`.
+Version 0.4 with one rule added. KB decided on 22 November that the stock courtesies of email are not scored (`notes/decisions/04-decisions.qmd`). It is a version of its own so that the runs made under v0.4 still correspond to the text they used. Written by an AI assistant at KB's instruction. Instructions SHA-256 `724b3ae6b965b035`.
 
 | # | Change | Reason | Manual | Cases that prompted it |
 |:--|:--|:--|:--|:--|
@@ -182,7 +182,7 @@ The differences between v0.4 and v0.5 on the calibration sets, up to four points
 
 ## v0.6 (22 November 2026) — draft, not frozen
 
-A second round of refinement, at KB's instruction, from what Sonnet 5.5 and Opus 5.5 still differed on from the expert in the two calibration sets under v0.5 (81 of 344 sentences). Each pattern was taken to the manual's wording. Written by an AI assistant. KB has not read the file. Instructions SHA-256 `444332c7bba398c4`.
+A second round of refinement, at KB's instruction, from what Sonnet 5.5 and Opus 5.5 still differed on from the expert in the two calibration sets under v0.5 (81 of 344 sentences). Each pattern was taken to the manual's wording. Written by an AI assistant. Instructions SHA-256 `444332c7bba398c4`.
 
 | # | Change | Reason | Manual | Cases that prompted it |
 |:--|:--|:--|:--|:--|
@@ -218,9 +218,9 @@ The round did what it aimed at in the speech: affiliation there rises to .85 for
 - **"Going forward" and progress on the way to a goal** (`CB64`, `CB77`), listed under change 3 of v0.4 where the expert scores some uses and not others. Left.
 - **Single cases with no rule to state:** knowledge credited to two people (`CA18.2`), the star of a show (`CA21.1`), a result that "worked" (`CA19.6`), demands of an institution (`CB48`).
 
-## v0.6 with worked examples (22 November 2026) — a configuration, not a new version
+## v0.6 with worked examples (22 November 2026) — a new version of the specification, with the instructions unchanged
 
-KB decided on 22 November to add expert-scored practice stories to the request. The instructions of v0.6 are unchanged; the examples are appended when `12_worked_examples.R` runs and are not in this folder, because the stories are in copyright. Each sentence of an example story is followed by the motives the expert scored in it, as Pang and Ring transcribed them.
+KB decided on 22 November to add expert-scored practice stories to the request. The instructions of v0.6 are unchanged. The examples are part of what the coder is given, so this is a new version of the coding specification (Chapter 4, section 4.4), although it has no file of its own: the examples are appended when `12_worked_examples.R` runs and are not in this folder, because the stories are in copyright. Each sentence of an example story is followed by the motives the expert scored in it, as Pang and Ring transcribed them.
 
 Category agreement by the manual's rule, all three motives together:
 

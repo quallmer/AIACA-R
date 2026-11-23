@@ -11,7 +11,7 @@ The question was whether an LLM coder, given written instructions, can score ach
 
 The table gives the result on material that took no part in developing the instructions: 30 stories told aloud in an interview and three political speeches, from the manual's practice Sets G to J. The figure is category agreement for the three motives together.
 
-| Coding instructions | Model | Stories | Speeches |
+| Coding specification | Model | Stories | Speeches |
 |:--|:--|--:|--:|
 | First frozen version (v0.3) | Claude Sonnet 5.5 | .75 | .53 |
 | First frozen version (v0.3) | Claude Opus 5.5 | .79 | .63 |
@@ -24,8 +24,8 @@ The table gives the result on material that took no part in developing the instr
 1. **Revising the instructions did most of the work, and the gain carried over to new material.** On the speeches it was worth 17 to 24 points, and on the stories four to six.
 2. **A more capable model helped under the first instructions and hardly at all under the revised ones.** Opus was ahead of Sonnet by four to ten points under v0.3, and by two or three under v0.6, which is within what a single run varies.
 3. **Worked examples added nothing on new material**, although they had appeared to add about five points on the material the instructions were revised on.
-4. **No configuration reached the standard.** The best came within two to five points of it.
-5. **Figures on the material used for revision ran several points high.** The revised configurations scored .80 to .88 on the calibration sets, on which they were revised, and .77 to .83 on the new material.
+4. **No procedure reached the standard.** The best came within two to five points of it.
+5. **Figures on the material used for revision ran several points high.** The revised procedures scored .80 to .88 on the calibration sets, on which they were revised, and .77 to .83 on the new material.
 
 At the level of the story, where Pang and Ring (2020) report agreement among human coders, two LLM coders agreed with each other as well as their human coders did (section 7).
 
@@ -61,7 +61,9 @@ Three references were transcribed for this work, each twice and independently by
 - **Calibration Set B and Sets G to J (text)**, from page images, compared word for word with the scan's text layer. Every difference was a fault of the text layer ([`01b_calibration_b.R`](analysis/01b_calibration_b.R), [`01c_practice_sets.R`](analysis/01c_practice_sets.R)).
 - **The expert scoring of the calibration sets** (149 images) and **of Sets G to J** (222 labelled images, 219 after merging labels the expert says to score once). The two entries agree on every image ([`06b_calibration_key.R`](analysis/06b_calibration_key.R), [`13b_final_key.R`](analysis/13b_final_key.R)).
 
-The transcriptions have not been checked by a person.
+One of the authors checked a sample of the transcribed scoring against the manual's pages on 23 November 2026 and found no error. The check was a spot check, and not of every entry.
+
+The text of Calibration Set A is Pang and Ring's transcription. On 23 November 2026 it was compared with the manual's pages (file 2, PDF pages 250 to 258). It differs in one dropped word (`CA23`, sentence 3), in two sentences joined as one (the end of `CA1`, in which the expert scores nothing), and in eight misspellings of the original that the transcription corrects or changes. No difference touches a phrase the expert scored.
 
 ## 4. Procedure common to every run
 
@@ -143,7 +145,7 @@ With 90 examples, Opus reached .85 or better on each motive in the calibration s
 
 ### 5.6 The final check on new material
 
-Sets G to J had not been opened. Their text was transcribed and divided into sentences ([`01c_practice_sets.R`](analysis/01c_practice_sets.R)). The configuration was recorded: v0.6 with the 90 examples, Sonnet 5.5 and Opus 5.5. Both coded the 33 documents once ([`13_final_check.R`](analysis/13_final_check.R)), and only then was the expert's scoring opened and transcribed ([`13b_final_key.R`](analysis/13b_final_key.R)). The sets were afterwards coded under v0.3 and under v0.6 without examples, neither of which was changed in the light of the scoring ([`13d_final_baselines.R`](analysis/13d_final_baselines.R)).
+Sets G to J had not been opened. Their text was transcribed and divided into sentences ([`01c_practice_sets.R`](analysis/01c_practice_sets.R)). The procedure was recorded: v0.6 with the 90 examples, Sonnet 5.5 and Opus 5.5. Both coded the 33 documents once ([`13_final_check.R`](analysis/13_final_check.R)), and only then was the expert's scoring opened and transcribed ([`13b_final_key.R`](analysis/13b_final_key.R)). The sets were afterwards coded under v0.3 and under v0.6 without examples, neither of which was changed in the light of the scoring ([`13d_final_baselines.R`](analysis/13d_final_baselines.R)).
 
 Category agreement with the expert ([`13c_final_compare.R`](analysis/13c_final_compare.R)):
 
@@ -178,7 +180,7 @@ The gain from the instructions is the only one that held on new material at the 
 
 ## 7. Beside the human coders
 
-**Against the expert.** No configuration reached the .85 that a trained human scorer must reach. On new material the best was .83 on the stories and .80 on the speeches.
+**Against the expert.** No procedure reached the .85 that a trained human scorer must reach. On new material the best was .83 on the stories and .80 on the speeches.
 
 **Against each other.** At the level of the story, the two LLM coders of the first test agreed with each other as well as Pang and Ring's human coders did ([`10_human_benchmarks.R`](analysis/10_human_benchmarks.R); v0.3, Calibration Set A):
 
@@ -195,12 +197,12 @@ The two measures ask different things. The intraclass correlation asks whether c
 
 - **Single runs.** Each figure is one run. A repeat of the same coder under the same instructions moved calibration figures by up to four points.
 - **Small counts.** Calibration Set A holds 21 to 23 expert images for each motive, and the stories of Set G only ten for achievement. One agreement more or less moves such a figure by several points.
-- **References transcribed by AI assistants.** Each was entered twice and the entries agree, but no person has checked them.
+- **References transcribed by AI assistants.** Each was entered twice and the entries agree. One of the authors has checked a sample of the scoring against the manual's pages, and not every entry.
 - **Sentence division.** Our sentences end only at a full stop, question mark, or exclamation mark. The expert sometimes treats a pause in a spoken story as the end of a sentence. The cost is small: the expert's own images score .95 to .99 against themselves under our rule.
 - **The human comparison is not like for like.** A trainee has the manual with its examples and many hours of corrected practice. The coders had a restatement of the rules, and in one configuration 90 scored stories. The human figures are also on other texts.
-- **Prior exposure.** The manual's stories and some of the speeches are public, and a model may have seen them, or their scoring. The instructions tell the model to use nothing it recalls, which is a precaution and not evidence.
+- **Prior exposure.** The manual's stories and some of the speeches are public, and a model may have seen them, or their scoring. The instructions tell the model to use nothing it recalls, which is a precaution and not evidence. No masking test was run.
 - **Selection.** The more capable model, the examples, and the revised instructions were all chosen after the first test. Only Sets G to J were kept apart from those choices.
-- **Not done.** `deepseek-flash` was not run under v0.6 or on Sets G to J. The email hold-out was not coded. The disagreements on Sets G to J have not been read.
+- **Not done.** `deepseek-flash` was not run under v0.6 or on Sets G to J. The email hold-out was not coded. The disagreements on Sets G to J have not been read. The manual's practice Sets K to M, which also carry expert scoring, have not been opened, and would serve a further round.
 
 ## 9. Reproducing the figures
 

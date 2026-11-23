@@ -9,7 +9,7 @@ subtitle: "Chapter 4: the worked example in full"
 The pages for this example are being prepared. This page describes what they will contain.
 :::
 
-Chapter 4 of the book assembles its decisions into the design of one study and presents part of it. The whole study is given here.
+Section 4.8 of the book, "Worked Example: Scoring Motive Imagery with an LLM Coder", presents one study in summary. The whole study is given here.
 
 The study codes three kinds of motive imagery in short texts: achievement, affiliation-intimacy, and power. Its coding scheme is Winter's (1994) *Manual for Scoring Motive Imagery in Running Text*, which states the standard a trained human scorer must reach against an expert's scoring. The question is whether an LLM coder, given written instructions, reaches that standard, and what in the design of the study moves the answer.
 
@@ -25,5 +25,7 @@ Each stage will have its own pages, with the code and the results it produced.
 6. **Human benchmarks.** The LLM coders beside the published agreement of human coders.
 7. **A final check** on material that took no part in development.
 8. **Exercises.**
+
+The chapter describes stages 1 to 4 as the first round of development and evaluation, and stages 5 and 7 as the second.
 
 The material the example uses, and how to obtain it, is listed on the [data page](../data.qmd).

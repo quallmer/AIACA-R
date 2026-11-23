@@ -3,7 +3,7 @@
 # The manual seals the expert scoring of Calibration Sets A and B in a
 # separate file. It was opened only after the specification was frozen and
 # every coder's output on both sets was saved. The scoring was then
-# transcribed by hand, twice and independently, as one record for each scored
+# transcribed by AI assistants, twice and independently, as one record for each scored
 # image: its motive, the phrases the expert underlines, and any remark beside
 # the label.
 #

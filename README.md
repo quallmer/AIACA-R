@@ -1,5 +1,7 @@
 # AI-Assisted Content Analysis: Companion Workbook
 
+**Website: <https://quallmer.github.io/AIACA-R/>**
+
 The companion workbook to *AI-Assisted Content Analysis*, by Seraphine F. Maerz and Kenneth Benoit (Sage, forthcoming). It is a [Quarto](https://quarto.org) website with the full worked examples of the book's chapters, the R code behind them, the data, and exercises. The code uses the authors' R package [`quallmer`](https://quallmer.github.io/quallmer/).
 
 The workbook is a draft and is being written alongside the book.

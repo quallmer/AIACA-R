@@ -37,7 +37,7 @@ The workbook follows the parts and chapters of the book. A chapter's section has
 | 2 | Our Approach to Content Analysis | [Not yet available]{.status-pending} |
 | 3 | Understanding Generative AI for Content Analysis | [Not yet available]{.status-pending} |
 | 4 | Designing AI-Assisted Content Analysis | [In preparation](ch04-research-design/index.qmd){.status-ready} |
-| 5 | Addressing Ethics and Responsible LLM Usage | [Not yet available]{.status-pending} |
+| 5 | Addressing Ethics and Responsible LLM Usage | [Model providers' data policies](ch05-ethics/index.qmd){.status-ready} |
 | | **Part II: AI-Assisted Workflow** | |
 | 6 | Acquiring and Preparing Content | [Not yet available]{.status-pending} |
 | 7 | Units, Context and Segmentation | [Not yet available]{.status-pending} |

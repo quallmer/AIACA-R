@@ -1,0 +1,170 @@
+---
+title: "Model Providers' Data Policies"
+subtitle: "Chapter 5: what happens to material sent to a model"
+date: 2026-11-27
+date-format: "D MMMM YYYY"
+date-modified: 2026-11-27
+---
+
+::: callout-important
+## Check before you send
+
+Every entry below summarises what a provider's own pages said on the date shown. Terms change, often without notice, and an enterprise agreement or a data-processing addendum can differ from the public terms. Before sending confidential or personal material to a model, read the current terms for the service and the model you will use, and keep a copy with the record of the study. This page is not legal advice.
+:::
+
+Section 5.5 of the book argues that whether material stays private depends on who runs the model and on what terms, not on whether the model's weights can be downloaded. The largest open-weight models are often used through an API, sometimes the developer's own, and cloud platforms and routing services serve open-weight and closed models side by side under terms of their own. This page records those terms for the services researchers are most likely to use.
+
+## What to Check
+
+For each service and model, five questions decide what happens to the material.
+
+1. **Training.** Are API inputs and outputs used to train or improve models by default, and can that be switched off?
+2. **Retention.** How long are inputs and outputs kept, including copies kept for abuse or safety monitoring?
+3. **Zero retention.** Can retention be switched off, and for whom: everyone, paying customers, or approved enterprise customers only?
+4. **The model's developer.** When the host is not the developer, does the content reach the developer?
+5. **Location and law.** Where is the material processed and stored, and under which entity's terms and which country's law?
+
+A free tier and a paid tier of the same service can answer these questions differently, as can two models on the same platform.
+
+## Summary
+
+The table compresses each provider's terms to a few words. The sections that follow give the wording and the source.
+
+| Provider | Service | Trains on API data by default? | Retention | Zero retention | Location and entity |
+|:--|:--|:--|:--|:--|:--|
+| Anthropic | Developer's own API (closed models) | No | Deleted within 30 days; longer if flagged | On approval, per organisation | Stored in the US; entity by customer's residence |
+| OpenAI | Developer's own API (closed models) | No | Up to 30 days; some endpoints until deleted | On approval, for eligible endpoints | Not stated on the pages read |
+| Google | Gemini API | Unpaid tier: yes, with human review. Paid tier: no | Paid tier: logged "for a limited period" | Not stated | Paid tier: "any country" |
+| Google | Vertex AI (cloud platform) | No | Abuse logging; caching up to 24 hours | By configuration | Selected location |
+| Mistral AI | Developer's own API (open-weight and closed models) | Free tier: may be used. API: opt-out available | Not stated for the API | Pay-as-you-go, stateless calls, on approval | EEA by default; French company |
+| DeepSeek | Developer's own API (open-weight models) | Training listed as a purpose; opt-out on request | While the account exists | Not stated | China; Chinese law |
+| Moonshot AI | Developer's own API (open-weight models) | No | Not stated | Enterprise customers, on request | Not stated |
+| Amazon Bedrock | Cloud platform (both types) | Not stated on the pages read | Nothing stored in one mode; some models' traffic kept up to 30 days | Through the account manager | Within AWS |
+| Microsoft Azure | Cloud platform (both types) | No | Abuse-monitoring store; period not stated | Modified abuse monitoring, for approved customers | Customer's chosen geography |
+| OpenRouter | Routing service (both types) | Depends on the provider; routing can exclude those that train | Depends on the provider | Routing can be restricted to zero-retention providers | Depends on the provider |
+| Ollama | Cloud hosting (open-weight models) | No | Not kept beyond the request | The default | United States |
+
+: Data policies of model providers, as stated on their own pages on 27 November 2026. {tbl-colwidths="[11,16,19,20,17,17]"}
+
+## Developers' Own APIs
+
+### Anthropic
+
+*Checked 27 November 2026.* Sources: [commercial terms](https://www.anthropic.com/legal/commercial-terms) (effective 17 June 2025); privacy centre articles on [training](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training) (updated 18 August 2026), [retention](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data) (1 July 2026), [zero data retention](https://privacy.claude.com/en/articles/8956058-i-have-a-zero-data-retention-agreement-with-anthropic-what-products-does-it-apply-to) (15 October 2026), and [server locations](https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers) (15 June 2026).
+
+- **Training.** The commercial terms say that "Anthropic may not train models on Customer Content from Services." Feedback that a user reports explicitly is an exception.
+- **Retention.** Inputs and outputs are deleted "within 30 days of receipt or generation". Material flagged under the usage policy is kept for up to two years, and classifier scores for up to seven.
+- **Zero retention.** Available "subject to Anthropic's approval", per organisation, for eligible APIs only. Safety classifier results are still kept.
+- **Location and entity.** Traffic may be routed to "select countries in the US, Europe, Asia and Australia", and "data is stored in the US." Customers in the European Economic Area contract with Anthropic Ireland, others with Anthropic, PBC.
+
+### OpenAI
+
+*Checked 27 November 2026.* Sources: [data controls in the API platform](https://developers.openai.com/api/docs/guides/your-data) (no date shown) and [enterprise privacy](https://openai.com/enterprise-privacy/) (updated 8 January 2026).
+
+- **Training.** API data is "not used to train or improve OpenAI models" unless the customer opts in.
+- **Retention.** "Abuse monitoring logs are generated for all API feature usage and retained for up to 30 days." Endpoints that keep application state, such as files, assistants, and batches, keep data until it is deleted.
+- **Zero retention.** Zero data retention and modified abuse monitoring are "subject to prior approval by OpenAI", for eligible endpoints only, and content from flagged models may still be retained for review.
+- **Location and entity.** Not stated on the pages read. A separate guide covers data residency.
+
+### Google Gemini API
+
+*Checked 27 November 2026.* Source: [Gemini API additional terms](https://aistudio.google.com/docs/terms) (effective 23 March 2026).
+
+- **Training.** On the unpaid tier, Google uses submitted content to "provide, improve, and develop Google products", and "human reviewers may read, annotate, and process your API input and output." On the paid tier, which needs a billing account, "Google doesn't use your prompts or responses to improve our products."
+- **Retention.** On the paid tier, prompts and responses are logged "for a limited period of time", for detecting violations of the terms. No period is given.
+- **Zero retention.** Not stated in these terms. Vertex AI, below, offers it.
+- **Location.** Paid-tier content "may be stored transiently or cached in any country".
+
+Unpaid use is not suitable for confidential material.
+
+### Mistral AI
+
+*Checked 27 November 2026.* Sources: [commercial terms](https://legal.mistral.ai/terms/commercial-terms-of-service) (effective 25 September 2026), [data-processing addendum](https://legal.mistral.ai/terms/data-processing-addendum) (effective 27 July 2026), and help articles on [training](https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models), [opting out](https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training), [zero data retention](https://help.mistral.ai/en/articles/347612-can-i-activate-zero-data-retention-zdr), and [storage location](https://help.mistral.ai/en/articles/347629-where-do-you-store-my-data-or-my-organization-s-data).
+
+- **Training.** The commercial terms say Mistral "will not use Customer Data or Outputs to train its artificial intelligence models", with exceptions, while the data-processing addendum allows training unless the customer has opted out. Data from the free tier of Mistral's studio may be used for training. An administrator can switch off the use of API data with a toggle in the admin panel. The opt-out does not apply to Labs or preview models.
+- **Retention.** No period is stated for API data. Abuse monitoring applies to the APIs unless zero retention is on.
+- **Zero retention.** "ZDR is available only with pay-as-you-go", for stateless API calls, and Mistral approves requests "at our discretion". Agents, batch files, conversations, and stored files are excluded.
+- **Location and law.** "By default, your data is hosted in the European Economic Area (EEA)", with a US endpoint as an option. Mistral AI is a French company, and French law governs contracts outside the Americas and Asia-Pacific.
+
+### DeepSeek
+
+*Checked 27 November 2026.* Sources: [open platform terms of service](https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html) (effective 29 April 2026) and [privacy policy](https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html) (updated 10 February 2026).
+
+- **Training.** The privacy policy lists using input "to train and improve our technology" as a purpose, and gives a right to opt out of training by writing to the company. No API-specific setting is described.
+- **Retention.** Input is kept "for as long as you have an account", and longer where needed to deal with a violation.
+- **Zero retention.** Not stated.
+- **Location and law.** The service is operated by Hangzhou DeepSeek Artificial Intelligence Co., Ltd., which stores personal data "in People's Republic of China", and the terms are governed by the law of mainland China. Some institutions and governments restrict its use.
+
+DeepSeek's models are open-weight, so the same models can also be run locally or through another host, under that host's terms.
+
+### Moonshot AI (Kimi)
+
+*Checked 27 November 2026.* Sources: [zero data retention](https://platform.kimi.ai/docs/guide/zero-data-retention) (no date shown), [API data processing and security](https://www.kimi.com/en/help/kimi-api/api-data-security) (no date shown), and the [privacy policy](https://platform.kimi.ai/docs/agreement/userprivacy.md) (updated 25 November 2026).
+
+- **Training.** API data "will not be used to train or improve Kimi models." The consumer privacy policy allows training on user content, and excludes processing for enterprise and Open Platform customers.
+- **Retention.** No default period is stated.
+- **Zero retention.** "ZDR is available on request to enterprise customers", not for the Batch API, and cannot be guaranteed for images or video.
+- **Location.** Not stated, beyond that data may be stored outside the user's country.
+
+Moonshot's Kimi models are open-weight, but the largest need more hardware than most research teams have, so the developer's API or another host is the usual route.
+
+## Cloud Platforms
+
+### Amazon Bedrock
+
+*Checked 27 November 2026.* Sources: [data protection](https://docs.aws.amazon.com/bedrock/latest/userguide/data-protection.html), [data retention](https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.html), and [abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) (no dates shown).
+
+- **Training.** Not stated on the pages read.
+- **The model's developer.** "Amazon Bedrock does not share your content with model providers for any current mode", and model providers have no access to customers' prompts and completions.
+- **Retention.** Retention is set by mode. In mode `none`, "No request or response data is written to durable storage". In the default mode, AWS "may retain the data for safety and abuse-prevention purposes." For Anthropic's Claude Fable 5, 5.1, and 5.2, Bedrock "retains all traffic for up to 30 days for automated offline abuse detection", with possible human review of flagged traffic. For OpenAI's closed models, flagged traffic is kept for up to 30 days. Some models are available only if the account accepts review of inputs and outputs.
+- **Zero retention.** Arranged through the AWS account manager, per account and per model.
+- **Location.** Retained data stays "within the AWS boundary", and the setting is made for each region.
+
+### Microsoft Azure
+
+*Checked 27 November 2026.* Sources: [data, privacy, and security for Azure direct models](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/openai/data-privacy) (change log to 17 November 2026) and [abuse monitoring](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/abuse-monitoring).
+
+- **Training.** Prompts and completions "are NOT used to train, retrain, or improve the base models."
+- **The model's developer.** They "are NOT available to OpenAI or other providers of Models sold by Azure."
+- **Retention.** The models are stateless, but prompts and completions can be kept in an abuse-monitoring store for human review. No period is stated. Stateful features keep data until the customer deletes it.
+- **Zero retention.** Customers who meet further eligibility criteria can apply for modified abuse monitoring, under which the storage and human review are not performed. Microsoft says this option will no longer be available for models released on or after 1 November 2026, from a date to be announced.
+- **Location.** "Prompts and responses are processed within the customer-specified geography", except for global and data-zone deployments.
+
+### Google Vertex AI
+
+*Checked 27 November 2026.* Source: [data governance](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/data-governance) (no date shown). Google now calls the platform Gemini Enterprise Agent Platform.
+
+- **Training.** Google "won't use your data to train or fine-tune any AI/ML models" without the customer's permission.
+- **Retention.** Google "may log prompts to detect potential abuse". In-memory caching is deleted within 24 hours. Grounding with Google Search keeps data for up to three days and cannot be switched off. OpenAI models on the platform log by default for up to 30 days in the US.
+- **Zero retention.** Possible, but "customers must take specific actions", such as leaving request and response logging off and avoiding the features that store data.
+- **Location.** Durable caching stays in the location the customer selects.
+
+## Routing and Hosting Services
+
+### OpenRouter
+
+*Checked 27 November 2026.* Sources: [zero data retention](https://openrouter.ai/docs/guides/privacy/zero-data-retention) and [provider logging](https://openrouter.ai/docs/guides/privacy/provider-logging) (no dates shown; the pages announced changes taking effect in October 2026).
+
+- **How it works.** OpenRouter passes each request to one of several providers of the chosen model, and the provider's own policy governs what happens to it. Providers are classed as zero retention, safety retention (kept, "not used for training"), or retention and training under the provider's policy.
+- **Choosing providers.** Account settings or a flag on each request can restrict routing to zero-retention providers, and a separate setting excludes providers that train on data. Self-serve accounts allow safety retention by default.
+- **Unknown policies.** Where a provider's policy is unclear, OpenRouter will "assume that the endpoint both retains and trains on data."
+- **OpenRouter's own retention.** Not stated on the pages read for ordinary requests.
+
+A "no training" setting is not the same as zero retention: a provider can keep data without training on it.
+
+### Ollama
+
+*Checked 27 November 2026.* Sources: [privacy policy](https://ollama.com/privacy) (updated March 2026) and [cloud documentation](https://docs.ollama.com/cloud).
+
+- **Local use.** Ollama also runs open-weight models on the researcher's own computer. The entries here concern its cloud service.
+- **Training.** For its cloud models, "We do not use your inputs or outputs to train any AI models."
+- **Retention.** Content "is not stored beyond the time required to fulfill the request." No retention for abuse monitoring is described.
+- **Location.** Data "may be transferred to and processed in the United States."
+
+## Record of Checks
+
+| Date | Change |
+|:--|:--|
+| 27 November 2026 | First version: eleven services. |
+
+To report a change in a provider's terms, or to suggest a service to add, open an issue on the [workbook's repository](https://github.com/quallmer/AIACA-R/issues).

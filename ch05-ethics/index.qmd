@@ -1,0 +1,10 @@
+---
+title: "Addressing Ethics and Responsible LLM Usage"
+subtitle: "Chapter 5: companion material"
+---
+
+Chapter 5 of the book asks what responsible use of an LLM in content analysis requires: disclosure, the external costs of AI, trustworthiness, data security and privacy, and the choice between open-weight and closed models. It ends with a checklist and an ethics review of the achievement-imagery study from Chapter 4.
+
+The chapter has no code of its own. Its companion material is reference information that changes faster than a book can.
+
+- **[Model Providers' Data Policies](provider-policies.qmd).** What the main model developers, cloud platforms, and routing services say about training on API data, retention, zero-retention options, and where data is processed, with the date on which each was checked. Section 5.5 of the book explains why these terms, and not the model type alone, decide where a researcher's material goes.

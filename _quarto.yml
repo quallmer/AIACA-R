@@ -51,6 +51,10 @@ website:
             href: ch04-research-design/index.qmd
             contents:
               - ch04-research-design/report.qmd
+          - section: "5. Addressing Ethics and Responsible LLM Usage"
+            href: ch05-ethics/index.qmd
+            contents:
+              - ch05-ethics/provider-policies.qmd
   page-footer:
     left: "Seraphine F. Maerz and Kenneth Benoit"
     right: "Companion to *AI-Assisted Content Analysis* (Sage)"

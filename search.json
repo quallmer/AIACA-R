@@ -1,0 +1,437 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Companion Workbook",
+    "section": "",
+    "text": "NoteDraft\n\n\n\nThis workbook is being written alongside the book. Pages, code, and results may change.\nThis is the companion workbook to AI-Assisted Content Analysis, by Seraphine F. Maerz and Kenneth Benoit (Sage, forthcoming). The book sets out the methodology of content analysis and qualitative coding when a large language model (LLM) does the coding. The workbook shows how each procedure is carried out: the full worked examples, the code that produced every figure, the data, and exercises.\nThe book does not depend on any software. The workbook uses R and the authors’ package quallmer, which is one implementation of the procedures the book describes. Readers who work in Python or another environment will find that the steps transfer.",
+    "crumbs": [
+      "Companion Workbook",
+      "About This Workbook"
+    ]
+  },
+  {
+    "objectID": "index.html#how-the-workbook-is-organised",
+    "href": "index.html#how-the-workbook-is-organised",
+    "title": "Companion Workbook",
+    "section": "How the Workbook Is Organised",
+    "text": "How the Workbook Is Organised\nThe workbook follows the parts and chapters of the book. A chapter’s section has three kinds of page.\n\nWorked example. The study that the chapter presents in summary is given here in full, one step to a page. Each page explains the step, shows the R code, and shows what the code returned.\nDownloads. Every page’s code can be downloaded as a script, and a chapter’s code as one archive. The data page lists each dataset, its source, and the terms on which it may be used.\nExercises. Each chapter ends with exercises that apply its procedures to new material or vary a design choice, with solutions that can be shown or hidden.",
+    "crumbs": [
+      "Companion Workbook",
+      "About This Workbook"
+    ]
+  },
+  {
+    "objectID": "index.html#three-ways-to-use-it",
+    "href": "index.html#three-ways-to-use-it",
+    "title": "Companion Workbook",
+    "section": "Three Ways to Use It",
+    "text": "Three Ways to Use It\n\nRead. Every page shows the results its code produced when the authors ran it. Nothing needs to be installed.\nRun from saved output. A request to a model is made once and its output saved. Where the terms of the source material allow, the saved output is provided, so that every later step can be run without an API key and without cost.\nRun live. With an API key for a model provider, the coding itself can be repeated, or run with another model. Getting Started explains the setup.",
+    "crumbs": [
+      "Companion Workbook",
+      "About This Workbook"
+    ]
+  },
+  {
+    "objectID": "index.html#chapters",
+    "href": "index.html#chapters",
+    "title": "Companion Workbook",
+    "section": "Chapters",
+    "text": "Chapters\n\n\n\n\n\n\n\n\n\nChapter\nCompanion material\n\n\n\n\n\nPart I: Foundations\n\n\n\n1\nIntroduction: A New Era for Coding and Content Analysis\nNot yet available\n\n\n2\nOur Approach to Content Analysis\nNot yet available\n\n\n3\nUnderstanding Generative AI for Content Analysis\nNot yet available\n\n\n4\nDesigning AI-Assisted Content Analysis\nIn preparation\n\n\n5\nAddressing Ethics and Responsible LLM Usage\nModel providers’ data policies\n\n\n\nPart II: AI-Assisted Workflow\n\n\n\n6\nAcquiring and Preparing Content\nNot yet available\n\n\n7\nUnits, Context and Segmentation\nNot yet available\n\n\n8\nPrompting as Codebook Design\nNot yet available\n\n\n9\nApplying Closed Codebooks with LLMs\nNot yet available\n\n\n10\nConducting Inductive Coding Cycles with LLMs\nNot yet available\n\n\n11\nCoding Multimodal Content with Multimodal Models\nNot yet available\n\n\n\nPart III: Analysis and Evaluation\n\n\n\n12\nAnalysing AI-Assisted Coding Outputs\nNot yet available\n\n\n13\nMeasuring Reliability and Agreement\nNot yet available\n\n\n14\nAssessing Validity and Interpretive Credibility\nNot yet available\n\n\n15\nReplication and Reproducibility\nNot yet available\n\n\n16\nA Practical Guide to AI-Assisted Content Analysis\nNot yet available\n\n\n17\nOpen Problems and the Methodological Agenda\nNot yet available",
+    "crumbs": [
+      "Companion Workbook",
+      "About This Workbook"
+    ]
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "NoteDraft\n\n\n\nPermission to reproduce the material from Winter’s manual has been requested and is not yet confirmed. The material will be removed from the workbook if it is not given.\nThis page lists the material each chapter’s example uses: where it comes from, the terms on which it may be used, and how to obtain it.",
+    "crumbs": [
+      "Companion Workbook",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "data.html#how-data-are-provided",
+    "href": "data.html#how-data-are-provided",
+    "title": "Data",
+    "section": "How Data Are Provided",
+    "text": "How Data Are Provided\n\nMaterial the workbook includes is in a folder named data/ beside the chapter’s pages, where the code expects it.\nMaterial it may not include is downloaded from its source by the script get-data.R in the chapter’s folder, which puts the files in the same folder.\nModel output is saved when a request is made, in data/runs/, and read back afterwards, so that the pages run without an API key.",
+    "crumbs": [
+      "Companion Workbook",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "data.html#chapter-4-motive-imagery-in-running-text",
+    "href": "data.html#chapter-4-motive-imagery-in-running-text",
+    "title": "Data",
+    "section": "Chapter 4: Motive Imagery in Running Text",
+    "text": "Chapter 4: Motive Imagery in Running Text\n\n\n\n\n\n\n\n\n\nMaterial\nSource\nTerms\nHow it is obtained\n\n\n\n\nPractice and calibration stories from Winter’s manual, with expert scoring by sentence (UD1_sentences.xlsx)\nReplication data for Pang and Ring (2020), https://osf.io/563xn/\nThe deposit is licensed CC BY-NC-SA 4.0. The story texts are from Winter’s manual\nIncluded in ch04-research-design/data/\n\n\nSentences from the Enron Email Corpus, scored for the three motives (UD2_sentences.xlsx)\nThe same deposit\nCC BY-NC-SA 4.0\nIncluded in ch04-research-design/data/\n\n\nCalibration Set B and practice Sets G to J: their text, divided into sentences, and their expert scoring, with the expert scoring of Calibration Set A (data/runs/calibration_*, data/runs/practice_GJ_*)\nTranscribed for this workbook from Winter (1994), University of Michigan Deep Blue, https://deepblue.lib.umich.edu/handle/2027.42/117563\nAll rights reserved by the author. Reproduced here for the example, with attribution, while permission is sought\nIncluded in ch04-research-design/data/runs/\n\n\nGeneral Inquirer dictionary categories (inquireraugmented.csv)\nThe Harvard General Inquirer (Stone et al., 1966)\nLong published and widely reused in research. Included as fair use\nIncluded in ch04-research-design/analysis/geninquirer/\n\n\nModel output for each run (data/runs/*/coded.rds)\nThis workbook\nThe runs contain the texts they coded, so the terms above apply to them\nIncluded in ch04-research-design/data/runs/\n\n\n\n\nSources\nPang, J. S., & Ring, H. (2020). Automated coding of implicit motives: A machine-learning approach. Motivation and Emotion, 44, 549–566. https://doi.org/10.1007/s11031-020-09832-8\nWinter, D. G. (1994). Manual for scoring motive imagery in running text (Version 4.2). Unpublished instrument, University of Michigan.",
+    "crumbs": [
+      "Companion Workbook",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/index.html",
+    "href": "ch05-ethics/index.html",
+    "title": "Addressing Ethics and Responsible LLM Usage",
+    "section": "",
+    "text": "Chapter 5 of the book asks what responsible use of an LLM in content analysis requires: disclosure, the external costs of AI, trustworthiness, data security and privacy, and the choice between open-weight and closed models. It ends with a checklist and an ethics review of the achievement-imagery study from Chapter 4.\nThe chapter has no code of its own. Its companion material is reference information that changes faster than a book can.\n\nModel Providers’ Data Policies. What the main model developers, cloud platforms, and routing services say about training on API data, retention, zero-retention options, and where data is processed, with the date on which each was checked. Section 5.5 of the book explains why these terms, and not the model type alone, decide where a researcher’s material goes.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/index.html",
+    "href": "ch04-research-design/index.html",
+    "title": "Designing AI-Assisted Content Analysis",
+    "section": "",
+    "text": "NoteIn preparation\n\n\n\nThe pages for this example are being prepared. This page describes what they will contain.\nSection 4.8 of the book, “Worked Example: Scoring Motive Imagery with an LLM Coder”, presents one study in summary. The whole study is given here.\nThe study codes three kinds of motive imagery in short texts: achievement, affiliation-intimacy, and power. Its coding scheme is Winter’s (1994) Manual for Scoring Motive Imagery in Running Text, which states the standard a trained human scorer must reach against an expert’s scoring. The question is whether an LLM coder, given written instructions, reaches that standard, and what in the design of the study moves the answer.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/index.html#what-the-example-will-contain",
+    "href": "ch04-research-design/index.html#what-the-example-will-contain",
+    "title": "Designing AI-Assisted Content Analysis",
+    "section": "What the Example Will Contain",
+    "text": "What the Example Will Contain\nEach stage will have its own pages, with the code and the results it produced.\n\nDesign and partition. What can be established from the material before any text is coded, and the assignment of every document to development or to reserve.\nThe coding specification. The written instructions given to the model, in each of their versions, and the checks made on them before they met any source text.\nA baseline and a pilot. A dictionary rule as the bar an LLM coder has to beat, and a pilot on the development material.\nThe reserved test. Coding the reserved material once with each coder, and comparing the result with the expert’s scoring.\nRefinement. Reading the disagreements, revising the instructions, and trying a more capable model and worked examples.\nHuman benchmarks. The LLM coders beside the published agreement of human coders.\nA final check on material that took no part in development.\nExercises.\n\nThe chapter describes stages 1 to 4 as the first round of development and evaluation, and stages 5 and 7 as the second.\nThe material the example uses, and how to obtain it, is listed on the data page.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html",
+    "href": "ch04-research-design/report.html",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "",
+    "text": "This report documents the worked example of Chapter 4, Designing AI-Assisted Content Analysis. The chapter gives the summary. This page gives the materials, the procedure, the sequence of attempts, and the results, with links to the code behind each figure. The runs were made on 21 and 22 November 2026.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#summary",
+    "href": "ch04-research-design/report.html#summary",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "1. Summary",
+    "text": "1. Summary\nThe question was whether an LLM coder, given written instructions, can score achievement, affiliation-intimacy, and power imagery as Winter’s (1994) manual requires of a trained human scorer: a category agreement of .85 or better with the expert on each motive.\nThe table gives the result on material that took no part in developing the instructions: 30 stories told aloud in an interview and three political speeches, from the manual’s practice Sets G to J. The figure is category agreement for the three motives together.\n\n\n\nCoding specification\nModel\nStories\nSpeeches\n\n\n\n\nFirst frozen version (v0.3)\nClaude Sonnet 5.5\n.75\n.53\n\n\nFirst frozen version (v0.3)\nClaude Opus 5.5\n.79\n.63\n\n\nRevised (v0.6)\nClaude Sonnet 5.5\n.81\n.77\n\n\nRevised (v0.6)\nClaude Opus 5.5\n.83\n.80\n\n\nRevised, with 90 worked examples\nClaude Sonnet 5.5\n.80\n.79\n\n\nRevised, with 90 worked examples\nClaude Opus 5.5\n.80\n.80\n\n\nRequired of a trained human scorer\n\n.85\n.85\n\n\n\n\nRevising the instructions did most of the work, and the gain carried over to new material. On the speeches it was worth 17 to 24 points, and on the stories four to six.\nA more capable model helped under the first instructions and hardly at all under the revised ones. Opus was ahead of Sonnet by four to ten points under v0.3, and by two or three under v0.6, which is within what a single run varies.\nWorked examples added nothing on new material, although they had appeared to add about five points on the material the instructions were revised on.\nNo procedure reached the standard. The best came within two to five points of it.\nFigures on the material used for revision ran several points high. The revised procedures scored .80 to .88 on the calibration sets, on which they were revised, and .77 to .83 on the new material.\n\nAt the level of the story, where Pang and Ring (2020) report agreement among human coders, two LLM coders agreed with each other as well as their human coders did (section 7).",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#the-task-and-the-human-benchmarks",
+    "href": "ch04-research-design/report.html#the-task-and-the-human-benchmarks",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "2. The task and the human benchmarks",
+    "text": "2. The task and the human benchmarks\nThe scoring system. Winter’s manual scores three motives in running text. A scorer marks each image: a phrase expressing a standard of excellence (achievement), warm relations (affiliation-intimacy), or impact on others (power). The unit is the sentence. The same motive in two consecutive sentences is scored once, unless another motive comes between (manual, p. 21).\nThe index. Category agreement is twice the number of agreements divided by the scorer’s images plus the expert’s. Agreement on absence earns nothing. The same motive in the same sentence, or in the same pair of adjacent sentences, is an agreement (pp. 30–31). The figures in this report use that rule unless they say “same sentence”.\nThe standard. A scorer should reach .85 on each motive, and try for .90 (p. 30).\nHow a human reaches it. The manual allows 25 to 30 hours of practice. The trainee scores practice sets with the expert’s scoring and explanations to hand afterwards, at first after every story, and may consult the manual throughout. The two calibration sets are then a final check: one blind attempt against expert scoring that someone else holds until the trainee has finished (pp. 28–30). The manual’s documentation reports novices above .85, for the three motives combined, on the last three practice sets.\nAgreement among human coders. Pang and Ring (2020) report the intraclass correlation of story-level motive scores (two-way, consistency, average rating): .90 for achievement, .96 for affiliation, and .83 for power among three coders on 30 stories (p. 555), and .85, .78, and .84 between two coders on 393 stories (p. 557).\nWhat was not available. No text in our material was scored by two human coders, and no independent human’s scoring of the calibration sets. The human figures above are published summaries and could not be recomputed.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#materials-and-what-each-was-used-for",
+    "href": "ch04-research-design/report.html#materials-and-what-each-was-used-for",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "3. Materials and what each was used for",
+    "text": "3. Materials and what each was used for\n\n\n\n\n\n\n\n\n\nMaterial\nSize\nReference\nRole\n\n\n\n\nPractice sets A to F\n180 stories, 1,142 sentences\nExpert scoring as Pang and Ring transcribed it, by sentence\nDevelopment of v0.2 and v0.3. Sets A to C later supplied the worked examples\n\n\nCalibration Set A\n30 stories, 216 sentences\nThe manual’s sealed expert scoring, transcribed here\nReserved test of v0.3. Then development of v0.4 to v0.6\n\n\nCalibration Set B\nOne speech, 128 sentences\nThe same\nThe same\n\n\nEmails, first test\nNine writers, 5,815 emails, 14,615 sentences\nPang and Ring’s labels, one of two coders for each email\nReserved test of v0.3\n\n\nEmails, hold-out\nNine writers, 4,574 emails\nThe same\nNot coded\n\n\nPractice sets G to J\n30 interview stories and three speeches, 455 sentences\nThe manual’s expert scoring, transcribed here\nFinal check. Took no part in development\n\n\n\nThe source files and the saved model runs are in the chapter’s data/ folder. The data page gives their sources and terms.\nThree references were transcribed for this work, each twice and independently by AI assistants, with the two entries compared:\n\nCalibration Set B and Sets G to J (text), from page images, compared word for word with the scan’s text layer. Every difference was a fault of the text layer (01b_calibration_b.R, 01c_practice_sets.R).\nThe expert scoring of the calibration sets (149 images) and of Sets G to J (222 labelled images, 219 after merging labels the expert says to score once). The two entries agree on every image (06b_calibration_key.R, 13b_final_key.R).\n\nOne of the authors checked a sample of the transcribed scoring against the manual’s pages on 23 November 2026 and found no error. The check was a spot check, and not of every entry.\nThe text of Calibration Set A is Pang and Ring’s transcription. On 23 November 2026 it was compared with the manual’s pages (file 2, PDF pages 250 to 258). It differs in one dropped word (CA23, sentence 3), in two sentences joined as one (the end of CA1, in which the expert scores nothing), and in eight misspellings of the original that the transcription corrects or changes. No difference touches a phrase the expert scored.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#procedure-common-to-every-run",
+    "href": "ch04-research-design/report.html#procedure-common-to-every-run",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "4. Procedure common to every run",
+    "text": "4. Procedure common to every run\n\nOne request for each document, independent of every other. The document is sent as a numbered list of its sentences.\nThe model lists images; a fixed rule counts them. The model returns, for each sentence, the images it finds: the motive, the criterion, and the words that carry it. The manual’s counting rule is then applied in code, so that a disagreement with the expert can be traced either to a judgment or to the rule. Both functions are in the specification file (codebook/motive_codebook_v0.3.R).\nThe coding specification is a quallmer codebook. Runs are made with qlm_code(), repeated or given to another model with qlm_replicate(), and compared with qlm_compare() and qlm_validate() (R/setup.R).\nSettings. An output cap of 64,000 tokens, and every other setting at the provider’s default.\nModels. anthropic/claude-sonnet-5-5 was the main coder throughout. deepseek/deepseek-flash was the declared second coder for the first test. anthropic/claude-opus-5-5 was added later as a more capable model.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#the-sequence-of-attempts",
+    "href": "ch04-research-design/report.html#the-sequence-of-attempts",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "5. The sequence of attempts",
+    "text": "5. The sequence of attempts\n\n5.1 Before any model was run\nThe design was fixed from the practice sets alone (00_design_figures.R): how rare the imagery is (achievement in 85 of 1,142 sentences), how the reference records it, what a dictionary matches, and how large a test would need to be. Every document was assigned once to development or to reserve (01_partition.R).\nA dictionary rule was fixed as the bar an LLM coder had to beat (03_dictionary.R): a sentence is scored for achievement if three or more of its word stems fall in three General Inquirer categories. It reached .24 on the practice stories and .47 on Calibration Set A.\n\n\n5.2 A first codebook, and one round of development (v0.2 to v0.3)\nThe first specification, v0.2, was a condensed restatement of the manual’s rules in new wording, with no examples. It was piloted on the 180 practice stories (04_pilot.R), the disagreements were read, and ten changes were made, each restoring a rule of the manual that the condensation had narrowed or widened (codebook/REVISIONS.md, v0.3).\n\n\n\nPractice stories, Sonnet 5.5\nv0.2\nv0.3\n\n\n\n\nAchievement\n.74\n.80\n\n\nAffiliation-intimacy\n.72\n.78\n\n\nPower\n.71\n.74\n\n\n\nVersion 0.3 was then frozen, and the two coders declared, before any reserved material was coded.\n\n\n5.3 The reserved test of v0.3\nThe calibration sets (06_reserved.R, 07_validate_calibration.R). Both coders’ output was saved, and only then was the sealed expert scoring opened.\n\n\n\n\nAchievement\nAffiliation-intimacy\nPower\nAll three\n\n\n\n\nSet A (stories), Sonnet 5.5\n.78\n.74\n.71\n.74\n\n\nSet A (stories), deepseek-flash\n.77\n.77\n.89\n.81\n\n\nSet A (stories), dictionary rule\n.47\n\n\n\n\n\nSet B (speech), Sonnet 5.5\n.61\n.73\n.39\n.59\n\n\nSet B (speech), deepseek-flash\n.68\n.73\n.70\n.70\n\n\nSet B (speech), dictionary rule\n.34\n\n\n\n\n\n\nNeither coder met the standard. Both were well above the dictionary rule. A repeat of the main coder with nothing changed agreed with its first coding at a Krippendorff’s alpha of .88 to .99 on Set A.\nThe emails (07_validate_emails.R). Against Pang and Ring’s labels the main coder found most of the labelled imagery (recall .84, .63, and .43 for the three motives) and marked three to six times as many sentences as the labels did (precision .25, .13, and .07). Reading the disagreements showed that the labels cannot measure precision (08_disagreements.R). They mark a motive in 311 of 5,815 emails, and they treat the same wording differently: of 44 sentences that call a job or piece of work good, great, or excellent, the labels mark achievement in 25. Each email was scored by one of two coders, whose reliability was established on picture stories and not on email (Pang and Ring, 2020, p. 557). The emails were not used further, and the hold-out was not coded.\n\n\n5.4 Refining the instructions (v0.4 to v0.6)\nRefining a codebook against expert coding is part of the research design. Once the calibration sets had been compared with their key they became development material, and the disagreements on them were read.\nThe main coder’s errors were systematic, and each concerned a rule the manual states. Three examples:\n\nThe expert scores a single word of excellence standing alone. The coder wanted a fuller statement of performance.\nThe expert scores unrequested help as power, and as affiliation too where warmth is shown. The coder recorded affiliation alone.\nThe expert scores power exercised by a government, an institution, or an unnamed agent. The coder passed over it, which is why it found 7 of the 29 power images in the speech.\n\nEach pattern was taken to the manual’s wording before anything was changed. codebook/REVISIONS.md lists every change with its page and the cases that prompted it, and what was left alone because the manual does not settle it.\n\n\n\nVersion\nWhat it added\n\n\n\n\nv0.4\nEleven changes restoring rules of the manual\n\n\nv0.5\nOne rule decided by an author where the manual is silent: the stock courtesies of a message are not scored\n\n\nv0.6\nSeven further changes from a second reading, mostly for dense political prose\n\n\n\n\n\n5.5 A more capable model, and worked examples\nClaude Opus 5.5 was run under each version (11_stronger_model.R). Then 90 practice stories (sets A to C), each sentence followed by the motives the expert scored in it, were appended to the v0.6 instructions as worked examples (12_worked_examples.R). This is in-context learning: the examples sit in the system prompt of every request, and no model is trained. The examples are built from the practice stories when the script runs.\nCategory agreement on the calibration sets, all three motives together:\n\n\n\n\nv0.3\nv0.5\nv0.6\nv0.6 with 90 examples\n\n\n\n\nSet A (stories), Sonnet 5.5\n.74\n.86\n.85\n.85\n\n\nSet A (stories), Opus 5.5\n.79\n.88\n.84\n.88\n\n\nSet B (speech), Sonnet 5.5\n.59\n.79\n.80\n.85\n\n\nSet B (speech), Opus 5.5\n.63\n.76\n.80\n.84\n\n\n\nWith 90 examples, Opus reached .85 or better on each motive in the calibration stories (.85, .88, .90). These figures are on the material the instructions were revised on, and they are not a test.\n\n\n5.6 The final check on new material\nSets G to J had not been opened. Their text was transcribed and divided into sentences (01c_practice_sets.R). The procedure was recorded: v0.6 with the 90 examples, Sonnet 5.5 and Opus 5.5. Both coded the 33 documents once (13_final_check.R), and only then was the expert’s scoring opened and transcribed (13b_final_key.R). The sets were afterwards coded under v0.3 and under v0.6 without examples, neither of which was changed in the light of the scoring (13d_final_baselines.R).\nCategory agreement with the expert (13c_final_compare.R):\n\n\n\n\nAchievement\nAffiliation-intimacy\nPower\nAll three\n\n\n\n\nStories (Set G)\n\n\n\n\n\n\nv0.3, Sonnet 5.5\n.86\n.79\n.68\n.75\n\n\nv0.3, Opus 5.5\n.74\n.83\n.78\n.79\n\n\nv0.6, Sonnet 5.5\n.86\n.76\n.83\n.81\n\n\nv0.6, Opus 5.5\n.80\n.76\n.89\n.83\n\n\nv0.6 with examples, Sonnet 5.5\n.67\n.79\n.84\n.80\n\n\nv0.6 with examples, Opus 5.5\n.70\n.76\n.85\n.80\n\n\nSpeeches (Sets H, I, J)\n\n\n\n\n\n\nv0.3, Sonnet 5.5\n.53\n.51\n.55\n.53\n\n\nv0.3, Opus 5.5\n.64\n.52\n.71\n.63\n\n\nv0.6, Sonnet 5.5\n.83\n.72\n.75\n.77\n\n\nv0.6, Opus 5.5\n.79\n.81\n.79\n.80\n\n\nv0.6 with examples, Sonnet 5.5\n.84\n.74\n.78\n.79\n\n\nv0.6 with examples, Opus 5.5\n.82\n.78\n.80\n.80\n\n\n\nThe expert scored 10 achievement, 27 affiliation-intimacy, and 45 power images in the stories, and 47, 37, and 53 in the speeches.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#what-changed-the-result-and-what-did-not",
+    "href": "ch04-research-design/report.html#what-changed-the-result-and-what-did-not",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "6. What changed the result, and what did not",
+    "text": "6. What changed the result, and what did not\n\n\n\n\n\n\n\n\nStep\nOn the calibration sets, where the revision was done\nOn new material\n\n\n\n\nRevising the instructions (v0.3 to v0.6)\nStories +5 to +11 points, speech +17 to +21\nStories +4 to +6, speeches +17 to +24\n\n\nA more capable model\n+4 to +5 under v0.3, none under v0.6\n+4 to +10 under v0.3, +2 to +3 under v0.6\n\n\nWorked examples\nStories none to +4, speech +4 to +5\nStories -1 to -3, speeches none to +2\n\n\n\nThe gain from the instructions is the only one that held on new material at the size it showed in development. The gain from the examples did not.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#beside-the-human-coders",
+    "href": "ch04-research-design/report.html#beside-the-human-coders",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "7. Beside the human coders",
+    "text": "7. Beside the human coders\nAgainst the expert. No procedure reached the .85 that a trained human scorer must reach. On new material the best was .83 on the stories and .80 on the speeches.\nAgainst each other. At the level of the story, the two LLM coders of the first test agreed with each other as well as Pang and Ring’s human coders did (10_human_benchmarks.R; v0.3, Calibration Set A):\n\n\n\n\n\n\n\n\n\nIntraclass correlation of story-level scores\nAchievement\nAffiliation-intimacy\nPower\n\n\n\n\nThree human coders, 30 stories (Pang and Ring, p. 555)\n.90\n.96\n.83\n\n\nTwo human coders, 393 stories (p. 557)\n.85\n.78\n.84\n\n\nSonnet 5.5 and deepseek-flash\n.90\n.96\n.90\n\n\nSonnet 5.5 and the expert\n.91\n.86\n.81\n\n\n\nThe two measures ask different things. The intraclass correlation asks whether coders order stories alike by how much imagery they hold. Category agreement asks whether they scored the same images. The LLM coders did the first as well as humans and the second less well. Their agreement with each other is also partly shared error: on affiliation they agreed with each other at .96 and with the expert at .86.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#limits",
+    "href": "ch04-research-design/report.html#limits",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "8. Limits",
+    "text": "8. Limits\n\nSingle runs. Each figure is one run. A repeat of the same coder under the same instructions moved calibration figures by up to four points.\nSmall counts. Calibration Set A holds 21 to 23 expert images for each motive, and the stories of Set G only ten for achievement. One agreement more or less moves such a figure by several points.\nReferences transcribed by AI assistants. Each was entered twice and the entries agree. One of the authors has checked a sample of the scoring against the manual’s pages, and not every entry.\nSentence division. Our sentences end only at a full stop, question mark, or exclamation mark. The expert sometimes treats a pause in a spoken story as the end of a sentence. The cost is small: the expert’s own images score .95 to .99 against themselves under our rule.\nThe human comparison is not like for like. A trainee has the manual with its examples and many hours of corrected practice. The coders had a restatement of the rules, and in one configuration 90 scored stories. The human figures are also on other texts.\nPrior exposure. The manual’s stories and some of the speeches are public, and a model may have seen them, or their scoring. The instructions tell the model to use nothing it recalls, which is a precaution and not evidence. No masking test was run.\nSelection. The more capable model, the examples, and the revised instructions were all chosen after the first test. Only Sets G to J were kept apart from those choices.\nNot done. deepseek-flash was not run under v0.6 or on Sets G to J. The email hold-out was not coded. The disagreements on Sets G to J have not been read. The manual’s practice Sets K to M, which also carry expert scoring, have not been opened, and would serve a further round.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#reproducing-the-figures",
+    "href": "ch04-research-design/report.html#reproducing-the-figures",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "9. Reproducing the figures",
+    "text": "9. Reproducing the figures\nRun each script from the chapter’s folder, in the order of its number. A run is made once and saved: sourcing a script again reads the saved run back and makes no new request.\n\n\n\nStage\nScripts\n\n\n\n\nDesign and partition\n00_design_figures.R, 01_partition.R, 01b_calibration_b.R, 01c_practice_sets.R\n\n\nChecks, baseline, and pilot\n02_codebook_checks.R, 03_dictionary.R, 04_pilot.R\n\n\nReserved test of v0.3\n06_reserved.R, 06b_calibration_key.R, 07_validate_calibration.R, 07_validate_emails.R\n\n\nRefinement\n08_disagreements.R, 09_revision_pilot.R, 11_stronger_model.R, 12_worked_examples.R\n\n\nHuman benchmarks\n10_human_benchmarks.R\n\n\nFinal check\n13_final_check.R, 13b_final_key.R, 13c_final_compare.R, 13d_final_baselines.R\n\n\n\nCost. Coding the 33 documents of the final check cost 0.70 US dollars with Sonnet 5.5 and 2.48 with Opus 5.5, with the long instructions cached by the provider after the first group of requests. The 5,815 emails of the first test took about 20 minutes with Sonnet 5.5 and about two hours with deepseek-flash.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch04-research-design/report.html#sources",
+    "href": "ch04-research-design/report.html#sources",
+    "title": "Scoring Motive Imagery with an LLM Coder",
+    "section": "Sources",
+    "text": "Sources\nPang, J. S., & Ring, H. (2020). Automated coding of implicit motives: A machine-learning approach. Motivation and Emotion, 44, 549–566.\nWinter, D. G. (1994). Manual for scoring motive imagery in running text (Version 4.2). University of Michigan.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "4. Designing AI-Assisted Content Analysis",
+      "Scoring Motive Imagery with an LLM Coder"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/provider-policies.html",
+    "href": "ch05-ethics/provider-policies.html",
+    "title": "Model Providers’ Data Policies",
+    "section": "",
+    "text": "ImportantCheck before you send\n\n\n\nEvery entry below summarises what a provider’s own pages said on the date shown. Terms change, often without notice, and an enterprise agreement or a data-processing addendum can differ from the public terms. Before sending confidential or personal material to a model, read the current terms for the service and the model you will use, and keep a copy with the record of the study. This page is not legal advice.\nSection 5.5 of the book argues that whether material stays private depends on who runs the model and on what terms, not on whether the model’s weights can be downloaded. The largest open-weight models are often used through an API, sometimes the developer’s own, and cloud platforms and routing services serve open-weight and closed models side by side under terms of their own. This page records those terms for the services researchers are most likely to use.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage",
+      "Model Providers' Data Policies"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/provider-policies.html#what-to-check",
+    "href": "ch05-ethics/provider-policies.html#what-to-check",
+    "title": "Model Providers’ Data Policies",
+    "section": "What to Check",
+    "text": "What to Check\nFor each service and model, five questions decide what happens to the material.\n\nTraining. Are API inputs and outputs used to train or improve models by default, and can that be switched off?\nRetention. How long are inputs and outputs kept, including copies kept for abuse or safety monitoring?\nZero retention. Can retention be switched off, and for whom: everyone, paying customers, or approved enterprise customers only?\nThe model’s developer. When the host is not the developer, does the content reach the developer?\nLocation and law. Where is the material processed and stored, and under which entity’s terms and which country’s law?\n\nA free tier and a paid tier of the same service can answer these questions differently, as can two models on the same platform.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage",
+      "Model Providers' Data Policies"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/provider-policies.html#summary",
+    "href": "ch05-ethics/provider-policies.html#summary",
+    "title": "Model Providers’ Data Policies",
+    "section": "Summary",
+    "text": "Summary\nThe table compresses each provider’s terms to a few words. The sections that follow give the wording and the source.\n\nData policies of model providers, as stated on their own pages on 27 November 2026.\n\n\n\n\n\n\n\n\n\n\nProvider\nService\nTrains on API data by default?\nRetention\nZero retention\nLocation and entity\n\n\n\n\nAnthropic\nDeveloper’s own API (closed models)\nNo\nDeleted within 30 days; longer if flagged\nOn approval, per organisation\nStored in the US; entity by customer’s residence\n\n\nOpenAI\nDeveloper’s own API (closed models)\nNo\nUp to 30 days; some endpoints until deleted\nOn approval, for eligible endpoints\nNot stated on the pages read\n\n\nGoogle\nGemini API\nUnpaid tier: yes, with human review. Paid tier: no\nPaid tier: logged “for a limited period”\nNot stated\nPaid tier: “any country”\n\n\nGoogle\nVertex AI (cloud platform)\nNo\nAbuse logging; caching up to 24 hours\nBy configuration\nSelected location\n\n\nMistral AI\nDeveloper’s own API (open-weight and closed models)\nFree tier: may be used. API: opt-out available\nNot stated for the API\nPay-as-you-go, stateless calls, on approval\nEEA by default; French company\n\n\nDeepSeek\nDeveloper’s own API (open-weight models)\nTraining listed as a purpose; opt-out on request\nWhile the account exists\nNot stated\nChina; Chinese law\n\n\nMoonshot AI\nDeveloper’s own API (open-weight models)\nNo\nNot stated\nEnterprise customers, on request\nNot stated\n\n\nAmazon Bedrock\nCloud platform (both types)\nNot stated on the pages read\nNothing stored in one mode; some models’ traffic kept up to 30 days\nThrough the account manager\nWithin AWS\n\n\nMicrosoft Azure\nCloud platform (both types)\nNo\nAbuse-monitoring store; period not stated\nModified abuse monitoring, for approved customers\nCustomer’s chosen geography\n\n\nOpenRouter\nRouting service (both types)\nDepends on the provider; routing can exclude those that train\nDepends on the provider\nRouting can be restricted to zero-retention providers\nDepends on the provider\n\n\nOllama\nCloud hosting (open-weight models)\nNo\nNot kept beyond the request\nThe default\nUnited States",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage",
+      "Model Providers' Data Policies"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/provider-policies.html#developers-own-apis",
+    "href": "ch05-ethics/provider-policies.html#developers-own-apis",
+    "title": "Model Providers’ Data Policies",
+    "section": "Developers’ Own APIs",
+    "text": "Developers’ Own APIs\n\nAnthropic\nChecked 27 November 2026. Sources: commercial terms (effective 17 June 2025); privacy centre articles on training (updated 18 August 2026), retention (1 July 2026), zero data retention (15 October 2026), and server locations (15 June 2026).\n\nTraining. The commercial terms say that “Anthropic may not train models on Customer Content from Services.” Feedback that a user reports explicitly is an exception.\nRetention. Inputs and outputs are deleted “within 30 days of receipt or generation”. Material flagged under the usage policy is kept for up to two years, and classifier scores for up to seven.\nZero retention. Available “subject to Anthropic’s approval”, per organisation, for eligible APIs only. Safety classifier results are still kept.\nLocation and entity. Traffic may be routed to “select countries in the US, Europe, Asia and Australia”, and “data is stored in the US.” Customers in the European Economic Area contract with Anthropic Ireland, others with Anthropic, PBC.\n\n\n\nOpenAI\nChecked 27 November 2026. Sources: data controls in the API platform (no date shown) and enterprise privacy (updated 8 January 2026).\n\nTraining. API data is “not used to train or improve OpenAI models” unless the customer opts in.\nRetention. “Abuse monitoring logs are generated for all API feature usage and retained for up to 30 days.” Endpoints that keep application state, such as files, assistants, and batches, keep data until it is deleted.\nZero retention. Zero data retention and modified abuse monitoring are “subject to prior approval by OpenAI”, for eligible endpoints only, and content from flagged models may still be retained for review.\nLocation and entity. Not stated on the pages read. A separate guide covers data residency.\n\n\n\nGoogle Gemini API\nChecked 27 November 2026. Source: Gemini API additional terms (effective 23 March 2026).\n\nTraining. On the unpaid tier, Google uses submitted content to “provide, improve, and develop Google products”, and “human reviewers may read, annotate, and process your API input and output.” On the paid tier, which needs a billing account, “Google doesn’t use your prompts or responses to improve our products.”\nRetention. On the paid tier, prompts and responses are logged “for a limited period of time”, for detecting violations of the terms. No period is given.\nZero retention. Not stated in these terms. Vertex AI, below, offers it.\nLocation. Paid-tier content “may be stored transiently or cached in any country”.\n\nUnpaid use is not suitable for confidential material.\n\n\nMistral AI\nChecked 27 November 2026. Sources: commercial terms (effective 25 September 2026), data-processing addendum (effective 27 July 2026), and help articles on training, opting out, zero data retention, and storage location.\n\nTraining. The commercial terms say Mistral “will not use Customer Data or Outputs to train its artificial intelligence models”, with exceptions, while the data-processing addendum allows training unless the customer has opted out. Data from the free tier of Mistral’s studio may be used for training. An administrator can switch off the use of API data with a toggle in the admin panel. The opt-out does not apply to Labs or preview models.\nRetention. No period is stated for API data. Abuse monitoring applies to the APIs unless zero retention is on.\nZero retention. “ZDR is available only with pay-as-you-go”, for stateless API calls, and Mistral approves requests “at our discretion”. Agents, batch files, conversations, and stored files are excluded.\nLocation and law. “By default, your data is hosted in the European Economic Area (EEA)”, with a US endpoint as an option. Mistral AI is a French company, and French law governs contracts outside the Americas and Asia-Pacific.\n\n\n\nDeepSeek\nChecked 27 November 2026. Sources: open platform terms of service (effective 29 April 2026) and privacy policy (updated 10 February 2026).\n\nTraining. The privacy policy lists using input “to train and improve our technology” as a purpose, and gives a right to opt out of training by writing to the company. No API-specific setting is described.\nRetention. Input is kept “for as long as you have an account”, and longer where needed to deal with a violation.\nZero retention. Not stated.\nLocation and law. The service is operated by Hangzhou DeepSeek Artificial Intelligence Co., Ltd., which stores personal data “in People’s Republic of China”, and the terms are governed by the law of mainland China. Some institutions and governments restrict its use.\n\nDeepSeek’s models are open-weight, so the same models can also be run locally or through another host, under that host’s terms.\n\n\nMoonshot AI (Kimi)\nChecked 27 November 2026. Sources: zero data retention (no date shown), API data processing and security (no date shown), and the privacy policy (updated 25 November 2026).\n\nTraining. API data “will not be used to train or improve Kimi models.” The consumer privacy policy allows training on user content, and excludes processing for enterprise and Open Platform customers.\nRetention. No default period is stated.\nZero retention. “ZDR is available on request to enterprise customers”, not for the Batch API, and cannot be guaranteed for images or video.\nLocation. Not stated, beyond that data may be stored outside the user’s country.\n\nMoonshot’s Kimi models are open-weight, but the largest need more hardware than most research teams have, so the developer’s API or another host is the usual route.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage",
+      "Model Providers' Data Policies"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/provider-policies.html#cloud-platforms",
+    "href": "ch05-ethics/provider-policies.html#cloud-platforms",
+    "title": "Model Providers’ Data Policies",
+    "section": "Cloud Platforms",
+    "text": "Cloud Platforms\n\nAmazon Bedrock\nChecked 27 November 2026. Sources: data protection, data retention, and abuse detection (no dates shown).\n\nTraining. Not stated on the pages read.\nThe model’s developer. “Amazon Bedrock does not share your content with model providers for any current mode”, and model providers have no access to customers’ prompts and completions.\nRetention. Retention is set by mode. In mode none, “No request or response data is written to durable storage”. In the default mode, AWS “may retain the data for safety and abuse-prevention purposes.” For Anthropic’s Claude Fable 5, 5.1, and 5.2, Bedrock “retains all traffic for up to 30 days for automated offline abuse detection”, with possible human review of flagged traffic. For OpenAI’s closed models, flagged traffic is kept for up to 30 days. Some models are available only if the account accepts review of inputs and outputs.\nZero retention. Arranged through the AWS account manager, per account and per model.\nLocation. Retained data stays “within the AWS boundary”, and the setting is made for each region.\n\n\n\nMicrosoft Azure\nChecked 27 November 2026. Sources: data, privacy, and security for Azure direct models (change log to 17 November 2026) and abuse monitoring.\n\nTraining. Prompts and completions “are NOT used to train, retrain, or improve the base models.”\nThe model’s developer. They “are NOT available to OpenAI or other providers of Models sold by Azure.”\nRetention. The models are stateless, but prompts and completions can be kept in an abuse-monitoring store for human review. No period is stated. Stateful features keep data until the customer deletes it.\nZero retention. Customers who meet further eligibility criteria can apply for modified abuse monitoring, under which the storage and human review are not performed. Microsoft says this option will no longer be available for models released on or after 1 November 2026, from a date to be announced.\nLocation. “Prompts and responses are processed within the customer-specified geography”, except for global and data-zone deployments.\n\n\n\nGoogle Vertex AI\nChecked 27 November 2026. Source: data governance (no date shown). Google now calls the platform Gemini Enterprise Agent Platform.\n\nTraining. Google “won’t use your data to train or fine-tune any AI/ML models” without the customer’s permission.\nRetention. Google “may log prompts to detect potential abuse”. In-memory caching is deleted within 24 hours. Grounding with Google Search keeps data for up to three days and cannot be switched off. OpenAI models on the platform log by default for up to 30 days in the US.\nZero retention. Possible, but “customers must take specific actions”, such as leaving request and response logging off and avoiding the features that store data.\nLocation. Durable caching stays in the location the customer selects.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage",
+      "Model Providers' Data Policies"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/provider-policies.html#routing-and-hosting-services",
+    "href": "ch05-ethics/provider-policies.html#routing-and-hosting-services",
+    "title": "Model Providers’ Data Policies",
+    "section": "Routing and Hosting Services",
+    "text": "Routing and Hosting Services\n\nOpenRouter\nChecked 27 November 2026. Sources: zero data retention and provider logging (no dates shown; the pages announced changes taking effect in October 2026).\n\nHow it works. OpenRouter passes each request to one of several providers of the chosen model, and the provider’s own policy governs what happens to it. Providers are classed as zero retention, safety retention (kept, “not used for training”), or retention and training under the provider’s policy.\nChoosing providers. Account settings or a flag on each request can restrict routing to zero-retention providers, and a separate setting excludes providers that train on data. Self-serve accounts allow safety retention by default.\nUnknown policies. Where a provider’s policy is unclear, OpenRouter will “assume that the endpoint both retains and trains on data.”\nOpenRouter’s own retention. Not stated on the pages read for ordinary requests.\n\nA “no training” setting is not the same as zero retention: a provider can keep data without training on it.\n\n\nOllama\nChecked 27 November 2026. Sources: privacy policy (updated March 2026) and cloud documentation.\n\nLocal use. Ollama also runs open-weight models on the researcher’s own computer. The entries here concern its cloud service.\nTraining. For its cloud models, “We do not use your inputs or outputs to train any AI models.”\nRetention. Content “is not stored beyond the time required to fulfill the request.” No retention for abuse monitoring is described.\nLocation. Data “may be transferred to and processed in the United States.”",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage",
+      "Model Providers' Data Policies"
+    ]
+  },
+  {
+    "objectID": "ch05-ethics/provider-policies.html#record-of-checks",
+    "href": "ch05-ethics/provider-policies.html#record-of-checks",
+    "title": "Model Providers’ Data Policies",
+    "section": "Record of Checks",
+    "text": "Record of Checks\n\n\n\nDate\nChange\n\n\n\n\n27 November 2026\nFirst version: eleven services.\n\n\n\nTo report a change in a provider’s terms, or to suggest a service to add, open an issue on the workbook’s repository.",
+    "crumbs": [
+      "Companion Workbook",
+      "Part I: Foundations",
+      "5. Addressing Ethics and Responsible LLM Usage",
+      "Model Providers' Data Policies"
+    ]
+  },
+  {
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Nothing needs to be installed to read the workbook: every page shows the results its code produced. This page is for readers who want to run the code.",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#r-and-an-editor",
+    "href": "getting-started.html#r-and-an-editor",
+    "title": "Getting Started",
+    "section": "R and an Editor",
+    "text": "R and an Editor\nThe workbook uses R, a free environment for statistical computing. Install the current version, and an editor such as RStudio or Positron.",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#packages",
+    "href": "getting-started.html#packages",
+    "title": "Getting Started",
+    "section": "Packages",
+    "text": "Packages\nThe examples use quallmer for coding with an LLM and for comparing and validating the results, the tidyverse packages for handling data, and a few others that each chapter names.\ninstall.packages(c(\"tidyverse\", \"readxl\", \"quanteda\", \"pak\"))\n\n# quallmer, from its development repository\npak::pak(\"quallmer/quallmer\")\nThe quallmer website documents every function used here.",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#the-workbooks-files",
+    "href": "getting-started.html#the-workbooks-files",
+    "title": "Getting Started",
+    "section": "The Workbook’s Files",
+    "text": "The Workbook’s Files\nThe source of every page, with its code, is in the workbook’s repository. Clone it, or download it as an archive from the repository’s Code menu, and open the folder as a project in the editor. Each chapter has a folder of its own, and the code on a chapter’s pages is written to run from inside that folder.\nEach page also has a button that downloads its code as a script.",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#data",
+    "href": "getting-started.html#data",
+    "title": "Getting Started",
+    "section": "Data",
+    "text": "Data\nSome of the material the examples use cannot be redistributed here. Where that is so, a script in the chapter’s folder, get-data.R, downloads the files from the source into a folder named data/ beside the chapter’s pages. The data page lists every dataset with its source and terms.",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#an-api-key",
+    "href": "getting-started.html#an-api-key",
+    "title": "Getting Started",
+    "section": "An API Key",
+    "text": "An API Key\nSending text to a model requires an account with a provider and an API key. quallmer reads the key from an environment variable, which is best set in the file .Renviron so that it never appears in a script:\nusethis::edit_r_environ()\nAdd a line for each provider to be used, save the file, and restart R. For example:\nANTHROPIC_API_KEY=your-key-here\nNever put a key in a script, and never commit .Renviron to a repository.\nA model is named by its provider and its identifier. The request below asks a model to code a sample of film reviews with a sentiment codebook that ships with quallmer:\nlibrary(quallmer)\n\ncoded &lt;- qlm_code(\n  data_corpus_LMRDsample,\n  codebook = data_codebook_sentiment,\n  model = \"anthropic/claude-sonnet-5-5\"\n)",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#running-without-a-key",
+    "href": "getting-started.html#running-without-a-key",
+    "title": "Getting Started",
+    "section": "Running Without a Key",
+    "text": "Running Without a Key\nA request costs money and its result can vary from one run to the next. The examples therefore make each request once, save what the model returned, and read the saved output on every later run. Where the saved output is provided, each step after the coding can be run with no key and at no cost, and gives the figures printed on the page.",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#what-a-run-costs",
+    "href": "getting-started.html#what-a-run-costs",
+    "title": "Getting Started",
+    "section": "What a Run Costs",
+    "text": "What a Run Costs\nEach chapter reports what its example cost to run and how long it took. Costs depend on the model and change often, so check the provider’s current prices before coding a large corpus, and try a small sample first.",
+    "crumbs": [
+      "Companion Workbook",
+      "Getting Started"
+    ]
+  }
+]

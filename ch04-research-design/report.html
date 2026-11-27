@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Scoring Motive Imagery with an LLM Coder – AI-Assisted Content Analysis</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../ch05-ethics/index.html" rel="next">
+<link href="../ch04-research-design/index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0cf49cfadc000603ac8142d3a87995b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">AI-Assisted Content Analysis</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Companion Workbook</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../getting-started.html"> 
+<span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../data.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/quallmer/AIACA-R"> <i class="bi bi-github" role="img" aria-label="Source on GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ch04-research-design/index.html">Part I: Foundations</a></li><li class="breadcrumb-item"><a href="../ch04-research-design/index.html">4. Designing AI-Assisted Content Analysis</a></li><li class="breadcrumb-item"><a href="../ch04-research-design/report.html">Scoring Motive Imagery with an LLM Coder</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Section">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Workbook</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../getting-started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Part I: Foundations</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../ch04-research-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">4. Designing AI-Assisted Content Analysis</span></a>
+            <button type="button" class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section: 4. Designing AI-Assisted Content Analysis">
+              <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
+            </button> 
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ch04-research-design/report.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Scoring Motive Imagery with an LLM Coder</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../ch05-ethics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">5. Addressing Ethics and Responsible LLM Usage</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section: 5. Addressing Ethics and Responsible LLM Usage">
+              <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
+            </button> 
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ch05-ethics/provider-policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Model Providers’ Data Policies</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">1. Summary</a></li>
+  <li><a href="#the-task-and-the-human-benchmarks" id="toc-the-task-and-the-human-benchmarks" class="nav-link" data-scroll-target="#the-task-and-the-human-benchmarks">2. The task and the human benchmarks</a></li>
+  <li><a href="#materials-and-what-each-was-used-for" id="toc-materials-and-what-each-was-used-for" class="nav-link" data-scroll-target="#materials-and-what-each-was-used-for">3. Materials and what each was used for</a></li>
+  <li><a href="#procedure-common-to-every-run" id="toc-procedure-common-to-every-run" class="nav-link" data-scroll-target="#procedure-common-to-every-run">4. Procedure common to every run</a></li>
+  <li><a href="#the-sequence-of-attempts" id="toc-the-sequence-of-attempts" class="nav-link" data-scroll-target="#the-sequence-of-attempts">5. The sequence of attempts</a>
+  <ul class="collapse">
+  <li><a href="#before-any-model-was-run" id="toc-before-any-model-was-run" class="nav-link" data-scroll-target="#before-any-model-was-run">5.1 Before any model was run</a></li>
+  <li><a href="#a-first-codebook-and-one-round-of-development-v0.2-to-v0.3" id="toc-a-first-codebook-and-one-round-of-development-v0.2-to-v0.3" class="nav-link" data-scroll-target="#a-first-codebook-and-one-round-of-development-v0.2-to-v0.3">5.2 A first codebook, and one round of development (v0.2 to v0.3)</a></li>
+  <li><a href="#the-reserved-test-of-v0.3" id="toc-the-reserved-test-of-v0.3" class="nav-link" data-scroll-target="#the-reserved-test-of-v0.3">5.3 The reserved test of v0.3</a></li>
+  <li><a href="#refining-the-instructions-v0.4-to-v0.6" id="toc-refining-the-instructions-v0.4-to-v0.6" class="nav-link" data-scroll-target="#refining-the-instructions-v0.4-to-v0.6">5.4 Refining the instructions (v0.4 to v0.6)</a></li>
+  <li><a href="#a-more-capable-model-and-worked-examples" id="toc-a-more-capable-model-and-worked-examples" class="nav-link" data-scroll-target="#a-more-capable-model-and-worked-examples">5.5 A more capable model, and worked examples</a></li>
+  <li><a href="#the-final-check-on-new-material" id="toc-the-final-check-on-new-material" class="nav-link" data-scroll-target="#the-final-check-on-new-material">5.6 The final check on new material</a></li>
+  </ul></li>
+  <li><a href="#what-changed-the-result-and-what-did-not" id="toc-what-changed-the-result-and-what-did-not" class="nav-link" data-scroll-target="#what-changed-the-result-and-what-did-not">6. What changed the result, and what did not</a></li>
+  <li><a href="#beside-the-human-coders" id="toc-beside-the-human-coders" class="nav-link" data-scroll-target="#beside-the-human-coders">7. Beside the human coders</a></li>
+  <li><a href="#limits" id="toc-limits" class="nav-link" data-scroll-target="#limits">8. Limits</a></li>
+  <li><a href="#reproducing-the-figures" id="toc-reproducing-the-figures" class="nav-link" data-scroll-target="#reproducing-the-figures">9. Reproducing the figures</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/quallmer/AIACA-R/blob/main/ch04-research-design/report.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/quallmer/AIACA-R/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ch04-research-design/index.html">Part I: Foundations</a></li><li class="breadcrumb-item"><a href="../ch04-research-design/index.html">4. Designing AI-Assisted Content Analysis</a></li><li class="breadcrumb-item"><a href="../ch04-research-design/report.html">Scoring Motive Imagery with an LLM Coder</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Scoring Motive Imagery with an LLM Coder</h1>
+<p class="subtitle lead">A report on the Chapter 4 worked example</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This report documents the worked example of Chapter 4, <em>Designing AI-Assisted Content Analysis</em>. The chapter gives the summary. This page gives the materials, the procedure, the sequence of attempts, and the results, with links to the code behind each figure. The runs were made on 21 and 22 November 2026.</p>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">1. Summary</h2>
+<p>The question was whether an LLM coder, given written instructions, can score achievement, affiliation-intimacy, and power imagery as Winter’s (1994) manual requires of a trained human scorer: a category agreement of .85 or better with the expert on each motive.</p>
+<p>The table gives the result on material that took no part in developing the instructions: 30 stories told aloud in an interview and three political speeches, from the manual’s practice Sets G to J. The figure is category agreement for the three motives together.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Coding specification</th>
+<th style="text-align: left;">Model</th>
+<th style="text-align: right;">Stories</th>
+<th style="text-align: right;">Speeches</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">First frozen version (v0.3)</td>
+<td style="text-align: left;">Claude Sonnet 5.5</td>
+<td style="text-align: right;">.75</td>
+<td style="text-align: right;">.53</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">First frozen version (v0.3)</td>
+<td style="text-align: left;">Claude Opus 5.5</td>
+<td style="text-align: right;">.79</td>
+<td style="text-align: right;">.63</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Revised (v0.6)</td>
+<td style="text-align: left;">Claude Sonnet 5.5</td>
+<td style="text-align: right;">.81</td>
+<td style="text-align: right;">.77</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Revised (v0.6)</td>
+<td style="text-align: left;">Claude Opus 5.5</td>
+<td style="text-align: right;">.83</td>
+<td style="text-align: right;">.80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Revised, with 90 worked examples</td>
+<td style="text-align: left;">Claude Sonnet 5.5</td>
+<td style="text-align: right;">.80</td>
+<td style="text-align: right;">.79</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Revised, with 90 worked examples</td>
+<td style="text-align: left;">Claude Opus 5.5</td>
+<td style="text-align: right;">.80</td>
+<td style="text-align: right;">.80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Required of a trained human scorer</em></td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"><em>.85</em></td>
+<td style="text-align: right;"><em>.85</em></td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><strong>Revising the instructions did most of the work, and the gain carried over to new material.</strong> On the speeches it was worth 17 to 24 points, and on the stories four to six.</li>
+<li><strong>A more capable model helped under the first instructions and hardly at all under the revised ones.</strong> Opus was ahead of Sonnet by four to ten points under v0.3, and by two or three under v0.6, which is within what a single run varies.</li>
+<li><strong>Worked examples added nothing on new material</strong>, although they had appeared to add about five points on the material the instructions were revised on.</li>
+<li><strong>No procedure reached the standard.</strong> The best came within two to five points of it.</li>
+<li><strong>Figures on the material used for revision ran several points high.</strong> The revised procedures scored .80 to .88 on the calibration sets, on which they were revised, and .77 to .83 on the new material.</li>
+</ol>
+<p>At the level of the story, where Pang and Ring (2020) report agreement among human coders, two LLM coders agreed with each other as well as their human coders did (section 7).</p>
+</section>
+<section id="the-task-and-the-human-benchmarks" class="level2">
+<h2 class="anchored" data-anchor-id="the-task-and-the-human-benchmarks">2. The task and the human benchmarks</h2>
+<p><strong>The scoring system.</strong> Winter’s manual scores three motives in running text. A scorer marks each <em>image</em>: a phrase expressing a standard of excellence (achievement), warm relations (affiliation-intimacy), or impact on others (power). The unit is the sentence. The same motive in two consecutive sentences is scored once, unless another motive comes between (manual, p.&nbsp;21).</p>
+<p><strong>The index.</strong> Category agreement is twice the number of agreements divided by the scorer’s images plus the expert’s. Agreement on absence earns nothing. The same motive in the same sentence, or in the same pair of adjacent sentences, is an agreement (pp.&nbsp;30–31). The figures in this report use that rule unless they say “same sentence”.</p>
+<p><strong>The standard.</strong> A scorer should reach .85 on each motive, and try for .90 (p.&nbsp;30).</p>
+<p><strong>How a human reaches it.</strong> The manual allows 25 to 30 hours of practice. The trainee scores practice sets with the expert’s scoring and explanations to hand afterwards, at first after every story, and may consult the manual throughout. The two calibration sets are then a final check: one blind attempt against expert scoring that someone else holds until the trainee has finished (pp.&nbsp;28–30). The manual’s documentation reports novices above .85, for the three motives combined, on the last three practice sets.</p>
+<p><strong>Agreement among human coders.</strong> Pang and Ring (2020) report the intraclass correlation of story-level motive scores (two-way, consistency, average rating): .90 for achievement, .96 for affiliation, and .83 for power among three coders on 30 stories (p.&nbsp;555), and .85, .78, and .84 between two coders on 393 stories (p.&nbsp;557).</p>
+<p><strong>What was not available.</strong> No text in our material was scored by two human coders, and no independent human’s scoring of the calibration sets. The human figures above are published summaries and could not be recomputed.</p>
+</section>
+<section id="materials-and-what-each-was-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="materials-and-what-each-was-used-for">3. Materials and what each was used for</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Material</th>
+<th style="text-align: left;">Size</th>
+<th style="text-align: left;">Reference</th>
+<th style="text-align: left;">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Practice sets A to F</td>
+<td style="text-align: left;">180 stories, 1,142 sentences</td>
+<td style="text-align: left;">Expert scoring as Pang and Ring transcribed it, by sentence</td>
+<td style="text-align: left;">Development of v0.2 and v0.3. Sets A to C later supplied the worked examples</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Calibration Set A</td>
+<td style="text-align: left;">30 stories, 216 sentences</td>
+<td style="text-align: left;">The manual’s sealed expert scoring, transcribed here</td>
+<td style="text-align: left;">Reserved test of v0.3. Then development of v0.4 to v0.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Calibration Set B</td>
+<td style="text-align: left;">One speech, 128 sentences</td>
+<td style="text-align: left;">The same</td>
+<td style="text-align: left;">The same</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emails, first test</td>
+<td style="text-align: left;">Nine writers, 5,815 emails, 14,615 sentences</td>
+<td style="text-align: left;">Pang and Ring’s labels, one of two coders for each email</td>
+<td style="text-align: left;">Reserved test of v0.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Emails, hold-out</td>
+<td style="text-align: left;">Nine writers, 4,574 emails</td>
+<td style="text-align: left;">The same</td>
+<td style="text-align: left;">Not coded</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Practice sets G to J</td>
+<td style="text-align: left;">30 interview stories and three speeches, 455 sentences</td>
+<td style="text-align: left;">The manual’s expert scoring, transcribed here</td>
+<td style="text-align: left;">Final check. Took no part in development</td>
+</tr>
+</tbody>
+</table>
+<p>The source files and the saved model runs are in the chapter’s <code>data/</code> folder. The <a href="../data.html">data page</a> gives their sources and terms.</p>
+<p>Three references were transcribed for this work, each twice and independently by AI assistants, with the two entries compared:</p>
+<ul>
+<li><strong>Calibration Set B and Sets G to J (text)</strong>, from page images, compared word for word with the scan’s text layer. Every difference was a fault of the text layer (<a href="analysis/01b_calibration_b.R"><code>01b_calibration_b.R</code></a>, <a href="analysis/01c_practice_sets.R"><code>01c_practice_sets.R</code></a>).</li>
+<li><strong>The expert scoring of the calibration sets</strong> (149 images) and <strong>of Sets G to J</strong> (222 labelled images, 219 after merging labels the expert says to score once). The two entries agree on every image (<a href="analysis/06b_calibration_key.R"><code>06b_calibration_key.R</code></a>, <a href="analysis/13b_final_key.R"><code>13b_final_key.R</code></a>).</li>
+</ul>
+<p>One of the authors checked a sample of the transcribed scoring against the manual’s pages on 23 November 2026 and found no error. The check was a spot check, and not of every entry.</p>
+<p>The text of Calibration Set A is Pang and Ring’s transcription. On 23 November 2026 it was compared with the manual’s pages (file 2, PDF pages 250 to 258). It differs in one dropped word (<code>CA23</code>, sentence 3), in two sentences joined as one (the end of <code>CA1</code>, in which the expert scores nothing), and in eight misspellings of the original that the transcription corrects or changes. No difference touches a phrase the expert scored.</p>
+</section>
+<section id="procedure-common-to-every-run" class="level2">
+<h2 class="anchored" data-anchor-id="procedure-common-to-every-run">4. Procedure common to every run</h2>
+<ul>
+<li><strong>One request for each document</strong>, independent of every other. The document is sent as a numbered list of its sentences.</li>
+<li><strong>The model lists images; a fixed rule counts them.</strong> The model returns, for each sentence, the images it finds: the motive, the criterion, and the words that carry it. The manual’s counting rule is then applied in code, so that a disagreement with the expert can be traced either to a judgment or to the rule. Both functions are in the specification file (<a href="codebook/motive_codebook_v0.3.R"><code>codebook/motive_codebook_v0.3.R</code></a>).</li>
+<li><strong>The coding specification is a <code>quallmer</code> codebook.</strong> Runs are made with <code>qlm_code()</code>, repeated or given to another model with <code>qlm_replicate()</code>, and compared with <code>qlm_compare()</code> and <code>qlm_validate()</code> (<a href="R/setup.R"><code>R/setup.R</code></a>).</li>
+<li><strong>Settings.</strong> An output cap of 64,000 tokens, and every other setting at the provider’s default.</li>
+<li><strong>Models.</strong> <code>anthropic/claude-sonnet-5-5</code> was the main coder throughout. <code>deepseek/deepseek-flash</code> was the declared second coder for the first test. <code>anthropic/claude-opus-5-5</code> was added later as a more capable model.</li>
+</ul>
+</section>
+<section id="the-sequence-of-attempts" class="level2">
+<h2 class="anchored" data-anchor-id="the-sequence-of-attempts">5. The sequence of attempts</h2>
+<section id="before-any-model-was-run" class="level3">
+<h3 class="anchored" data-anchor-id="before-any-model-was-run">5.1 Before any model was run</h3>
+<p>The design was fixed from the practice sets alone (<a href="analysis/00_design_figures.R"><code>00_design_figures.R</code></a>): how rare the imagery is (achievement in 85 of 1,142 sentences), how the reference records it, what a dictionary matches, and how large a test would need to be. Every document was assigned once to development or to reserve (<a href="analysis/01_partition.R"><code>01_partition.R</code></a>).</p>
+<p>A dictionary rule was fixed as the bar an LLM coder had to beat (<a href="analysis/03_dictionary.R"><code>03_dictionary.R</code></a>): a sentence is scored for achievement if three or more of its word stems fall in three General Inquirer categories. It reached .24 on the practice stories and .47 on Calibration Set A.</p>
+</section>
+<section id="a-first-codebook-and-one-round-of-development-v0.2-to-v0.3" class="level3">
+<h3 class="anchored" data-anchor-id="a-first-codebook-and-one-round-of-development-v0.2-to-v0.3">5.2 A first codebook, and one round of development (v0.2 to v0.3)</h3>
+<p>The first specification, <a href="codebook/motive_codebook_v0.2.R">v0.2</a>, was a condensed restatement of the manual’s rules in new wording, with no examples. It was piloted on the 180 practice stories (<a href="analysis/04_pilot.R"><code>04_pilot.R</code></a>), the disagreements were read, and ten changes were made, each restoring a rule of the manual that the condensation had narrowed or widened (<a href="codebook/REVISIONS.md"><code>codebook/REVISIONS.md</code></a>, v0.3).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Practice stories, Sonnet 5.5</th>
+<th style="text-align: right;">v0.2</th>
+<th style="text-align: right;">v0.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Achievement</td>
+<td style="text-align: right;">.74</td>
+<td style="text-align: right;">.80</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Affiliation-intimacy</td>
+<td style="text-align: right;">.72</td>
+<td style="text-align: right;">.78</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Power</td>
+<td style="text-align: right;">.71</td>
+<td style="text-align: right;">.74</td>
+</tr>
+</tbody>
+</table>
+<p>Version 0.3 was then frozen, and the two coders declared, before any reserved material was coded.</p>
+</section>
+<section id="the-reserved-test-of-v0.3" class="level3">
+<h3 class="anchored" data-anchor-id="the-reserved-test-of-v0.3">5.3 The reserved test of v0.3</h3>
+<p><strong>The calibration sets</strong> (<a href="analysis/06_reserved.R"><code>06_reserved.R</code></a>, <a href="analysis/07_validate_calibration.R"><code>07_validate_calibration.R</code></a>). Both coders’ output was saved, and only then was the sealed expert scoring opened.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Achievement</th>
+<th style="text-align: right;">Affiliation-intimacy</th>
+<th style="text-align: right;">Power</th>
+<th style="text-align: right;">All three</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Set A (stories), Sonnet 5.5</td>
+<td style="text-align: right;">.78</td>
+<td style="text-align: right;">.74</td>
+<td style="text-align: right;">.71</td>
+<td style="text-align: right;">.74</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Set A (stories), <code>deepseek-flash</code></td>
+<td style="text-align: right;">.77</td>
+<td style="text-align: right;">.77</td>
+<td style="text-align: right;">.89</td>
+<td style="text-align: right;">.81</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Set A (stories), dictionary rule</td>
+<td style="text-align: right;">.47</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Set B (speech), Sonnet 5.5</td>
+<td style="text-align: right;">.61</td>
+<td style="text-align: right;">.73</td>
+<td style="text-align: right;">.39</td>
+<td style="text-align: right;">.59</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Set B (speech), <code>deepseek-flash</code></td>
+<td style="text-align: right;">.68</td>
+<td style="text-align: right;">.73</td>
+<td style="text-align: right;">.70</td>
+<td style="text-align: right;">.70</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Set B (speech), dictionary rule</td>
+<td style="text-align: right;">.34</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>Neither coder met the standard. Both were well above the dictionary rule. A repeat of the main coder with nothing changed agreed with its first coding at a Krippendorff’s alpha of .88 to .99 on Set A.</p>
+<p><strong>The emails</strong> (<a href="analysis/07_validate_emails.R"><code>07_validate_emails.R</code></a>). Against Pang and Ring’s labels the main coder found most of the labelled imagery (recall .84, .63, and .43 for the three motives) and marked three to six times as many sentences as the labels did (precision .25, .13, and .07). Reading the disagreements showed that the labels cannot measure precision (<a href="analysis/08_disagreements.R"><code>08_disagreements.R</code></a>). They mark a motive in 311 of 5,815 emails, and they treat the same wording differently: of 44 sentences that call a job or piece of work good, great, or excellent, the labels mark achievement in 25. Each email was scored by one of two coders, whose reliability was established on picture stories and not on email (Pang and Ring, 2020, p.&nbsp;557). The emails were not used further, and the hold-out was not coded.</p>
+</section>
+<section id="refining-the-instructions-v0.4-to-v0.6" class="level3">
+<h3 class="anchored" data-anchor-id="refining-the-instructions-v0.4-to-v0.6">5.4 Refining the instructions (v0.4 to v0.6)</h3>
+<p>Refining a codebook against expert coding is part of the research design. Once the calibration sets had been compared with their key they became development material, and the disagreements on them were read.</p>
+<p>The main coder’s errors were systematic, and each concerned a rule the manual states. Three examples:</p>
+<ul>
+<li>The expert scores a single word of excellence standing alone. The coder wanted a fuller statement of performance.</li>
+<li>The expert scores unrequested help as power, and as affiliation too where warmth is shown. The coder recorded affiliation alone.</li>
+<li>The expert scores power exercised by a government, an institution, or an unnamed agent. The coder passed over it, which is why it found 7 of the 29 power images in the speech.</li>
+</ul>
+<p>Each pattern was taken to the manual’s wording before anything was changed. <a href="codebook/REVISIONS.md"><code>codebook/REVISIONS.md</code></a> lists every change with its page and the cases that prompted it, and what was left alone because the manual does not settle it.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">What it added</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="codebook/motive_codebook_v0.4.R">v0.4</a></td>
+<td style="text-align: left;">Eleven changes restoring rules of the manual</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="codebook/motive_codebook_v0.5.R">v0.5</a></td>
+<td style="text-align: left;">One rule decided by an author where the manual is silent: the stock courtesies of a message are not scored</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="codebook/motive_codebook_v0.6.R">v0.6</a></td>
+<td style="text-align: left;">Seven further changes from a second reading, mostly for dense political prose</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a-more-capable-model-and-worked-examples" class="level3">
+<h3 class="anchored" data-anchor-id="a-more-capable-model-and-worked-examples">5.5 A more capable model, and worked examples</h3>
+<p>Claude Opus 5.5 was run under each version (<a href="analysis/11_stronger_model.R"><code>11_stronger_model.R</code></a>). Then 90 practice stories (sets A to C), each sentence followed by the motives the expert scored in it, were appended to the v0.6 instructions as worked examples (<a href="analysis/12_worked_examples.R"><code>12_worked_examples.R</code></a>). This is in-context learning: the examples sit in the system prompt of every request, and no model is trained. The examples are built from the practice stories when the script runs.</p>
+<p>Category agreement on the calibration sets, all three motives together:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">v0.3</th>
+<th style="text-align: right;">v0.5</th>
+<th style="text-align: right;">v0.6</th>
+<th style="text-align: right;">v0.6 with 90 examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Set A (stories), Sonnet 5.5</td>
+<td style="text-align: right;">.74</td>
+<td style="text-align: right;">.86</td>
+<td style="text-align: right;">.85</td>
+<td style="text-align: right;">.85</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Set A (stories), Opus 5.5</td>
+<td style="text-align: right;">.79</td>
+<td style="text-align: right;">.88</td>
+<td style="text-align: right;">.84</td>
+<td style="text-align: right;">.88</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Set B (speech), Sonnet 5.5</td>
+<td style="text-align: right;">.59</td>
+<td style="text-align: right;">.79</td>
+<td style="text-align: right;">.80</td>
+<td style="text-align: right;">.85</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Set B (speech), Opus 5.5</td>
+<td style="text-align: right;">.63</td>
+<td style="text-align: right;">.76</td>
+<td style="text-align: right;">.80</td>
+<td style="text-align: right;">.84</td>
+</tr>
+</tbody>
+</table>
+<p>With 90 examples, Opus reached .85 or better on each motive in the calibration stories (.85, .88, .90). These figures are on the material the instructions were revised on, and they are not a test.</p>
+</section>
+<section id="the-final-check-on-new-material" class="level3">
+<h3 class="anchored" data-anchor-id="the-final-check-on-new-material">5.6 The final check on new material</h3>
+<p>Sets G to J had not been opened. Their text was transcribed and divided into sentences (<a href="analysis/01c_practice_sets.R"><code>01c_practice_sets.R</code></a>). The procedure was recorded: v0.6 with the 90 examples, Sonnet 5.5 and Opus 5.5. Both coded the 33 documents once (<a href="analysis/13_final_check.R"><code>13_final_check.R</code></a>), and only then was the expert’s scoring opened and transcribed (<a href="analysis/13b_final_key.R"><code>13b_final_key.R</code></a>). The sets were afterwards coded under v0.3 and under v0.6 without examples, neither of which was changed in the light of the scoring (<a href="analysis/13d_final_baselines.R"><code>13d_final_baselines.R</code></a>).</p>
+<p>Category agreement with the expert (<a href="analysis/13c_final_compare.R"><code>13c_final_compare.R</code></a>):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Achievement</th>
+<th style="text-align: right;">Affiliation-intimacy</th>
+<th style="text-align: right;">Power</th>
+<th style="text-align: right;">All three</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Stories (Set G)</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">v0.3, Sonnet 5.5</td>
+<td style="text-align: right;">.86</td>
+<td style="text-align: right;">.79</td>
+<td style="text-align: right;">.68</td>
+<td style="text-align: right;">.75</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">v0.3, Opus 5.5</td>
+<td style="text-align: right;">.74</td>
+<td style="text-align: right;">.83</td>
+<td style="text-align: right;">.78</td>
+<td style="text-align: right;">.79</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">v0.6, Sonnet 5.5</td>
+<td style="text-align: right;">.86</td>
+<td style="text-align: right;">.76</td>
+<td style="text-align: right;">.83</td>
+<td style="text-align: right;">.81</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">v0.6, Opus 5.5</td>
+<td style="text-align: right;">.80</td>
+<td style="text-align: right;">.76</td>
+<td style="text-align: right;">.89</td>
+<td style="text-align: right;">.83</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">v0.6 with examples, Sonnet 5.5</td>
+<td style="text-align: right;">.67</td>
+<td style="text-align: right;">.79</td>
+<td style="text-align: right;">.84</td>
+<td style="text-align: right;">.80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">v0.6 with examples, Opus 5.5</td>
+<td style="text-align: right;">.70</td>
+<td style="text-align: right;">.76</td>
+<td style="text-align: right;">.85</td>
+<td style="text-align: right;">.80</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Speeches (Sets H, I, J)</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">v0.3, Sonnet 5.5</td>
+<td style="text-align: right;">.53</td>
+<td style="text-align: right;">.51</td>
+<td style="text-align: right;">.55</td>
+<td style="text-align: right;">.53</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">v0.3, Opus 5.5</td>
+<td style="text-align: right;">.64</td>
+<td style="text-align: right;">.52</td>
+<td style="text-align: right;">.71</td>
+<td style="text-align: right;">.63</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">v0.6, Sonnet 5.5</td>
+<td style="text-align: right;">.83</td>
+<td style="text-align: right;">.72</td>
+<td style="text-align: right;">.75</td>
+<td style="text-align: right;">.77</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">v0.6, Opus 5.5</td>
+<td style="text-align: right;">.79</td>
+<td style="text-align: right;">.81</td>
+<td style="text-align: right;">.79</td>
+<td style="text-align: right;">.80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">v0.6 with examples, Sonnet 5.5</td>
+<td style="text-align: right;">.84</td>
+<td style="text-align: right;">.74</td>
+<td style="text-align: right;">.78</td>
+<td style="text-align: right;">.79</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">v0.6 with examples, Opus 5.5</td>
+<td style="text-align: right;">.82</td>
+<td style="text-align: right;">.78</td>
+<td style="text-align: right;">.80</td>
+<td style="text-align: right;">.80</td>
+</tr>
+</tbody>
+</table>
+<p>The expert scored 10 achievement, 27 affiliation-intimacy, and 45 power images in the stories, and 47, 37, and 53 in the speeches.</p>
+</section>
+</section>
+<section id="what-changed-the-result-and-what-did-not" class="level2">
+<h2 class="anchored" data-anchor-id="what-changed-the-result-and-what-did-not">6. What changed the result, and what did not</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">On the calibration sets, where the revision was done</th>
+<th style="text-align: left;">On new material</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Revising the instructions (v0.3 to v0.6)</td>
+<td style="text-align: left;">Stories +5 to +11 points, speech +17 to +21</td>
+<td style="text-align: left;">Stories +4 to +6, speeches +17 to +24</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A more capable model</td>
+<td style="text-align: left;">+4 to +5 under v0.3, none under v0.6</td>
+<td style="text-align: left;">+4 to +10 under v0.3, +2 to +3 under v0.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Worked examples</td>
+<td style="text-align: left;">Stories none to +4, speech +4 to +5</td>
+<td style="text-align: left;">Stories -1 to -3, speeches none to +2</td>
+</tr>
+</tbody>
+</table>
+<p>The gain from the instructions is the only one that held on new material at the size it showed in development. The gain from the examples did not.</p>
+</section>
+<section id="beside-the-human-coders" class="level2">
+<h2 class="anchored" data-anchor-id="beside-the-human-coders">7. Beside the human coders</h2>
+<p><strong>Against the expert.</strong> No procedure reached the .85 that a trained human scorer must reach. On new material the best was .83 on the stories and .80 on the speeches.</p>
+<p><strong>Against each other.</strong> At the level of the story, the two LLM coders of the first test agreed with each other as well as Pang and Ring’s human coders did (<a href="analysis/10_human_benchmarks.R"><code>10_human_benchmarks.R</code></a>; v0.3, Calibration Set A):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Intraclass correlation of story-level scores</th>
+<th style="text-align: right;">Achievement</th>
+<th style="text-align: right;">Affiliation-intimacy</th>
+<th style="text-align: right;">Power</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Three human coders, 30 stories (Pang and Ring, p.&nbsp;555)</td>
+<td style="text-align: right;">.90</td>
+<td style="text-align: right;">.96</td>
+<td style="text-align: right;">.83</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Two human coders, 393 stories (p.&nbsp;557)</td>
+<td style="text-align: right;">.85</td>
+<td style="text-align: right;">.78</td>
+<td style="text-align: right;">.84</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sonnet 5.5 and <code>deepseek-flash</code></td>
+<td style="text-align: right;">.90</td>
+<td style="text-align: right;">.96</td>
+<td style="text-align: right;">.90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sonnet 5.5 and the expert</td>
+<td style="text-align: right;">.91</td>
+<td style="text-align: right;">.86</td>
+<td style="text-align: right;">.81</td>
+</tr>
+</tbody>
+</table>
+<p>The two measures ask different things. The intraclass correlation asks whether coders order stories alike by how much imagery they hold. Category agreement asks whether they scored the same images. The LLM coders did the first as well as humans and the second less well. Their agreement with each other is also partly shared error: on affiliation they agreed with each other at .96 and with the expert at .86.</p>
+</section>
+<section id="limits" class="level2">
+<h2 class="anchored" data-anchor-id="limits">8. Limits</h2>
+<ul>
+<li><strong>Single runs.</strong> Each figure is one run. A repeat of the same coder under the same instructions moved calibration figures by up to four points.</li>
+<li><strong>Small counts.</strong> Calibration Set A holds 21 to 23 expert images for each motive, and the stories of Set G only ten for achievement. One agreement more or less moves such a figure by several points.</li>
+<li><strong>References transcribed by AI assistants.</strong> Each was entered twice and the entries agree. One of the authors has checked a sample of the scoring against the manual’s pages, and not every entry.</li>
+<li><strong>Sentence division.</strong> Our sentences end only at a full stop, question mark, or exclamation mark. The expert sometimes treats a pause in a spoken story as the end of a sentence. The cost is small: the expert’s own images score .95 to .99 against themselves under our rule.</li>
+<li><strong>The human comparison is not like for like.</strong> A trainee has the manual with its examples and many hours of corrected practice. The coders had a restatement of the rules, and in one configuration 90 scored stories. The human figures are also on other texts.</li>
+<li><strong>Prior exposure.</strong> The manual’s stories and some of the speeches are public, and a model may have seen them, or their scoring. The instructions tell the model to use nothing it recalls, which is a precaution and not evidence. No masking test was run.</li>
+<li><strong>Selection.</strong> The more capable model, the examples, and the revised instructions were all chosen after the first test. Only Sets G to J were kept apart from those choices.</li>
+<li><strong>Not done.</strong> <code>deepseek-flash</code> was not run under v0.6 or on Sets G to J. The email hold-out was not coded. The disagreements on Sets G to J have not been read. The manual’s practice Sets K to M, which also carry expert scoring, have not been opened, and would serve a further round.</li>
+</ul>
+</section>
+<section id="reproducing-the-figures" class="level2">
+<h2 class="anchored" data-anchor-id="reproducing-the-figures">9. Reproducing the figures</h2>
+<p>Run each script from the chapter’s folder, in the order of its number. A run is made once and saved: sourcing a script again reads the saved run back and makes no new request.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Stage</th>
+<th style="text-align: left;">Scripts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Design and partition</td>
+<td style="text-align: left;"><a href="analysis/00_design_figures.R"><code>00_design_figures.R</code></a>, <a href="analysis/01_partition.R"><code>01_partition.R</code></a>, <a href="analysis/01b_calibration_b.R"><code>01b_calibration_b.R</code></a>, <a href="analysis/01c_practice_sets.R"><code>01c_practice_sets.R</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Checks, baseline, and pilot</td>
+<td style="text-align: left;"><a href="analysis/02_codebook_checks.R"><code>02_codebook_checks.R</code></a>, <a href="analysis/03_dictionary.R"><code>03_dictionary.R</code></a>, <a href="analysis/04_pilot.R"><code>04_pilot.R</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Reserved test of v0.3</td>
+<td style="text-align: left;"><a href="analysis/06_reserved.R"><code>06_reserved.R</code></a>, <a href="analysis/06b_calibration_key.R"><code>06b_calibration_key.R</code></a>, <a href="analysis/07_validate_calibration.R"><code>07_validate_calibration.R</code></a>, <a href="analysis/07_validate_emails.R"><code>07_validate_emails.R</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Refinement</td>
+<td style="text-align: left;"><a href="analysis/08_disagreements.R"><code>08_disagreements.R</code></a>, <a href="analysis/09_revision_pilot.R"><code>09_revision_pilot.R</code></a>, <a href="analysis/11_stronger_model.R"><code>11_stronger_model.R</code></a>, <a href="analysis/12_worked_examples.R"><code>12_worked_examples.R</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Human benchmarks</td>
+<td style="text-align: left;"><a href="analysis/10_human_benchmarks.R"><code>10_human_benchmarks.R</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Final check</td>
+<td style="text-align: left;"><a href="analysis/13_final_check.R"><code>13_final_check.R</code></a>, <a href="analysis/13b_final_key.R"><code>13b_final_key.R</code></a>, <a href="analysis/13c_final_compare.R"><code>13c_final_compare.R</code></a>, <a href="analysis/13d_final_baselines.R"><code>13d_final_baselines.R</code></a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cost.</strong> Coding the 33 documents of the final check cost 0.70 US dollars with Sonnet 5.5 and 2.48 with Opus 5.5, with the long instructions cached by the provider after the first group of requests. The 5,815 emails of the first test took about 20 minutes with Sonnet 5.5 and about two hours with <code>deepseek-flash</code>.</p>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<p>Pang, J. S., &amp; Ring, H. (2020). Automated coding of implicit motives: A machine-learning approach. <em>Motivation and Emotion</em>, 44, 549–566.</p>
+<p>Winter, D. G. (1994). <em>Manual for scoring motive imagery in running text</em> (Version 4.2). University of Michigan.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/quallmer\.github\.io\/AIACA-R\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../ch04-research-design/index.html" class="pagination-link" aria-label="4. Designing AI-Assisted Content Analysis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4. Designing AI-Assisted Content Analysis</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../ch05-ethics/index.html" class="pagination-link" aria-label="5. Addressing Ethics and Responsible LLM Usage">
+        <span class="nav-page-text">5. Addressing Ethics and Responsible LLM Usage</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Seraphine F. Maerz and Kenneth Benoit</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/quallmer/AIACA-R/blob/main/ch04-research-design/report.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/quallmer/AIACA-R/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Companion to <em>AI-Assisted Content Analysis</em> (Sage)</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
